@@ -100,7 +100,7 @@ console.log("%c🔥 程序：Hexo | 主题：Hexo-Theme-Solitude | 作者：DuoS
         enable: true,
         type: 'twikoo',
         twikoo: {
-            url: 'https://bibitalk.netlify.app/',
+            url: 'https://bibitalk.netlify.app/.netlify/functions/twikoo/',
             accessToken: ''
         },
         waline: {
@@ -147,7 +147,7 @@ document.addEventListener('pjax:send', function(){
     --site-about-oneself-map--dark: url(https://bu.dusays.com/2023/10/31/6541161bc4066.webp);
 }</style><div class="author-content-item-group column mapAndInfo"><div class="author-content-item map single"><span class="map-title">我现在住在 中国</span></div><div class="author-content-item selfInfo single"><div><span class="selfInfo-title">生于</span><span class="selfInfo-content" style="color: #43a6c6;">1991</span></div><div><span class="selfInfo-title">中国</span><span class="selfInfo-content" style="color: #c69043;">家里蹲</span></div><div><span class="selfInfo-title">现在职业</span><span class="selfInfo-content" style="color: #b04fe6;">剪辑师</span></div></div></div></div><div class="author-content"><div class="create-site-post author-content-item single"><div class="author-content-item-tips">心路历程</div><span class="author-content-item-title">为什么建站？</span><br>创建这个站的时候，想要就是能够有一个自己能够<b>积累知识、积累兴趣</b>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。 <br> 与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，有<b>技能的教程干货</b>、有<b>生活上的吐槽和妙招</b>、有<b>话题上的思考和想法</b>。一般我研究什么、发现了什么都会分享在这里。 <br> 这些就是创造这个小站的本意，<b>也是我分享生活的方式</b>。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。 <br></div></div><div class="author-content"><div class="author-content-item single reward"><div class="author-content-item-tips">致谢</div><span class="author-content-item-title">赞赏名单</span><div class="author-content-item-description">感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造了价值。这会让我在这条路上走得更远。</div><div class="reward-list-all"><div class="reward-list-item"><div class="reward-list-item-name">悦华</div><div class="reward-list-bottom-group"><div class="reward-list-item-money">¥ 5</div><time class="datatime reward-list-item-time" datetime="2023-04-20T08:00:00+08:00"></time></div></div><div class="reward-list-item"><div class="reward-list-item-name">糕糕手</div><div class="reward-list-bottom-group"><div class="reward-list-item-money" style="background: var(--sco-vip);">¥ 6.66</div><time class="datatime reward-list-item-time" datetime="2023-08-11T08:00:00+08:00"></time></div></div><div class="reward-list-item"><div class="reward-list-item-name">幕幕</div><div class="reward-list-bottom-group"><div class="reward-list-item-money">¥ 5</div><time class="datatime reward-list-item-time" datetime="2023-08-11T08:00:00+08:00"></time></div></div><div class="reward-list-item"><div class="reward-list-item-name">悦华</div><div class="reward-list-bottom-group"><div class="reward-list-item-money" style="background: var(--sco-vip);">¥ 56</div><time class="datatime reward-list-item-time" datetime="2023-08-25T08:00:00+08:00"></time></div></div></div><div class="reward-list-tips"><p>总金额：¥ 72.66，将全部用于博客的维护</p></div></div></div></div><div id="post-comment" view-image><div class="comment-head"><div class="comment-headline"><i class="scoicon sco-chat-fill"></i><span> 评论</span></div></div><div class="comment-wrap"><div id="comment"></div><script>async function initComment(){
     var initOptions = Object.assign(
-        {"envId":"https://bibitalk.netlify.app/","lang":"zh-CN","accessToken":null},
+        {"envId":"https://bibitalk.netlify.app/.netlify/functions/twikoo/","lang":"zh-CN","accessToken":null},
         {
             el: '#comment',
             onCommentLoaded: function() {
@@ -159,7 +159,7 @@ document.addEventListener('pjax:send', function(){
     await twikoo.init(initOptions)
     if (false) {
         var countOptions = Object.assign(
-            {"envId":"https://bibitalk.netlify.app/","lang":"zh-CN","accessToken":null},
+            {"envId":"https://bibitalk.netlify.app/.netlify/functions/twikoo/","lang":"zh-CN","accessToken":null},
             {
                 urls: [window.location.pathname],
                 includeReply: false
