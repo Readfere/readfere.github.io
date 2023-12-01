@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MemosSync插件同步问题解决</title>
-    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
-<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
-<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
-<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
-<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
-<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PT下载站大全</title>
-    <url>/2023/11/11/PT%E4%B8%8B%E8%BD%BD%E7%AB%99%E5%A4%A7%E5%85%A8/</url>
-    <content><![CDATA[<h2 id="收集了网上比较全的-PT-下载站网址，需要的拿走："><a href="#收集了网上比较全的-PT-下载站网址，需要的拿走：" class="headerlink" title="收集了网上比较全的 PT 下载站网址，需要的拿走："></a>收集了网上比较全的 PT 下载站网址，需要的拿走：</h2><p><a href="https://carpt.net/">CarPT</a><br><a href="https://wintersakura.net/">WinterSakura</a><br><a href="https://piggo.me/">猪猪网</a><br><a href="http://www.hdzone.org/">HDzone高清地帶</a><br><a href="https://ptchina.org/">铂金学院</a><br><a href="https://broadcity.in/">HoşgeldinizBroadcity|BDC|Broadcity|BDC</a><br><a href="https://1ptba.com/login.php?returnto=torrents.php">1PTBar</a><br><a href="http://www.3dtorrents.org/">3DTorrents(3DT)</a><br><a href="https://www.3wmg.com/">3Wmg(芒果)</a><br><a href="https://52pt.site/">52PT</a><br><a href="https://ptpimg.me/">Ptpimg.me</a><br><a href="https://720pier.ru/">720pier</a><br><a href="https://aidoru-online.me/">Aidoru!Online</a><br><a href="https://aither.cc/">Aither</a><br><a href="http://all4nothin.net/">All4Nothin(A4N)</a><br><a href="https://alpharatio.cc/">AlphaRatio</a><br><a href="https://www.ansktracker.net/">AnimeNoSekai(AnimeNSK)</a><br><a href="https://animebytes.tv/">AnimeBytes(AB)</a><br><a href="https://animetorrents.me/">AnimeTorrents</a><br><a href="https://anthelion.me/">Anthelion</a><br><a href="http://arabscene.me/">ArabScene</a><br><a href="http://artofmisdirection.com/">Artofmisdirection</a><br><a href="https://asiancinema.me/">AsianCinema</a><br><a href="https://audiences.me/">Audiences</a><br><a href="https://aussierul.es/">AussieRul</a><br><a href="https://avistaz.to/">AvistaZ</a><br><a href="https://baconbits.org/">bB</a><br><a href="https://bemaniso.ws/">Bemaniso</a><br><a href="https://beyond-hd.me/">BeyondHD</a><br><a href="https://bibliotik.me/">Bibliotik</a><br><a href="https://www.bit-hdtv.com/">BitHDTV</a><br><a href="https://bithumen.be/">BitHUmen(BH)</a><br><a href="https://bitporn.eu/">BitPorn</a><br><a href="https://bitsexy.org/">BitSexy</a><br><a href="https://blutopia.xyz/">Bluetopia</a><br><a href="https://ssl.bootytape.com/">BootyTape</a><br><a href="https://brsociety.club/">BrSociety</a><br><a href="http://www.btarg.com.ar/">BTARG(Bt-Arg&#x2F;BTArg)</a><br><a href="https://broadcasthe.net/">BTN</a><br><a href="https://pt.btschool.club/">BTSCHOOL(比特校园)</a><br><a href="https://bwtorrents.tv/">BWT</a><br><a href="https://bt.byr.cn/">BYRBT</a><br><a href="http://www.cartoonchaos.org/">CartoonChaos(CC)</a><br><a href="https://www.cathode-ray.tube/">Cathode-Ray.Tube(CRT)</a><br><a href="https://ccfbits.org/">CCFBits(CCF&#x2F;吹吹风)</a><br><a href="https://www.cgpeers.com/">CGPeers</a><br><a href="https://chdbits.co/">CHDBits(CHD高清联盟&#x2F;彩虹岛)</a><br><a href="https://www.cherrykiss.org/">CherryKiss(CK)</a><br><a href="https://cinemageddon.net/">CinemaGeddon</a><br><a href="https://www.cinematik.net/">Cinematik(Tik)</a><br><a href="https://cinemaz.to/">CinemaZ</a><br><a href="https://hdcmct.org/">CMCT-PT</a><br><a href="https://concertos.live/">Concertos</a><br><a href="https://www.crnaberza.com/">CrnaBerza</a><br><a href="https://datatalli.net/">DataTalli</a><br><a href="https://dicmusic.club/">DIC(海豚音乐)</a><br><a href="https://dicmusic.club/">DICMusic(海豚音乐)</a><br><a href="https://discfan.net/">DiscFan(港知堂)</a><br><a href="https://www.empornium.is/">Empornium</a><br><a href="https://exoticaz.to/">ExoticaZ</a><br><a href="https://finelite.org/">FE</a><br><a href="https://femdomcult.org/">Femdomcult</a><br><a href="https://filelist.io/">FileList</a><br><a href="https://www.gaytorrent.ru/">GayTorrents</a><br><a href="https://gazellegames.net/">GazelleGames(GGN)</a><br><a href="https://gfxpeers.net/">GFXPeers</a><br><a href="http://www.grabthe.info/">GrabTheInfo(GTI)</a><br><a href="https://greatposterwall.com/">GreatPosterWall(GPW&#x2F;海豹影视)</a><br><a href="https://www.hddolby.com/">HDDolby(高清杜比)</a><br><a href="http://hdmayi.com/">HDMaYi(小蚂蚁PT站)</a><br><a href="https://pt.hd4fans.org/">HD4FANS</a><br><a href="https://www.hd.ai/">HDAI</a><br><a href="https://www.hdarea.co/">HDArea(高清视界)</a><br><a href="https://hdatmos.club/">HDAtmos(阿童木)</a><br><a href="https://hdbits.org/">HDB(海德堡)</a><br><a href="https://hdchina.org/">HDChina(瓷器)</a><br><a href="https://hdcity.city/">HDCity</a><br><a href="https://hdfans.org/">HDFans(红豆饭)</a><br><a href="https://hdf.world/">HD-Forever(HD-F)</a><br><a href="https://hdhome.org/">HDHome</a><br><a href="https://pt.hdpost.top/">HDPOST</a><br><a href="http://hdroute.org/">HDROUTE(思路高清)</a><br><a href="https://hdsky.me/">HDSky(天空)</a><br><a href="https://hd-space.org/">HD-Space</a><br><a href="https://hdtime.org/">HDTime</a><br><a href="https://hd-torrents.org/">HD-Torrents</a><br><a href="https://pt.hdupt.com/">HDU</a><br><a href="https://hdfun.me/">HDFun</a><br><a href="https://www.indietorrents.com/">IndieTorrents(IT)</a><br><a href="https://www.iptorrents.com/">IPTorrents</a><br><a href="https://www.joyhd.net/">JoyHD</a><br><a href="https://jpopsuki.eu/">JPopSuki</a><br><a href="https://jptv.club/">JPTV</a><br><a href="https://karagarga.in/">KaraGarga</a><br><a href="https://pt.keepfrds.com/">Keepfrds(朋友)</a><br><a href="https://kufirc.com/">Kufirc</a><br><a href="https://lemonhd.org/">LeagueHD(柠檬)</a><br><a href="http://learnbits.me/">LearnBits(LB)</a><br><a href="http://leohd59.ru/">Leohd59</a><br><a href="http://lesbians4u.org/">lesbians4u</a><br><a href="https://www.linkomanija.net/">Linkomanija(LM)</a><br><a href="https://lztr.me/">LzTr</a><br><a href="https://bt.mdan.org/">MDAN</a><br><a href="https://milkie.cc/">Milkie(ME)</a><br><a href="https://mma-tracker.net/">MMA-Tracker(MMA)</a><br><a href="https://kp.m-team.cc/">M-Team(馒头)</a><br><a href="https://www.morethantv.me/">MTV</a><br><a href="http://www.music-vid.com/">MusicVids</a><br><a href="https://www.myanonamouse.net/">MyAnonaMouse</a><br><a href="https://nebulance.io/">Nebulance</a><br><a href="https://www.nicept.net/">NicePT</a><br><a href="https://npupt.com/">NPUBits(蒲公英PT站)</a><br><a href="https://open.cd/">OpenCD(皇后)</a><br><a href="https://oppaiti.me/">Oppaitime</a><br><a href="https://orpheus.network/">OPS</a><br><a href="https://www.oshen.win/">OshenPT</a><br><a href="https://ourbits.club/">OurBits</a><br><a href="http://bt.ourdisc.net/">OurDisc</a><br><a href="https://passthepopcorn.me/">Passthepopcorn（PTP）</a><br><a href="https://polishsource.cz/">PolishSource(PS)</a><br><a href="https://pornbay.org/">PornBay</a><br><a href="https://pornbits.net/">Pornbits</a><br><a href="https://www.pornorip.si/">Pornorip</a><br><a href="https://privatehd.to/">PrivateHD(PHD)</a><br><a href="http://www.proaudiotorrents.org/">ProAudioTorrents(PAT)</a><br><a href="http://pwtorrents.net/">ProWrestlingTorrents(PWT)</a><br><a href="https://pterclub.com/">PTer</a><br><a href="https://www.pthome.net/">PTHOME</a><br><a href="https://pt.msg.vg/">PTMSG</a><br><a href="https://www.pttime.org/">PTtime(PT时间&#x2F;PTT)</a><br><a href="https://pterclub.com/">PT之友俱乐部(猫站)</a><br><a href="https://pussytorrents.org/">pussytorrents</a><br><a href="https://redacted.ch/">RED</a><br><a href="https://revolutiontt.me/">REVOLUTIONTT(RT)</a><br><a href="http://rgfootball.net/">RGFootball</a><br><a href="https://metal.iplay.ro/">RomanianMetalTorrents</a><br><a href="https://scene-rush.com/">SceneRush</a><br><a href="http://www.scenetorrents.org/">SceneTorrents</a><br><a href="http://sdbits.org/">SDB</a><br><a href="https://secret-cinema.pw/">SecretCinema</a><br><a href="https://seedfile.io/">SeedFile(SF)</a><br><a href="https://www.sharewood.tv/">ShareWood</a><br><a href="https://www.skyey2.com/">SkyeySnow(天雪动漫)</a><br><a href="https://sportscult.org/">sportscult</a><br><a href="https://springsunday.net/">SSD</a><br><a href="https://sugoimusic.me/">SugoiMusic</a><br><a href="https://superbits.org/">Superbits</a><br><a href="https://teamhd.org/">TeamHD</a><br><a href="https://tekno3d.com/">Tekno3DHDR-X</a><br><a href="https://thegeeks.click/">TG</a><br><a href="https://horrorcharnel.org/">TheHorrorCharnel(THC)</a><br><a href="https://themixingbowl.org/">TheMixingBowl(TMB)</a><br><a href="https://pt.eastgame.org/">TLFBits</a><br><a href="http://www.torrentbits.ro/">TorrentBits(TBits&#x2F;TBS)</a><br><a href="https://torrentbytes.net/">TorrentBytes(TB&#x2F;TBy)</a><br><a href="https://et8.org/">TorrentCCF(TCCF)</a><br><a href="https://www.torrentech.org/">TorrenTech(TTech&#x2F;TTC)</a><br><a href="https://www.torrenthr.org/">TorrentHr(TrHR&#x2F;THR)</a><br><a href="https://www.torrentleech.org/">TorrentLeech</a><br><a href="https://www.torrentseeds.org/">TorrentSeeds</a><br><a href="https://www.torrentday.com/">TorrentsTD</a><br><a href="http://www.trancetraffic.com/">TranceTraffic(TT)</a><br><a href="https://www.tribalmixes.com/">TribalMixes(TM)</a><br><a href="https://totheglory.im/">TTG</a><br><a href="https://uhdbits.org/">UHDBits</a><br><a href="http://www.uniongang.tv/">UnionGang</a><br><a href="https://tracker.uniotaku.com/">UniOtaku</a><br><a href="https://www.xspeeds.eu/">XSpeeds(XS)</a><br><a href="https://extremlymtorrents.ws/">XTR</a><br><a href="https://www.youiv.info/">youiv</a><br><a href="http://zombtracker.the-zomb.com/">ZOMBTorrents(ZOMB)</a><br><a href="http://pt.zhixing.bjtu.edu.cn/">ZXPT(北京交通大学知行PT)</a><br><a href="http://avgv.cc/">爱薇网</a><br><a href="https://club.hares.top/">白兔俱乐部</a><br><a href="https://www.hitpt.com/">百川PT</a><br><a href="https://tjupt.org/">北洋园PT</a><br><a href="https://www.beitai.pt/">备胎</a><br><a href="https://ptneko.com/">超科学PT喵</a><br><a href="http://discfan.net/">港知堂</a><br><a href="https://www.haidan.video/">海胆之家</a><br><a href="https://www.htpt.cc/">海棠PT</a><br><a href="https://hudbt.hust.edu.cn/">蝴蝶-HUDBT</a><br><a href="http://bitpt.cn/">极速之星</a><br><a href="https://pt.soulvoice.club/">聆音Club</a><br><a href="http://bt.neu6.edu.cn/">六维空间</a><br><a href="https://pt.nwsuaf6.edu.cn/">麦田PT</a><br><a href="https://nanyangpt.com/">南洋PT</a><br><a href="https://pt.sjtu.edu.cn/">上交葡萄PT站</a><br><a href="https://ptsbao.club/">烧包</a><br><a href="http://pt.xauat6.edu.cn/">溪涧草堂PT</a><br><a href="https://pt.hdbd.us/login.php">伊甸园</a><br><a href="https://www.tjupt.org/login.php">北洋园PT</a><br><a href="https://x-ite.me/">(XM)</a><br><a href="https://ntorrents.net/">NTorrents</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Obsidian dataview 引用本地图片</title>
     <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
@@ -53,52 +30,27 @@
       </tags>
   </entry>
   <entry>
-    <title>iPhone导入自定义字体</title>
-    <url>/2023/08/27/iPhone%E5%AF%BC%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
-<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 appstore 中下载 &#x3D;&#x3D;iFont&#x3D;&#x3D; APP<br>![[ifont.png]]</p>
-<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
-<li>用 safari 访问字体网站下载你需要的字体<br> ![[字体网站.png]]<br> ![[下载字体.png]]</li>
-<li>下载完成后点击&#x3D;&#x3D;下载按钮&#x3D;&#x3D;-&#x3D;&#x3D;下载&#x3D;&#x3D;- 点击字体后面的&#x3D;&#x3D;放大镜&#x3D;&#x3D;<br> ![[找到下载的字体.png]]<br> ![[点击放大镜.png]]<br> ![[跳转到文件管理器.png]]</li>
-<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br> ![[点击字体并分享.png]]</li>
-<li>分享到 iFont APP 中<br> ![[分享到iFont.png]]</li>
-<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br> ![[点击安装.png]]</li>
-<li>打开手机的&#x3D;&#x3D;设置&#x3D;&#x3D;界面 -&#x3D;&#x3D;通用&#x3D;&#x3D;-&#x3D;&#x3D;vpn 与设备管理&#x3D;&#x3D;，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！</li>
-<li>进入 obsidian &#x3D;&#x3D;设置&#x3D;&#x3D;-&#x3D;&#x3D;外观&#x3D;&#x3D;-&#x3D;&#x3D;字体&#x3D;&#x3D;，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br> ![[成功设置字体.png]]</li>
-</ol>
+    <title>MemosSync插件同步问题解决</title>
+    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
+<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
+<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
+<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
+<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
+<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
       </categories>
   </entry>
   <entry>
-    <title>YouTube第三方客户端&amp;去广告方案</title>
-    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%20&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>#YouTube</p>
-<p>▎YouTube 第三方客户端&amp;去广告方案</p>
-<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
-<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
-<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
-<ul>
-<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
-</ul>
-<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
-<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
-<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
-<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
-<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
-<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
-<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
-<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
-<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
-<p><a href="https://piped.video/">Piped在线播放</a></p>
+    <title>PT下载站大全</title>
+    <url>/2023/11/11/PT%E4%B8%8B%E8%BD%BD%E7%AB%99%E5%A4%A7%E5%85%A8/</url>
+    <content><![CDATA[<h2 id="收集了网上比较全的-PT-下载站网址，需要的拿走："><a href="#收集了网上比较全的-PT-下载站网址，需要的拿走：" class="headerlink" title="收集了网上比较全的 PT 下载站网址，需要的拿走："></a>收集了网上比较全的 PT 下载站网址，需要的拿走：</h2><p><a href="https://carpt.net/">CarPT</a><br><a href="https://wintersakura.net/">WinterSakura</a><br><a href="https://piggo.me/">猪猪网</a><br><a href="http://www.hdzone.org/">HDzone高清地帶</a><br><a href="https://ptchina.org/">铂金学院</a><br><a href="https://broadcity.in/">HoşgeldinizBroadcity|BDC|Broadcity|BDC</a><br><a href="https://1ptba.com/login.php?returnto=torrents.php">1PTBar</a><br><a href="http://www.3dtorrents.org/">3DTorrents(3DT)</a><br><a href="https://www.3wmg.com/">3Wmg(芒果)</a><br><a href="https://52pt.site/">52PT</a><br><a href="https://ptpimg.me/">Ptpimg.me</a><br><a href="https://720pier.ru/">720pier</a><br><a href="https://aidoru-online.me/">Aidoru!Online</a><br><a href="https://aither.cc/">Aither</a><br><a href="http://all4nothin.net/">All4Nothin(A4N)</a><br><a href="https://alpharatio.cc/">AlphaRatio</a><br><a href="https://www.ansktracker.net/">AnimeNoSekai(AnimeNSK)</a><br><a href="https://animebytes.tv/">AnimeBytes(AB)</a><br><a href="https://animetorrents.me/">AnimeTorrents</a><br><a href="https://anthelion.me/">Anthelion</a><br><a href="http://arabscene.me/">ArabScene</a><br><a href="http://artofmisdirection.com/">Artofmisdirection</a><br><a href="https://asiancinema.me/">AsianCinema</a><br><a href="https://audiences.me/">Audiences</a><br><a href="https://aussierul.es/">AussieRul</a><br><a href="https://avistaz.to/">AvistaZ</a><br><a href="https://baconbits.org/">bB</a><br><a href="https://bemaniso.ws/">Bemaniso</a><br><a href="https://beyond-hd.me/">BeyondHD</a><br><a href="https://bibliotik.me/">Bibliotik</a><br><a href="https://www.bit-hdtv.com/">BitHDTV</a><br><a href="https://bithumen.be/">BitHUmen(BH)</a><br><a href="https://bitporn.eu/">BitPorn</a><br><a href="https://bitsexy.org/">BitSexy</a><br><a href="https://blutopia.xyz/">Bluetopia</a><br><a href="https://ssl.bootytape.com/">BootyTape</a><br><a href="https://brsociety.club/">BrSociety</a><br><a href="http://www.btarg.com.ar/">BTARG(Bt-Arg&#x2F;BTArg)</a><br><a href="https://broadcasthe.net/">BTN</a><br><a href="https://pt.btschool.club/">BTSCHOOL(比特校园)</a><br><a href="https://bwtorrents.tv/">BWT</a><br><a href="https://bt.byr.cn/">BYRBT</a><br><a href="http://www.cartoonchaos.org/">CartoonChaos(CC)</a><br><a href="https://www.cathode-ray.tube/">Cathode-Ray.Tube(CRT)</a><br><a href="https://ccfbits.org/">CCFBits(CCF&#x2F;吹吹风)</a><br><a href="https://www.cgpeers.com/">CGPeers</a><br><a href="https://chdbits.co/">CHDBits(CHD高清联盟&#x2F;彩虹岛)</a><br><a href="https://www.cherrykiss.org/">CherryKiss(CK)</a><br><a href="https://cinemageddon.net/">CinemaGeddon</a><br><a href="https://www.cinematik.net/">Cinematik(Tik)</a><br><a href="https://cinemaz.to/">CinemaZ</a><br><a href="https://hdcmct.org/">CMCT-PT</a><br><a href="https://concertos.live/">Concertos</a><br><a href="https://www.crnaberza.com/">CrnaBerza</a><br><a href="https://datatalli.net/">DataTalli</a><br><a href="https://dicmusic.club/">DIC(海豚音乐)</a><br><a href="https://dicmusic.club/">DICMusic(海豚音乐)</a><br><a href="https://discfan.net/">DiscFan(港知堂)</a><br><a href="https://www.empornium.is/">Empornium</a><br><a href="https://exoticaz.to/">ExoticaZ</a><br><a href="https://finelite.org/">FE</a><br><a href="https://femdomcult.org/">Femdomcult</a><br><a href="https://filelist.io/">FileList</a><br><a href="https://www.gaytorrent.ru/">GayTorrents</a><br><a href="https://gazellegames.net/">GazelleGames(GGN)</a><br><a href="https://gfxpeers.net/">GFXPeers</a><br><a href="http://www.grabthe.info/">GrabTheInfo(GTI)</a><br><a href="https://greatposterwall.com/">GreatPosterWall(GPW&#x2F;海豹影视)</a><br><a href="https://www.hddolby.com/">HDDolby(高清杜比)</a><br><a href="http://hdmayi.com/">HDMaYi(小蚂蚁PT站)</a><br><a href="https://pt.hd4fans.org/">HD4FANS</a><br><a href="https://www.hd.ai/">HDAI</a><br><a href="https://www.hdarea.co/">HDArea(高清视界)</a><br><a href="https://hdatmos.club/">HDAtmos(阿童木)</a><br><a href="https://hdbits.org/">HDB(海德堡)</a><br><a href="https://hdchina.org/">HDChina(瓷器)</a><br><a href="https://hdcity.city/">HDCity</a><br><a href="https://hdfans.org/">HDFans(红豆饭)</a><br><a href="https://hdf.world/">HD-Forever(HD-F)</a><br><a href="https://hdhome.org/">HDHome</a><br><a href="https://pt.hdpost.top/">HDPOST</a><br><a href="http://hdroute.org/">HDROUTE(思路高清)</a><br><a href="https://hdsky.me/">HDSky(天空)</a><br><a href="https://hd-space.org/">HD-Space</a><br><a href="https://hdtime.org/">HDTime</a><br><a href="https://hd-torrents.org/">HD-Torrents</a><br><a href="https://pt.hdupt.com/">HDU</a><br><a href="https://hdfun.me/">HDFun</a><br><a href="https://www.indietorrents.com/">IndieTorrents(IT)</a><br><a href="https://www.iptorrents.com/">IPTorrents</a><br><a href="https://www.joyhd.net/">JoyHD</a><br><a href="https://jpopsuki.eu/">JPopSuki</a><br><a href="https://jptv.club/">JPTV</a><br><a href="https://karagarga.in/">KaraGarga</a><br><a href="https://pt.keepfrds.com/">Keepfrds(朋友)</a><br><a href="https://kufirc.com/">Kufirc</a><br><a href="https://lemonhd.org/">LeagueHD(柠檬)</a><br><a href="http://learnbits.me/">LearnBits(LB)</a><br><a href="http://leohd59.ru/">Leohd59</a><br><a href="http://lesbians4u.org/">lesbians4u</a><br><a href="https://www.linkomanija.net/">Linkomanija(LM)</a><br><a href="https://lztr.me/">LzTr</a><br><a href="https://bt.mdan.org/">MDAN</a><br><a href="https://milkie.cc/">Milkie(ME)</a><br><a href="https://mma-tracker.net/">MMA-Tracker(MMA)</a><br><a href="https://kp.m-team.cc/">M-Team(馒头)</a><br><a href="https://www.morethantv.me/">MTV</a><br><a href="http://www.music-vid.com/">MusicVids</a><br><a href="https://www.myanonamouse.net/">MyAnonaMouse</a><br><a href="https://nebulance.io/">Nebulance</a><br><a href="https://www.nicept.net/">NicePT</a><br><a href="https://npupt.com/">NPUBits(蒲公英PT站)</a><br><a href="https://open.cd/">OpenCD(皇后)</a><br><a href="https://oppaiti.me/">Oppaitime</a><br><a href="https://orpheus.network/">OPS</a><br><a href="https://www.oshen.win/">OshenPT</a><br><a href="https://ourbits.club/">OurBits</a><br><a href="http://bt.ourdisc.net/">OurDisc</a><br><a href="https://passthepopcorn.me/">Passthepopcorn（PTP）</a><br><a href="https://polishsource.cz/">PolishSource(PS)</a><br><a href="https://pornbay.org/">PornBay</a><br><a href="https://pornbits.net/">Pornbits</a><br><a href="https://www.pornorip.si/">Pornorip</a><br><a href="https://privatehd.to/">PrivateHD(PHD)</a><br><a href="http://www.proaudiotorrents.org/">ProAudioTorrents(PAT)</a><br><a href="http://pwtorrents.net/">ProWrestlingTorrents(PWT)</a><br><a href="https://pterclub.com/">PTer</a><br><a href="https://www.pthome.net/">PTHOME</a><br><a href="https://pt.msg.vg/">PTMSG</a><br><a href="https://www.pttime.org/">PTtime(PT时间&#x2F;PTT)</a><br><a href="https://pterclub.com/">PT之友俱乐部(猫站)</a><br><a href="https://pussytorrents.org/">pussytorrents</a><br><a href="https://redacted.ch/">RED</a><br><a href="https://revolutiontt.me/">REVOLUTIONTT(RT)</a><br><a href="http://rgfootball.net/">RGFootball</a><br><a href="https://metal.iplay.ro/">RomanianMetalTorrents</a><br><a href="https://scene-rush.com/">SceneRush</a><br><a href="http://www.scenetorrents.org/">SceneTorrents</a><br><a href="http://sdbits.org/">SDB</a><br><a href="https://secret-cinema.pw/">SecretCinema</a><br><a href="https://seedfile.io/">SeedFile(SF)</a><br><a href="https://www.sharewood.tv/">ShareWood</a><br><a href="https://www.skyey2.com/">SkyeySnow(天雪动漫)</a><br><a href="https://sportscult.org/">sportscult</a><br><a href="https://springsunday.net/">SSD</a><br><a href="https://sugoimusic.me/">SugoiMusic</a><br><a href="https://superbits.org/">Superbits</a><br><a href="https://teamhd.org/">TeamHD</a><br><a href="https://tekno3d.com/">Tekno3DHDR-X</a><br><a href="https://thegeeks.click/">TG</a><br><a href="https://horrorcharnel.org/">TheHorrorCharnel(THC)</a><br><a href="https://themixingbowl.org/">TheMixingBowl(TMB)</a><br><a href="https://pt.eastgame.org/">TLFBits</a><br><a href="http://www.torrentbits.ro/">TorrentBits(TBits&#x2F;TBS)</a><br><a href="https://torrentbytes.net/">TorrentBytes(TB&#x2F;TBy)</a><br><a href="https://et8.org/">TorrentCCF(TCCF)</a><br><a href="https://www.torrentech.org/">TorrenTech(TTech&#x2F;TTC)</a><br><a href="https://www.torrenthr.org/">TorrentHr(TrHR&#x2F;THR)</a><br><a href="https://www.torrentleech.org/">TorrentLeech</a><br><a href="https://www.torrentseeds.org/">TorrentSeeds</a><br><a href="https://www.torrentday.com/">TorrentsTD</a><br><a href="http://www.trancetraffic.com/">TranceTraffic(TT)</a><br><a href="https://www.tribalmixes.com/">TribalMixes(TM)</a><br><a href="https://totheglory.im/">TTG</a><br><a href="https://uhdbits.org/">UHDBits</a><br><a href="http://www.uniongang.tv/">UnionGang</a><br><a href="https://tracker.uniotaku.com/">UniOtaku</a><br><a href="https://www.xspeeds.eu/">XSpeeds(XS)</a><br><a href="https://extremlymtorrents.ws/">XTR</a><br><a href="https://www.youiv.info/">youiv</a><br><a href="http://zombtracker.the-zomb.com/">ZOMBTorrents(ZOMB)</a><br><a href="http://pt.zhixing.bjtu.edu.cn/">ZXPT(北京交通大学知行PT)</a><br><a href="http://avgv.cc/">爱薇网</a><br><a href="https://club.hares.top/">白兔俱乐部</a><br><a href="https://www.hitpt.com/">百川PT</a><br><a href="https://tjupt.org/">北洋园PT</a><br><a href="https://www.beitai.pt/">备胎</a><br><a href="https://ptneko.com/">超科学PT喵</a><br><a href="http://discfan.net/">港知堂</a><br><a href="https://www.haidan.video/">海胆之家</a><br><a href="https://www.htpt.cc/">海棠PT</a><br><a href="https://hudbt.hust.edu.cn/">蝴蝶-HUDBT</a><br><a href="http://bitpt.cn/">极速之星</a><br><a href="https://pt.soulvoice.club/">聆音Club</a><br><a href="http://bt.neu6.edu.cn/">六维空间</a><br><a href="https://pt.nwsuaf6.edu.cn/">麦田PT</a><br><a href="https://nanyangpt.com/">南洋PT</a><br><a href="https://pt.sjtu.edu.cn/">上交葡萄PT站</a><br><a href="https://ptsbao.club/">烧包</a><br><a href="http://pt.xauat6.edu.cn/">溪涧草堂PT</a><br><a href="https://pt.hdbd.us/login.php">伊甸园</a><br><a href="https://www.tjupt.org/login.php">北洋园PT</a><br><a href="https://x-ite.me/">(XM)</a><br><a href="https://ntorrents.net/">NTorrents</a></p>
 ]]></content>
       <categories>
-        <category>折腾记</category>
+        <category>趣站</category>
       </categories>
-      <tags>
-        <tag>YouTube</tag>
-      </tags>
   </entry>
   <entry>
     <title>Prism主题高亮样式通用CSS片段</title>
@@ -128,31 +80,49 @@
       </tags>
   </entry>
   <entry>
-    <title>图片 API 接口网站</title>
-    <url>/2023/11/11/%E5%9B%BE%E7%89%87API%20%E6%8E%A5%E5%8F%A3%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>这两天在折腾博客，博客有一些头图和文章图片需要用到图片 API 接口，就上网搜到了一些公用接口，这些站不知道能用多久，且行且珍惜</p>
-<h2 id="Unsplash-Image-API："><a href="#Unsplash-Image-API：" class="headerlink" title="Unsplash Image API："></a>Unsplash Image API：</h2><p><a href="https://unsplash.it/1600/900?random">https://unsplash.it/1600/900?random</a> <a href="https://source.unsplash.com/random">https://source.unsplash.com/random</a> <a href="https://source.unsplash.com/user/erondu/1600x900">https://source.unsplash.com/user/erondu/1600x900</a></p>
-<h2 id="二次元"><a href="#二次元" class="headerlink" title="二次元"></a>二次元</h2><p><a href="https://www.loliapi.com/">https://www.loliapi.com/</a> <a href="https://img.r10086.com/">https://img.r10086.com/</a></p>
-<h2 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h2><p><a href="https://imgapi.cn/">https://imgapi.cn/</a> <a href="https://api.likepoems.com/">https://api.likepoems.com/</a></p>
-<h2 id="韩小韩-API-接口站"><a href="#韩小韩-API-接口站" class="headerlink" title="韩小韩 API 接口站"></a>韩小韩 API 接口站</h2><p><a href="https://api.vvhan.com/">https://api.vvhan.com/</a></p>
-<h2 id="每日-bing："><a href="#每日-bing：" class="headerlink" title="每日 bing："></a>每日 bing：</h2><p><a href="https://api.isoyu.com/bing/_images.php">https://api.isoyu.com/bing\_images.php</a></p>
+    <title>YouTube第三方客户端&amp;去广告方案</title>
+    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%20&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
+<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
+<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
+<ul>
+<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
+</ul>
+<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
+<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
+<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
+<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
+<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
+<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
+<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
+<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
+<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
+<p><a href="https://piped.video/">Piped在线播放</a></p>
 ]]></content>
       <categories>
-        <category>趣站</category>
+        <category>APPS</category>
       </categories>
+      <tags>
+        <tag>YouTube</tag>
+      </tags>
   </entry>
   <entry>
-    <title>好用的聚合搜索推荐</title>
-    <url>/2023/11/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%81%9A%E5%90%88%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="聚合搜索"><a href="#聚合搜索" class="headerlink" title="聚合搜索"></a>聚合搜索</h2><p><a href="https://allsear.ch/">AllSearch</a> | <a href="https://github.com/andersonaddo/allsearch">AllSearch项目地址</a> <a href="https://searchaggregate.com/">SearchAggregate</a> <a href="https://www.gnod.com/search/">Compare Search Engines - Gnod Search</a> <a href="https://sou.best/">SouBest</a></p>
-<h2 id="收费搜索引擎"><a href="#收费搜索引擎" class="headerlink" title="收费搜索引擎"></a>收费搜索引擎</h2><p><a href="https://kagi.com/">Kagi</a> —— 没有免费方案 关于 kagi 搜索的介绍可以看少数派的 <a href="https://sspai.com/post/84160">这篇文章</a></p>
-<h2 id="儿童搜索"><a href="#儿童搜索" class="headerlink" title="儿童搜索"></a>儿童搜索</h2><p><a href="https://www.kidzsearch.com/">kidzsearch</a> <a href="https://www.alarms.org/kidrex/">kidrex</a> <a href="https://www.kiddle.co/">kiddle</a></p>
-<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://panyq.com/">盘友圈</a> <a href="https://www.pansearch.me/">pansearch</a></p>
-<h2 id="程序员搜索-搜索代码等技术问题"><a href="#程序员搜索-搜索代码等技术问题" class="headerlink" title="程序员搜索 (搜索代码等技术问题)"></a>程序员搜索 (搜索代码等技术问题)</h2><p><a href="https://devv.ai/">devv</a></p>
-<h2 id="磁力链接搜索"><a href="#磁力链接搜索" class="headerlink" title="磁力链接搜索"></a>磁力链接搜索</h2><p><a href="https://www.btsearch.love/zh">btsearch</a></p>
+    <title>iPhone导入自定义字体</title>
+    <url>/2023/08/27/iPhone%E5%AF%BC%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
+<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 appstore 中下载 &#x3D;&#x3D;iFont&#x3D;&#x3D; APP<br>![[ifont.png]]</p>
+<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
+<li>用 safari 访问字体网站下载你需要的字体<br> ![[字体网站.png]]<br> ![[下载字体.png]]</li>
+<li>下载完成后点击&#x3D;&#x3D;下载按钮&#x3D;&#x3D;-&#x3D;&#x3D;下载&#x3D;&#x3D;- 点击字体后面的&#x3D;&#x3D;放大镜&#x3D;&#x3D;<br> ![[找到下载的字体.png]]<br> ![[点击放大镜.png]]<br> ![[跳转到文件管理器.png]]</li>
+<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br> ![[点击字体并分享.png]]</li>
+<li>分享到 iFont APP 中<br> ![[分享到iFont.png]]</li>
+<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br> ![[点击安装.png]]</li>
+<li>打开手机的&#x3D;&#x3D;设置&#x3D;&#x3D;界面 -&#x3D;&#x3D;通用&#x3D;&#x3D;-&#x3D;&#x3D;vpn 与设备管理&#x3D;&#x3D;，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！</li>
+<li>进入 obsidian &#x3D;&#x3D;设置&#x3D;&#x3D;-&#x3D;&#x3D;外观&#x3D;&#x3D;-&#x3D;&#x3D;字体&#x3D;&#x3D;，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br> ![[成功设置字体.png]]</li>
+</ol>
 ]]></content>
       <categories>
-        <category>趣站</category>
+        <category>折腾记</category>
       </categories>
   </entry>
   <entry>
@@ -239,6 +209,34 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy </span><br><span class="line"><span class="comment"># 部署到github可能要求输入密码</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>图片 API 接口网站</title>
+    <url>/2023/11/11/%E5%9B%BE%E7%89%87API%20%E6%8E%A5%E5%8F%A3%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>这两天在折腾博客，博客有一些头图和文章图片需要用到图片 API 接口，就上网搜到了一些公用接口，这些站不知道能用多久，且行且珍惜</p>
+<h2 id="Unsplash-Image-API："><a href="#Unsplash-Image-API：" class="headerlink" title="Unsplash Image API："></a>Unsplash Image API：</h2><p><a href="https://unsplash.it/1600/900?random">https://unsplash.it/1600/900?random</a> <a href="https://source.unsplash.com/random">https://source.unsplash.com/random</a> <a href="https://source.unsplash.com/user/erondu/1600x900">https://source.unsplash.com/user/erondu/1600x900</a></p>
+<h2 id="二次元"><a href="#二次元" class="headerlink" title="二次元"></a>二次元</h2><p><a href="https://www.loliapi.com/">https://www.loliapi.com/</a> <a href="https://img.r10086.com/">https://img.r10086.com/</a></p>
+<h2 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h2><p><a href="https://imgapi.cn/">https://imgapi.cn/</a> <a href="https://api.likepoems.com/">https://api.likepoems.com/</a></p>
+<h2 id="韩小韩-API-接口站"><a href="#韩小韩-API-接口站" class="headerlink" title="韩小韩 API 接口站"></a>韩小韩 API 接口站</h2><p><a href="https://api.vvhan.com/">https://api.vvhan.com/</a></p>
+<h2 id="每日-bing："><a href="#每日-bing：" class="headerlink" title="每日 bing："></a>每日 bing：</h2><p><a href="https://api.isoyu.com/bing/_images.php">https://api.isoyu.com/bing\_images.php</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>好用的聚合搜索推荐</title>
+    <url>/2023/11/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%81%9A%E5%90%88%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="聚合搜索"><a href="#聚合搜索" class="headerlink" title="聚合搜索"></a>聚合搜索</h2><p><a href="https://allsear.ch/">AllSearch</a> | <a href="https://github.com/andersonaddo/allsearch">AllSearch项目地址</a> <a href="https://searchaggregate.com/">SearchAggregate</a> <a href="https://www.gnod.com/search/">Compare Search Engines - Gnod Search</a> <a href="https://sou.best/">SouBest</a></p>
+<h2 id="收费搜索引擎"><a href="#收费搜索引擎" class="headerlink" title="收费搜索引擎"></a>收费搜索引擎</h2><p><a href="https://kagi.com/">Kagi</a> —— 没有免费方案 关于 kagi 搜索的介绍可以看少数派的 <a href="https://sspai.com/post/84160">这篇文章</a></p>
+<h2 id="儿童搜索"><a href="#儿童搜索" class="headerlink" title="儿童搜索"></a>儿童搜索</h2><p><a href="https://www.kidzsearch.com/">kidzsearch</a> <a href="https://www.alarms.org/kidrex/">kidrex</a> <a href="https://www.kiddle.co/">kiddle</a></p>
+<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://panyq.com/">盘友圈</a> <a href="https://www.pansearch.me/">pansearch</a></p>
+<h2 id="程序员搜索-搜索代码等技术问题"><a href="#程序员搜索-搜索代码等技术问题" class="headerlink" title="程序员搜索 (搜索代码等技术问题)"></a>程序员搜索 (搜索代码等技术问题)</h2><p><a href="https://devv.ai/">devv</a></p>
+<h2 id="磁力链接搜索"><a href="#磁力链接搜索" class="headerlink" title="磁力链接搜索"></a>磁力链接搜索</h2><p><a href="https://www.btsearch.love/zh">btsearch</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
       </categories>
   </entry>
   <entry>
@@ -381,6 +379,23 @@
       </categories>
   </entry>
   <entry>
+    <title>电子书搜索网站推荐</title>
+    <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
+<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
+<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
+<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#99;&#x6b;&#98;&#x6f;&#x78;&#x40;&#x7a;&#108;&#x69;&#98;&#46;&#115;&#101;">&#x62;&#108;&#97;&#99;&#x6b;&#98;&#x6f;&#x78;&#x40;&#x7a;&#108;&#x69;&#98;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
+<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
+<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
+<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>第一次用英国 giffgaff 电话卡</title>
     <url>/2023/11/26/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8%E8%8B%B1%E5%9B%BDgiffgaff%E7%94%B5%E8%AF%9D%E5%8D%A1/</url>
     <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
@@ -435,23 +450,6 @@
 ]]></content>
       <categories>
         <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>电子书搜索网站推荐</title>
-    <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
-<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
-<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
-<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#108;&#x61;&#99;&#107;&#x62;&#111;&#x78;&#x40;&#x7a;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;">&#98;&#108;&#x61;&#99;&#107;&#x62;&#111;&#x78;&#x40;&#x7a;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
-<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
-<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
-<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
-<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
       </categories>
   </entry>
 </search>
