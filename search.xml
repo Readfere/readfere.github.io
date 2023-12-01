@@ -89,6 +89,33 @@
       </categories>
   </entry>
   <entry>
+    <title>Prism主题高亮样式通用CSS片段</title>
+    <url>/2023/08/25/Prism%E4%B8%BB%E9%A2%98%E9%AB%98%E4%BA%AE%E6%A0%B7%E5%BC%8F%E9%80%9A%E7%94%A8CSS%E7%89%87%E6%AE%B5/</url>
+    <content><![CDATA[<p>有一天看群友对 Prism 主题的高亮样式感兴趣了，当时有时间就去 Prism 主题的 <a href="https://github.com/damiankorcz/Prism-Theme">项目主页</a> 逛了逛，顺便把它的高亮样式移植了下来。<br>Prism 主题的高亮样式长这样：<br>![[Prism主题高亮样式-1.png]]<br>在 Prism 主题中高亮的用法是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;mint mark-filled mark-text-color&quot;&gt;This highlighted text is Mint&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以用以下参数<br>边框背景参数：</p>
+<ul>
+<li>mark-default</li>
+<li>mark-border</li>
+<li>mark-filled</li>
+<li>mark-borderandfilled<br>字体样式参数</li>
+<li>mark-text-default</li>
+<li>mark-text-color<br>替换上面案例代码中的的 class 中的内容，以显示不同高亮效果</li>
+</ul>
+<p>我觉得这种方法比较麻烦，所以在 CSS 片段中加入了 StyleSetting 设置选项，直接可以在设置中设置高亮的样式，只不过是全局通用样式，而不是针对某个高亮单独设置样式</p>
+<p>![[Prism主题高亮样式设置.png]]</p>
+<p>效果是这样的<br>![[Prism高亮设置.gif]]<br>将以下片段放入到 ob 库的. obsidian&#x2F;snippets 文件夹中，然后加载此 CSS 片段就可以了</p>
+<p><a href="https://www.aliyundrive.com/s/Xffysji3Fef">Prism Mark Highlight System.css</a><br>提取码: zk95</p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+      <tags>
+        <tag>Obsidian</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>YouTube第三方客户端 &amp;去广告方案</title>
     <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%20&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>#YouTube</p>
@@ -115,33 +142,6 @@
       </categories>
       <tags>
         <tag>YouTube</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Prism主题高亮样式通用CSS片段</title>
-    <url>/2023/08/25/Prism%E4%B8%BB%E9%A2%98%E9%AB%98%E4%BA%AE%E6%A0%B7%E5%BC%8F%E9%80%9A%E7%94%A8CSS%E7%89%87%E6%AE%B5/</url>
-    <content><![CDATA[<p>有一天看群友对 Prism 主题的高亮样式感兴趣了，当时有时间就去 Prism 主题的 <a href="https://github.com/damiankorcz/Prism-Theme">项目主页</a> 逛了逛，顺便把它的高亮样式移植了下来。<br>Prism 主题的高亮样式长这样：<br>![[Prism主题高亮样式-1.png]]<br>在 Prism 主题中高亮的用法是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;mint mark-filled mark-text-color&quot;&gt;This highlighted text is Mint&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
-
-<p>可以用以下参数<br>边框背景参数：</p>
-<ul>
-<li>mark-default</li>
-<li>mark-border</li>
-<li>mark-filled</li>
-<li>mark-borderandfilled<br>字体样式参数</li>
-<li>mark-text-default</li>
-<li>mark-text-color<br>替换上面案例代码中的的 class 中的内容，以显示不同高亮效果</li>
-</ul>
-<p>我觉得这种方法比较麻烦，所以在 CSS 片段中加入了 StyleSetting 设置选项，直接可以在设置中设置高亮的样式，只不过是全局通用样式，而不是针对某个高亮单独设置样式</p>
-<p>![[Prism主题高亮样式设置.png]]</p>
-<p>效果是这样的<br>![[Prism高亮设置.gif]]<br>将以下片段放入到 ob 库的. obsidian&#x2F;snippets 文件夹中，然后加载此 CSS 片段就可以了</p>
-<p><a href="https://www.aliyundrive.com/s/Xffysji3Fef">Prism Mark Highlight System.css</a><br>提取码: zk95</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-      <tags>
-        <tag>Obsidian</tag>
       </tags>
   </entry>
   <entry>
@@ -312,24 +312,6 @@
       </categories>
   </entry>
   <entry>
-    <title>洛雪音乐助手切换自定义音源</title>
-    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
-    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
-<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
-<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
-<p>切换后，会显示初始化成功</p>
-<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
-<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
-<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
-<p>感谢💖大佬辛苦付出！</p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-  </entry>
-  <entry>
     <title>搭建hugo博客</title>
     <url>/2023/11/22/%E6%90%AD%E5%BB%BAhugo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="安装-Hugo-博客"><a href="#安装-Hugo-博客" class="headerlink" title="安装 Hugo 博客"></a>安装 Hugo 博客</h2><h3 id="安装-hugo："><a href="#安装-hugo：" class="headerlink" title="安装 hugo："></a>安装 hugo：</h3><p>Windows：</p>
@@ -401,6 +383,24 @@
       </categories>
   </entry>
   <entry>
+    <title>洛雪音乐助手切换自定义音源</title>
+    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
+    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
+<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
+<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
+<p>切换后，会显示初始化成功</p>
+<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
+<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
+<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
+<p>感谢💖大佬辛苦付出！</p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+  </entry>
+  <entry>
     <title>电子书搜索网站推荐</title>
     <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<p><img src="/images/1700731737-dian-zi-shu-xia-zai-wang-zhan.png"></p>
@@ -408,7 +408,7 @@
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#x63;&#107;&#x62;&#111;&#120;&#64;&#122;&#108;&#x69;&#98;&#46;&#115;&#101;">&#x62;&#108;&#97;&#x63;&#107;&#x62;&#111;&#120;&#64;&#122;&#108;&#x69;&#98;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#x6f;&#120;&#x40;&#x7a;&#108;&#x69;&#x62;&#x2e;&#115;&#101;">&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#x6f;&#120;&#x40;&#x7a;&#108;&#x69;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
