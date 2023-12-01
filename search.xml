@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MemosSync插件同步问题解决</title>
-    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
-<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
-<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
-<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
-<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
-<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Obsidian dataview 引用本地图片</title>
     <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
@@ -42,6 +28,20 @@
       <tags>
         <tag>Obsidian</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>MemosSync插件同步问题解决</title>
+    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
+<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
+<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
+<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
+<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
+<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
   </entry>
   <entry>
     <title>PT下载站大全</title>
@@ -154,7 +154,7 @@
 <ol>
 <li>安装命令</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b main https://github.com/DuoSco/Hexo-theme-solitude.git themes/solitude</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b main https://Github.com/DuoSco/Hexo-theme-solitude.git themes/solitude</span><br></pre></td></tr></table></figure>
 
 <p>gitee 稳定版</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/yife68/hexo-theme-solitude.git themes/solitude</span><br></pre></td></tr></table></figure>
@@ -182,17 +182,33 @@
 <p>本地启动 hexo​</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<h2 id="安装-hexo-algolia-搜索"><a href="#安装-hexo-algolia-搜索" class="headerlink" title="安装 hexo-algolia 搜索"></a>安装 hexo-algolia 搜索</h2><p>hexo-algoliasearch（这个比较新）：<br><a href="https://github.com/LouisBarranqueiro/hexo-algoliasearch">GitHub - LouisBarranqueiro&#x2F;hexo-algoliasearch:</a></p>
+<h2 id="安装-hexo-algolia-搜索"><a href="#安装-hexo-algolia-搜索" class="headerlink" title="安装 hexo-algolia 搜索"></a>安装 hexo-algolia 搜索</h2><p>hexo-algoliasearch（这个比较新）：<br><a href="https://github.com/LouisBarranqueiro/hexo-algoliasearch">Github - LouisBarranqueiro&#x2F;hexo-algoliasearch:</a></p>
 <p>安装这个 Hexo 插件之后还有去 <a href="https://algolia.com/">algolia</a> 网站注册账号来配置获取以下信息：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">algolia:</span><br><span class="line">  appId: &quot;Z7A3XW4R2I&quot;</span><br><span class="line">  apiKey: &quot;12db1ad54372045549ef465881c17e743&quot;</span><br><span class="line">  adminApiKey: &quot;40321c7c207e7f73b63a19aa24c4761b&quot;</span><br></pre></td></tr></table></figure>
 
-<h2 id="local-search【本地搜索】-我没用这个"><a href="#local-search【本地搜索】-我没用这个" class="headerlink" title="local search【本地搜索】(我没用这个)"></a>local search【本地搜索】(我没用这个)</h2><p><a href="https://github.com/next-theme/hexo-generator-searchdb">GitHub - next-theme&#x2F;hexo-generator-searchdb: 🔍 Seach data generator plugin for Hexo.</a></p>
-<p><a href="https://github.com/wzpan/hexo-generator-search">GitHub - wzpan&#x2F;hexo-generator-search: A plugin to generate search data for Hexo.</a></p>
-<h2 id="安装豆瓣页面"><a href="#安装豆瓣页面" class="headerlink" title="安装豆瓣页面"></a>安装豆瓣页面</h2><p><a href="https://github.com/mythsman/hexo-douban">GitHub - mythsman&#x2F;hexo-douban</a></p>
+<h2 id="local-search【本地搜索】-我没用这个"><a href="#local-search【本地搜索】-我没用这个" class="headerlink" title="local search【本地搜索】(我没用这个)"></a>local search【本地搜索】(我没用这个)</h2><p><a href="https://github.com/next-theme/hexo-generator-searchdb">Github - next-theme&#x2F;hexo-generator-searchdb: 🔍 Seach data generator plugin for Hexo.</a></p>
+<p><a href="https://github.com/wzpan/hexo-generator-search">Github - wzpan&#x2F;hexo-generator-search: A plugin to generate search data for Hexo.</a></p>
+<h2 id="安装豆瓣页面"><a href="#安装豆瓣页面" class="headerlink" title="安装豆瓣页面"></a>安装豆瓣页面</h2><p><a href="https://github.com/mythsman/hexo-douban">Github - mythsman&#x2F;hexo-douban</a></p>
 <p>案例：<a href="https://blog.gmcj0816.top/books/">阅读书虫 | 七鳄学习格</a></p>
 <h2 id="配置-twikoo-评论系统"><a href="#配置-twikoo-评论系统" class="headerlink" title="配置 twikoo 评论系统"></a>配置 twikoo 评论系统</h2><p>我使用 <a href="https://www.mongodb.com/cloud/atlas/register">MongoDB</a> 配合 <a href="https://app.netlify.com/">Netlify</a> 搭建的</p>
 <p>教程在下面：<br><a href="https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2">云函数部署 | Twikoo 文档</a></p>
-]]></content>
+<h2 id="发布到Github-pages"><a href="#发布到Github-pages" class="headerlink" title="发布到Github pages"></a>发布到Github pages</h2><h3 id="新建Github仓库"><a href="#新建Github仓库" class="headerlink" title="新建Github仓库"></a>新建Github仓库</h3><ol>
+<li>注册Github账号</li>
+<li>新建一个名叫”用户名.github.io”的仓库</li>
+</ol>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><ol>
+<li>在Github右上角&#x3D;&#x3D;点击头像-settings-左边菜单栏pages-add a domain&#x3D;&#x3D;添加你的根域名，就是没有前缀的域名,点击add domain</li>
+<li>会弹出 &#x3D;&#x3D;add a verified domain&#x3D;&#x3D;，接下来去你的域名商网站添加一个txt record进行域验证，把Github给你的域名前缀和txt record填写进去，点击verify验证域名所有权</li>
+<li>在项目根目录建立一个CNAME文件里面填写要绑定的根域名xxx.com</li>
+<li>在项目repo页面点击&#x3D;&#x3D;settings-pages-custom domain&#x3D;&#x3D;添加要绑定的根域名，点save</li>
+<li>过一段时间勾选下面的Enforce HTTPS</li>
+</ol>
+<h3 id="修改hexo根目录的-config-yml-配置文件"><a href="#修改hexo根目录的-config-yml-配置文件" class="headerlink" title="修改hexo根目录的 _config.yml 配置文件"></a>修改hexo根目录的 _config.yml 配置文件</h3><p>添加：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/Readfere/readfere.github.io.git</span> <span class="comment"># https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署命令"><a href="#部署命令" class="headerlink" title="部署命令"></a>部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo algolia </span><br><span class="line"><span class="comment">#清除已生成文件+生成新文件+生成搜索缓存</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy </span><br><span class="line"><span class="comment">#部署到github可能要求输入密码</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>折腾记</category>
       </categories>
@@ -371,7 +387,7 @@
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#120;&#64;&#x7a;&#x6c;&#x69;&#98;&#46;&#115;&#x65;">&#98;&#x6c;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#120;&#64;&#x7a;&#x6c;&#x69;&#98;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#64;&#x7a;&#108;&#105;&#98;&#46;&#115;&#x65;">&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#64;&#x7a;&#108;&#105;&#98;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
