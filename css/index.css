@@ -3193,6 +3193,7 @@ a.console_switchbutton {
   border-radius: 12px;
   cursor: pointer;
   border: var(--style-border);
+  margin: 1rem 0 1rem;
 }
 #recent-posts > .recent-post-item:hover {
   box-shadow: var(--card-hover-box-shadow);
@@ -12064,6 +12065,78 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 .el-textarea .el-input__count {
   color: var(--sco-secondtext) !important;
   -webkit-user-select: none;
+}
+#comment .wl-sort li {
+  color: var(--sco-gray);
+}
+#comment .wl-sort li.active {
+  color: var(--sco-main) !important;
+}
+#comment .wl-comment .wl-panel {
+  margin: 0 !important;
+}
+#comment .wl-comment .wl-footer .wl-info button {
+  background-color: var(--sco-card-bg);
+  border: var(--style-border-always);
+  color: var(--sco-fontcolor);
+}
+#comment .wl-comment .wl-footer .wl-info button:hover {
+  background-color: var(--sco-main);
+  border-color: var(--sco-main);
+  color: var(--sco-card-bg);
+}
+#comment .wl-comment #wl-edit {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0.75rem 0.25rem;
+}
+#comment .wl-comment .wl-action {
+  transition: 0.3s;
+}
+#comment .wl-comment .wl-action:hover {
+  color: var(--sco-main);
+}
+#comment .wl-meta-head .wl-count {
+  color: var(--sco-gray);
+  font-size: 14px;
+  font-weight: normal;
+}
+#comment .wl-cards {
+  font-size: 16px !important;
+}
+#comment .wl-cards .wl-comment-actions button {
+  margin-right: 15px;
+  font-size: 18px;
+}
+#comment .wl-cards .wl-comment-actions button:hover {
+  color: var(--sco-main);
+}
+#comment .wl-cards .wl-head .wl-nick {
+  font-size: 20px !important;
+  color: var(--sco-lighttext);
+  font-weight: bolder;
+}
+#comment .wl-cards .wl-meta>span {
+  background: var(--sco-gray);
+  border-radius: 5px;
+  color: var(--sco-card-bg);
+  margin-right: 5px;
+}
+#comment .wl-cards .wl-user img {
+  flex-shrink: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 2.5rem;
+  border: 2px solid var(--sco-white);
+}
+[data-waline] a {
+  color: var(--sco-main) !important;
+}
+.wl-content pre,
+.wl-content pre[class*=language-] {
+  padding: 0.5rem !important;
 }
 #console {
   display: flex;

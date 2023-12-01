@@ -16,7 +16,7 @@
   </entry>
   <entry>
     <title>Obsidian dataview 引用本地图片</title>
-    <url>/2023/07/14/Obsidian%20dataview%20%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
 <p>事情是这样的：<br>7 月 13 日我用 douban 插件抓取 Reading 页面书籍封面的时候遇到了无法抓取的问题<br>我的 yaml 引用图片直接是引用的豆瓣的网络图片，见下图 cover：字段<br>![[内文yaml.png|200]]<br>明明豆瓣链接已经抓取到，但是出现了以下图片无法显示的情况（mac 端和 pc 端都是这种情况）<br>![[内文callout无图片.png|200]]<br>所以我判断有可能是插件的问题，还有一种最大的可能是豆瓣网站做了站外防盗链措施，我通过浏览器进入抓取的图片网址也无法显示图片，这证明有可能就是豆瓣不定期抽风的问题。<br>我也联系了 obsidian douban 插件的作者反馈了无法抓取图片并且后台插件无法登录豆瓣的问题，我也抓取了 douban 插件运行时候的日志提示 403 错误。</p>
 <blockquote>
@@ -35,42 +35,6 @@
 <p>OK，搞定，上面的代码可能应用到不同主题会出现不同的小问题，大家可以在 pkmer 群中反馈。</p>
 <p>%% 出处<br>link::</p>
 <p>%%</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-      <tags>
-        <tag>Obsidian</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Obsidian图片增强插件——Awesome image obsidian</title>
-    <url>/2023/07/29/Obsidian%E5%9B%BE%E7%89%87%E5%A2%9E%E5%BC%BA%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Awesome%20image%20obsidian/</url>
-    <content><![CDATA[<h1 id="Obsidian-图片增强插件——Awesome-image-obsidian"><a href="#Obsidian-图片增强插件——Awesome-image-obsidian" class="headerlink" title="Obsidian 图片增强插件——Awesome image obsidian"></a>Obsidian 图片增强插件——Awesome image obsidian</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title:插件信息</span><br><span class="line">插件名称：Awesome image obsidian </span><br><span class="line">插件作者：AwesomeDog</span><br><span class="line">插件说明：提供笔记中查看图片的基本操作</span><br><span class="line">插件项目地址：[点我跳转](https://github.com/AwesomeDog/obsidian-awesome-image)</span><br></pre></td></tr></table></figure>
-
-<p>Awesome image 其实是在 Image Tookit 的基础上魔改的插件，所以魔改的话就是建立在 Image Tookit 已有的核心功能基础上增加或优化了一些功能，我们这里就先简要介绍它的基础功能，就不展开说了<br>![[Pasted image 20230730095142.png]]</p>
-<p>这两个插件的主要功能就是上面的这条工具栏，它是一个图片增强插件，你在 ob 打开图片之后会看见这个工具条<br>第一个按钮：缩放至 100%<br>第二个按钮：放大图片<br>第三个按钮：缩小图片<br>第四个按钮：全屏<br>第五个按钮：刷新<br>第六个按钮：向左旋转<br>第七个按钮：向右旋转<br>第八个按钮：水平翻转<br>第九个按钮：垂直翻转<br>第十个按钮：图片反色<br>第十一个按钮：复制图片到剪贴板</p>
-<p>详细说明可以参照 <a href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/obsidian-image-toolkit/">Obsidian 插件：Image toolkit 提供笔记中查看图片的基本操作</a>。</p>
-<p>这里着重说 Awesome image 和 Image Tookit 区别的地方<br>![[Pasted image 20230730101202.png]]<br>就是上面图片的这四个功能</p>
-<ol>
-<li><strong>On paste processing</strong> （开启粘贴图片时的功能）<ul>
-<li>这个选项默认是关闭的，你如果想要使用下面三个功能，那一定要把这个选项开启 ![[Pasted image 20230730103156.png]]</li>
-</ul>
-</li>
-<li><strong>Ignore folders</strong>（排除的文件夹）<ul>
-<li>这个选项是可以排除一些像. obsidian 一样的隐藏的功能性或一些你不想被此插件功能影响的文件夹，这里面填写的文件夹不受此插件影响，包括搜索和重命名。填写的时候每一行填写一个文件夹</li>
-</ul>
-</li>
-<li><strong>Include</strong>（包含的文件）<ul>
-<li>这个选项可以限定此插件影响的文件名称，这里可以用正则表达式填写文件名称，包括文件名和后缀，如果你想让此插件影响特定的文件类型或文件名可以使用此功能结合正则表达式来限定</li>
-</ul>
-</li>
-<li><strong>Media folder</strong>（图片保存文件夹）<ul>
-<li>这个选项是让我们设置图片的保存的文件夹的，你可以手动新建一个文件夹然后在此填写具体路径，也可以使用插件默认设置，如果使用默认设置，在你粘贴图片时，插件会自动新建一个 assets&#x2F;img 目录用于保存本地图片</li>
-</ul>
-</li>
-</ol>
-<p>以下功能是和 Image Tookit 完全一样的可以参照 <a href="https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/obsidian-image-toolkit/">Obsidian 插件：Image toolkit 提供笔记中查看图片的基本操作</a>。<br>Awesome image：<br>![[Pasted image 20230730095142.png]]<br>![[Pasted image 20230730095205.png]]<br>![[Pasted image 20230730095221.png]]<br>![[Pasted image 20230730095242.png]]</p>
 ]]></content>
       <categories>
         <category>折腾记</category>
@@ -116,7 +80,7 @@
       </tags>
   </entry>
   <entry>
-    <title>YouTube第三方客户端 &amp;去广告方案</title>
+    <title>YouTube第三方客户端&amp;去广告方案</title>
     <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%20&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>#YouTube</p>
 <p>▎YouTube 第三方客户端&amp;去广告方案</p>
@@ -235,7 +199,7 @@
   </entry>
   <entry>
     <title>图片 API 接口网站</title>
-    <url>/2023/11/11/%E5%9B%BE%E7%89%87%20API%20%E6%8E%A5%E5%8F%A3%E7%BD%91%E7%AB%99/</url>
+    <url>/2023/11/11/%E5%9B%BE%E7%89%87API%20%E6%8E%A5%E5%8F%A3%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>这两天在折腾博客，博客有一些头图和文章图片需要用到图片 API 接口，就上网搜到了一些公用接口，这些站不知道能用多久，且行且珍惜</p>
 <h2 id="Unsplash-Image-API："><a href="#Unsplash-Image-API：" class="headerlink" title="Unsplash Image API："></a>Unsplash Image API：</h2><p><a href="https://unsplash.it/1600/900?random">https://unsplash.it/1600/900?random</a> <a href="https://source.unsplash.com/random">https://source.unsplash.com/random</a> <a href="https://source.unsplash.com/user/erondu/1600x900">https://source.unsplash.com/user/erondu/1600x900</a></p>
 <h2 id="二次元"><a href="#二次元" class="headerlink" title="二次元"></a>二次元</h2><p><a href="https://www.loliapi.com/">https://www.loliapi.com/</a> <a href="https://img.r10086.com/">https://img.r10086.com/</a></p>
@@ -293,7 +257,7 @@
   </entry>
   <entry>
     <title>快速访问 GitHub 的方法</title>
-    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE%20GitHub%20%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AEGitHub%E7%9A%84%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
 <h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
 <li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
@@ -403,12 +367,11 @@
   <entry>
     <title>电子书搜索网站推荐</title>
     <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><img src="/images/1700731737-dian-zi-shu-xia-zai-wang-zhan.png"></p>
-<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
+    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#x6c;&#x61;&#99;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#108;&#105;&#x62;&#46;&#115;&#101;">&#x62;&#x6c;&#x61;&#99;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#108;&#105;&#x62;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;">&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
@@ -420,7 +383,7 @@
   </entry>
   <entry>
     <title>第一次用英国 giffgaff 电话卡</title>
-    <url>/2023/11/26/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8%E8%8B%B1%E5%9B%BD%20giffgaff%20%E7%94%B5%E8%AF%9D%E5%8D%A1/</url>
+    <url>/2023/11/26/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8%E8%8B%B1%E5%9B%BDgiffgaff%E7%94%B5%E8%AF%9D%E5%8D%A1/</url>
     <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
 <h2 id="特点和主要用途："><a href="#特点和主要用途：" class="headerlink" title="特点和主要用途："></a>特点和主要用途：</h2><ul>
 <li>无月租</li>
