@@ -53,33 +53,6 @@
       </categories>
   </entry>
   <entry>
-    <title>YouTube第三方客户端&amp;去广告方案</title>
-    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
-<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
-<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
-<ul>
-<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
-</ul>
-<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
-<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
-<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
-<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
-<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
-<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
-<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
-<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
-<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
-<p><a href="https://piped.video/">Piped在线播放</a></p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-      <tags>
-        <tag>YouTube</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Prism主题高亮样式通用CSS片段</title>
     <url>/2023/08/25/Prism%E4%B8%BB%E9%A2%98%E9%AB%98%E4%BA%AE%E6%A0%B7%E5%BC%8F%E9%80%9A%E7%94%A8CSS%E7%89%87%E6%AE%B5/</url>
     <content><![CDATA[<p>有一天看群友对 Prism 主题的高亮样式感兴趣了，当时有时间就去 Prism 主题的 <a href="https://github.com/damiankorcz/Prism-Theme">项目主页</a> 逛了逛，顺便把它的高亮样式移植了下来。<br>Prism 主题的高亮样式长这样：<br>![[Prism主题高亮样式-1.png]]<br>在 Prism 主题中高亮的用法是这样的：</p>
@@ -104,6 +77,33 @@
       </categories>
       <tags>
         <tag>Obsidian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>YouTube第三方客户端&amp;去广告方案</title>
+    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
+<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
+<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
+<ul>
+<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
+</ul>
+<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
+<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
+<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
+<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
+<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
+<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
+<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
+<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
+<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
+<p><a href="https://piped.video/">Piped在线播放</a></p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+      <tags>
+        <tag>YouTube</tag>
       </tags>
   </entry>
   <entry>
@@ -372,7 +372,7 @@ Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pr
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#x78;&#64;&#122;&#108;&#105;&#x62;&#x2e;&#115;&#101;">&#x62;&#108;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#x78;&#64;&#122;&#108;&#105;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#99;&#x6b;&#x62;&#111;&#120;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;">&#98;&#x6c;&#97;&#99;&#x6b;&#x62;&#111;&#120;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
