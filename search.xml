@@ -130,9 +130,9 @@
     <url>/2023/11/30/%E5%88%9B%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>安装 nodejs 和 git<br><a href="https://nodejs.org/en">Node.js</a><br><a href="http://git-scm.com/">Git</a></p>
 <h3 id="hexo-安装步骤"><a href="#hexo-安装步骤" class="headerlink" title="hexo 安装步骤"></a>hexo 安装步骤</h3><ul>
-<li>安装<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
-<li>初始化新建文件夹<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure></li>
-<li>切换到新建的文件夹<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd &lt;folder&gt;</span><br></pre></td></tr></table></figure></li>
+<li>安装<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install <span class="literal">-g</span> hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure></li>
+<li>初始化新建文件夹<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure></li>
+<li>切换到新建的文件夹<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p>安装后的文件夹目录结构：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
@@ -140,8 +140,8 @@
 <p>网站的配置文件为：_config.yml</p>
 <h3 id="安装-hexo-主题"><a href="#安装-hexo-主题" class="headerlink" title="安装 hexo 主题"></a>安装 hexo 主题</h3><p>以 solitude 主题为例</p>
 <ul>
-<li>安装命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b main https://Github.com/DuoSco/Hexo-theme-solitude.git themes/solitude</span><br></pre></td></tr></table></figure>
-Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/yife68/hexo-theme-solitude.git themes/solitude</span><br></pre></td></tr></table></figure></li>
+<li>安装命令<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> main https://Github.com/DuoSco/Hexo<span class="literal">-theme-solitude</span>.git themes/solitude</span><br></pre></td></tr></table></figure>
+Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://gitee.com/yife68/hexo<span class="literal">-theme-solitude</span>.git themes/solitude</span><br></pre></td></tr></table></figure></li>
 <li>应用主题</li>
 </ul>
 <p>修改 hexo 根目录配置文件 _config.yml，把主题改为 solitude</p>
@@ -150,21 +150,21 @@ Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pr
 <li>将主题配置文件拷贝到博客根目录</li>
 </ul>
 <p><strong>mac:</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> -rf ./themes/solitude/_config.yml ./_config.solitude.yml</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> <span class="literal">-rf</span> ./themes/solitude/_config.yml ./_config.solitude.yml</span><br></pre></td></tr></table></figure>
 
 <p><strong>windows:</strong><br>复制 &#x2F;themes&#x2F;solitude&#x2F;_config.yml​<br>文件到 hexo 根目录，并重命名为 _config.solitude.yml​</p>
 <ul>
 <li>安装主题所需插件：</li>
 </ul>
 <p>安装 pug 和 stylus 渲染插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install hexo<span class="literal">-renderer-pug</span> hexo<span class="literal">-renderer-stylus</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked  <span class="comment"># 卸载默认 markdown 解析插件</span></span><br><span class="line">npm install hexo-renderer-markdown-it	<span class="comment"># 安装另一个markdown解析器</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm un hexo<span class="literal">-renderer-marked</span>  <span class="comment"># 卸载默认 markdown 解析插件</span></span><br><span class="line">npm install hexo<span class="literal">-renderer-markdown-it</span>	<span class="comment"># 安装另一个markdown解析器</span></span><br></pre></td></tr></table></figure>
 
 <p>本地启动 hexo​（hexo三连）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl <span class="comment">#清除已生成文件</span></span><br><span class="line">hexo g <span class="comment">#生成新文件</span></span><br><span class="line">hexo s <span class="comment">#开启本地服务</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo cl <span class="comment">#清除已生成文件</span></span><br><span class="line">hexo g <span class="comment">#生成新文件</span></span><br><span class="line">hexo s <span class="comment">#开启本地服务</span></span><br></pre></td></tr></table></figure>
 <h2 id="更新主题"><a href="#更新主题" class="headerlink" title="更新主题"></a>更新主题</h2><p><strong>cd 到主题目录</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="安装-hexo-algolia-搜索"><a href="#安装-hexo-algolia-搜索" class="headerlink" title="安装 hexo-algolia 搜索"></a>安装 hexo-algolia 搜索</h2><p>hexo-algoliasearch（这个比较新）：<br><a href="https://github.com/LouisBarranqueiro/hexo-algoliasearch">Github - LouisBarranqueiro&#x2F;hexo-algoliasearch:</a></p>
@@ -191,9 +191,9 @@ Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pr
 <h3 id="修改hexo根目录的-config-yml-配置文件"><a href="#修改hexo根目录的-config-yml-配置文件" class="headerlink" title="修改hexo根目录的 _config.yml 配置文件"></a>修改hexo根目录的 _config.yml 配置文件</h3><p>添加：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/用户名/用户名.github.io.git</span> </span><br><span class="line">  <span class="comment"># https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="部署命令"><a href="#部署命令" class="headerlink" title="部署命令"></a>部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo algolia </span><br><span class="line"><span class="comment"># 清除已生成文件+生成新文件+生成搜索缓存</span></span><br></pre></td></tr></table></figure>
+<h3 id="部署命令"><a href="#部署命令" class="headerlink" title="部署命令"></a>部署命令</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo algolia </span><br><span class="line"><span class="comment"># 清除已生成文件+生成新文件+生成搜索缓存</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy </span><br><span class="line"><span class="comment"># 部署到github可能要求输入密码</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo deploy </span><br><span class="line"><span class="comment"># 部署到github可能要求输入密码</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>折腾记</category>
       </categories>
@@ -253,6 +253,26 @@ Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pr
 <p>The Movie Database (TMDB)<br><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
 <p>分享交流下载字幕平台<br><a href="https://subhd.tv/">https://subhd.tv/</a></p>
 <p>Subtitles - download movie and TV Series subtitles<br><a href="https://www.opensubtitles.org/en/captcha/redirect-%7Czh">https://www.opensubtitles.org/en/captcha/redirect-%7Czh</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>快速访问 GitHub 的方法</title>
+    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AEGitHub%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
+<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
+<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
+<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
+</ol>
+<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
+<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
+<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
+<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
+<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
+<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
+<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
@@ -348,33 +368,13 @@ Gitee 稳定版：<figure class="highlight bash"><table><tr><td class="code"><pr
       </categories>
   </entry>
   <entry>
-    <title>快速访问 GitHub 的方法</title>
-    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AEGitHub%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
-<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
-<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
-<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
-</ol>
-<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
-<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
-<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
-<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
-<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
-<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
-<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>电子书搜索网站推荐</title>
     <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#108;&#x61;&#x63;&#x6b;&#x62;&#111;&#120;&#x40;&#x7a;&#x6c;&#105;&#x62;&#46;&#x73;&#101;">&#98;&#108;&#x61;&#x63;&#x6b;&#x62;&#111;&#120;&#x40;&#x7a;&#x6c;&#105;&#x62;&#46;&#x73;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#x63;&#107;&#x62;&#x6f;&#120;&#64;&#x7a;&#108;&#x69;&#98;&#x2e;&#x73;&#101;">&#x62;&#108;&#97;&#x63;&#107;&#x62;&#x6f;&#120;&#64;&#x7a;&#108;&#x69;&#98;&#x2e;&#x73;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
