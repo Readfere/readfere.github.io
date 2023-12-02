@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MemosSync插件同步问题解决</title>
-    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
-<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
-<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
-<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
-<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
-<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Obsidian dataview 引用本地图片</title>
     <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
@@ -42,6 +28,20 @@
       <tags>
         <tag>Obsidian</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>MemosSync插件同步问题解决</title>
+    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
+<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
+<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
+<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
+<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
+<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
   </entry>
   <entry>
     <title>PT下载站大全</title>
@@ -227,26 +227,6 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
-    <title>快速访问 GitHub 的方法</title>
-    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AEGitHub%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
-<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
-<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
-<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
-</ol>
-<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
-<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
-<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
-<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
-<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
-<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
-<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>如何找到优质博客</title>
     <url>/2023/11/27/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E4%BC%98%E8%B4%A8%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>开往 Travelling：随机访问优质博客的任意门<br><a href="https://www.travellings.cn/">Travelling</a> | <a href="https://github.com/travellings-link/travellings">GitHub</a></p>
@@ -279,21 +259,23 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
-    <title>洛雪音乐助手切换自定义音源</title>
-    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
-    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
-<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
-<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
-<p>切换后，会显示初始化成功</p>
-<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
-<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
-<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
-<p>感谢💖大佬辛苦付出！</p>
+    <title>快速访问 GitHub 的方法</title>
+    <url>/2023/11/25/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AEGitHub%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
+<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
+<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
+<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
+</ol>
+<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
+<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
+<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
+<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
+<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
+<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
+<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
 ]]></content>
       <categories>
-        <category>APPS</category>
+        <category>折腾记</category>
       </categories>
   </entry>
   <entry>
@@ -368,13 +350,31 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
+    <title>洛雪音乐助手切换自定义音源</title>
+    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
+    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
+<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
+<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
+<p>切换后，会显示初始化成功</p>
+<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
+<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
+<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
+<p>感谢💖大佬辛苦付出！</p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+  </entry>
+  <entry>
     <title>电子书搜索网站推荐</title>
     <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#99;&#107;&#x62;&#111;&#x78;&#64;&#x7a;&#108;&#105;&#x62;&#46;&#x73;&#x65;">&#98;&#x6c;&#97;&#99;&#107;&#x62;&#111;&#x78;&#64;&#x7a;&#108;&#105;&#x62;&#46;&#x73;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#x6c;&#x61;&#99;&#107;&#x62;&#x6f;&#x78;&#x40;&#122;&#x6c;&#x69;&#x62;&#46;&#115;&#x65;">&#x62;&#x6c;&#x61;&#99;&#107;&#x62;&#x6f;&#x78;&#x40;&#122;&#x6c;&#x69;&#x62;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
