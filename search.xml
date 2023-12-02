@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MemosSync插件同步问题解决</title>
-    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
-<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
-<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
-<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
-<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
-<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Obsidian dataview 引用本地图片</title>
-    <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
-<p>事情是这样的：<br>7 月 13 日我用 douban 插件抓取 Reading 页面书籍封面的时候遇到了无法抓取的问题<br>我的 yaml 引用图片直接是引用的豆瓣的网络图片，见下图 cover：字段<br>![[内文yaml.png|200]]<br>明明豆瓣链接已经抓取到，但是出现了以下图片无法显示的情况（mac 端和 pc 端都是这种情况）<br>![[内文callout无图片.png|200]]<br>所以我判断有可能是插件的问题，还有一种最大的可能是豆瓣网站做了站外防盗链措施，我通过浏览器进入抓取的图片网址也无法显示图片，这证明有可能就是豆瓣不定期抽风的问题。<br>我也联系了 obsidian douban 插件的作者反馈了无法抓取图片并且后台插件无法登录豆瓣的问题，我也抓取了 douban 插件运行时候的日志提示 403 错误。</p>
-<blockquote>
-<p>![[403错误 (1).png]]<br><em>图片 403 错误</em><br>![[豆瓣无法登录.png]]<br><em>无法登录豆瓣</em></p>
-</blockquote>
-<p>问题无法定位，如果是豆瓣本身的问题更是无法解决了。<br>所以我想，莫不如我把书库封面里面的网络图片都改为本地图片，或者让我的书库同时支持网络图片和本地图片。<br>下面是我之前的 dataview 代码，只支持网络图片的显示：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table &quot;![](&quot; + cover + &quot;)&quot; as Cover, </span><br><span class="line">author as &quot;作者&quot;,startime as &quot;阅读日期&quot;, score as &quot;评分&quot;</span><br><span class="line">from #reading</span><br><span class="line">where contains(type,&quot;book&quot;)</span><br><span class="line">where !contains(file.folder, &quot;Extra/Templates&quot;)</span><br><span class="line">sort file.ctime desc</span><br></pre></td></tr></table></figure>
-
-<p>于是我经过一系列查询，最终在 dataview 文档中找到了解决方案：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table embed(link(cover)) ,&quot;![](&quot; + cover + &quot;)&quot; as Cover, </span><br><span class="line">author as &quot;作者&quot;,startime as &quot;阅读日期&quot;, score as &quot;评分&quot;</span><br><span class="line">from #reading</span><br><span class="line">where contains(type,&quot;book&quot;)</span><br><span class="line">where !contains(file.folder, &quot;Extra/Templates&quot;)</span><br><span class="line">sort file.ctime desc</span><br></pre></td></tr></table></figure>
-
-<p>利用 embed 来显示本地图片也是收到了 cuman 大佬 BT 示例库的启发<br>![[Pasted image 20230715111320.png]]<br>我直接照搬了 BT 库中的代码发现并没有效果，可能是参数不全的缘故。</p>
-<p>查询文档之后发现<br>![[Pasted image 20230715113406.png|400]]<br>要在 embed 之后加 (link (cover)) 就像下面这样：<br>&#x3D;&#x3D;table embed(link(cover))&#x3D;&#x3D;<br>link 参数代表的是要放一个链接，cover 变量引用的是 yaml 里面的 cover 字段后面本地图片路径（相对和绝对路径都可以）类似下图这样：<br>![[Pasted image 20230715111758.png]]<br>然后我们就得到了<br>![[9ac3b168247046cf3db4e03997dbc4b.png|400]]<br>但是我们会发现图片上方会多出本地图片的名字<br>![[Pasted image 20230715112317.png|400]]<br>那是因为我们上面那段 dataview 代码中表单里多了一项本地图片，而我此时是网络图片和本地图片混用的情况，而上方有本地图片名称显示的就是网络图片，这时我们如果有混用需求的话就要去掉上方的名称显示，我想了一个方法，就是加载 css 片段去掉网络图片显示时上方的本地图片名称。<br>大家可以复制以下代码到 css 片段中加载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*embed隐藏本地图片名称*/</span><br><span class="line"></span><br><span class="line">.cards table.dataview span.internal-embed &#123;</span><br><span class="line"></span><br><span class="line">  display: none;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">/*dataview视图 embed隐藏本地图片名称*/</span><br><span class="line"></span><br><span class="line">.internal-embed:not(.image-embed) &#123;</span><br><span class="line"></span><br><span class="line">  display: none;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>OK，搞定，上面的代码可能应用到不同主题会出现不同的小问题，大家可以在 pkmer 群中反馈。</p>
-<p>%% 出处<br>link::</p>
-<p>%%</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-      <tags>
-        <tag>Obsidian</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PT下载站大全</title>
     <url>/2023/11/11/PT%E4%B8%8B%E8%BD%BD%E7%AB%99%E5%A4%A7%E5%85%A8/</url>
     <content><![CDATA[<h2 id="收集了网上比较全的-PT-下载站网址，需要的拿走："><a href="#收集了网上比较全的-PT-下载站网址，需要的拿走：" class="headerlink" title="收集了网上比较全的 PT 下载站网址，需要的拿走："></a>收集了网上比较全的 PT 下载站网址，需要的拿走：</h2><p><a href="https://carpt.net/">CarPT</a><br><a href="https://wintersakura.net/">WinterSakura</a><br><a href="https://piggo.me/">猪猪网</a><br><a href="http://www.hdzone.org/">HDzone高清地帶</a><br><a href="https://ptchina.org/">铂金学院</a><br><a href="https://broadcity.in/">HoşgeldinizBroadcity|BDC|Broadcity|BDC</a><br><a href="https://1ptba.com/login.php?returnto=torrents.php">1PTBar</a><br><a href="http://www.3dtorrents.org/">3DTorrents(3DT)</a><br><a href="https://www.3wmg.com/">3Wmg(芒果)</a><br><a href="https://52pt.site/">52PT</a><br><a href="https://ptpimg.me/">Ptpimg.me</a><br><a href="https://720pier.ru/">720pier</a><br><a href="https://aidoru-online.me/">Aidoru!Online</a><br><a href="https://aither.cc/">Aither</a><br><a href="http://all4nothin.net/">All4Nothin(A4N)</a><br><a href="https://alpharatio.cc/">AlphaRatio</a><br><a href="https://www.ansktracker.net/">AnimeNoSekai(AnimeNSK)</a><br><a href="https://animebytes.tv/">AnimeBytes(AB)</a><br><a href="https://animetorrents.me/">AnimeTorrents</a><br><a href="https://anthelion.me/">Anthelion</a><br><a href="http://arabscene.me/">ArabScene</a><br><a href="http://artofmisdirection.com/">Artofmisdirection</a><br><a href="https://asiancinema.me/">AsianCinema</a><br><a href="https://audiences.me/">Audiences</a><br><a href="https://aussierul.es/">AussieRul</a><br><a href="https://avistaz.to/">AvistaZ</a><br><a href="https://baconbits.org/">bB</a><br><a href="https://bemaniso.ws/">Bemaniso</a><br><a href="https://beyond-hd.me/">BeyondHD</a><br><a href="https://bibliotik.me/">Bibliotik</a><br><a href="https://www.bit-hdtv.com/">BitHDTV</a><br><a href="https://bithumen.be/">BitHUmen(BH)</a><br><a href="https://bitporn.eu/">BitPorn</a><br><a href="https://bitsexy.org/">BitSexy</a><br><a href="https://blutopia.xyz/">Bluetopia</a><br><a href="https://ssl.bootytape.com/">BootyTape</a><br><a href="https://brsociety.club/">BrSociety</a><br><a href="http://www.btarg.com.ar/">BTARG(Bt-Arg&#x2F;BTArg)</a><br><a href="https://broadcasthe.net/">BTN</a><br><a href="https://pt.btschool.club/">BTSCHOOL(比特校园)</a><br><a href="https://bwtorrents.tv/">BWT</a><br><a href="https://bt.byr.cn/">BYRBT</a><br><a href="http://www.cartoonchaos.org/">CartoonChaos(CC)</a><br><a href="https://www.cathode-ray.tube/">Cathode-Ray.Tube(CRT)</a><br><a href="https://ccfbits.org/">CCFBits(CCF&#x2F;吹吹风)</a><br><a href="https://www.cgpeers.com/">CGPeers</a><br><a href="https://chdbits.co/">CHDBits(CHD高清联盟&#x2F;彩虹岛)</a><br><a href="https://www.cherrykiss.org/">CherryKiss(CK)</a><br><a href="https://cinemageddon.net/">CinemaGeddon</a><br><a href="https://www.cinematik.net/">Cinematik(Tik)</a><br><a href="https://cinemaz.to/">CinemaZ</a><br><a href="https://hdcmct.org/">CMCT-PT</a><br><a href="https://concertos.live/">Concertos</a><br><a href="https://www.crnaberza.com/">CrnaBerza</a><br><a href="https://datatalli.net/">DataTalli</a><br><a href="https://dicmusic.club/">DIC(海豚音乐)</a><br><a href="https://dicmusic.club/">DICMusic(海豚音乐)</a><br><a href="https://discfan.net/">DiscFan(港知堂)</a><br><a href="https://www.empornium.is/">Empornium</a><br><a href="https://exoticaz.to/">ExoticaZ</a><br><a href="https://finelite.org/">FE</a><br><a href="https://femdomcult.org/">Femdomcult</a><br><a href="https://filelist.io/">FileList</a><br><a href="https://www.gaytorrent.ru/">GayTorrents</a><br><a href="https://gazellegames.net/">GazelleGames(GGN)</a><br><a href="https://gfxpeers.net/">GFXPeers</a><br><a href="http://www.grabthe.info/">GrabTheInfo(GTI)</a><br><a href="https://greatposterwall.com/">GreatPosterWall(GPW&#x2F;海豹影视)</a><br><a href="https://www.hddolby.com/">HDDolby(高清杜比)</a><br><a href="http://hdmayi.com/">HDMaYi(小蚂蚁PT站)</a><br><a href="https://pt.hd4fans.org/">HD4FANS</a><br><a href="https://www.hd.ai/">HDAI</a><br><a href="https://www.hdarea.co/">HDArea(高清视界)</a><br><a href="https://hdatmos.club/">HDAtmos(阿童木)</a><br><a href="https://hdbits.org/">HDB(海德堡)</a><br><a href="https://hdchina.org/">HDChina(瓷器)</a><br><a href="https://hdcity.city/">HDCity</a><br><a href="https://hdfans.org/">HDFans(红豆饭)</a><br><a href="https://hdf.world/">HD-Forever(HD-F)</a><br><a href="https://hdhome.org/">HDHome</a><br><a href="https://pt.hdpost.top/">HDPOST</a><br><a href="http://hdroute.org/">HDROUTE(思路高清)</a><br><a href="https://hdsky.me/">HDSky(天空)</a><br><a href="https://hd-space.org/">HD-Space</a><br><a href="https://hdtime.org/">HDTime</a><br><a href="https://hd-torrents.org/">HD-Torrents</a><br><a href="https://pt.hdupt.com/">HDU</a><br><a href="https://hdfun.me/">HDFun</a><br><a href="https://www.indietorrents.com/">IndieTorrents(IT)</a><br><a href="https://www.iptorrents.com/">IPTorrents</a><br><a href="https://www.joyhd.net/">JoyHD</a><br><a href="https://jpopsuki.eu/">JPopSuki</a><br><a href="https://jptv.club/">JPTV</a><br><a href="https://karagarga.in/">KaraGarga</a><br><a href="https://pt.keepfrds.com/">Keepfrds(朋友)</a><br><a href="https://kufirc.com/">Kufirc</a><br><a href="https://lemonhd.org/">LeagueHD(柠檬)</a><br><a href="http://learnbits.me/">LearnBits(LB)</a><br><a href="http://leohd59.ru/">Leohd59</a><br><a href="http://lesbians4u.org/">lesbians4u</a><br><a href="https://www.linkomanija.net/">Linkomanija(LM)</a><br><a href="https://lztr.me/">LzTr</a><br><a href="https://bt.mdan.org/">MDAN</a><br><a href="https://milkie.cc/">Milkie(ME)</a><br><a href="https://mma-tracker.net/">MMA-Tracker(MMA)</a><br><a href="https://kp.m-team.cc/">M-Team(馒头)</a><br><a href="https://www.morethantv.me/">MTV</a><br><a href="http://www.music-vid.com/">MusicVids</a><br><a href="https://www.myanonamouse.net/">MyAnonaMouse</a><br><a href="https://nebulance.io/">Nebulance</a><br><a href="https://www.nicept.net/">NicePT</a><br><a href="https://npupt.com/">NPUBits(蒲公英PT站)</a><br><a href="https://open.cd/">OpenCD(皇后)</a><br><a href="https://oppaiti.me/">Oppaitime</a><br><a href="https://orpheus.network/">OPS</a><br><a href="https://www.oshen.win/">OshenPT</a><br><a href="https://ourbits.club/">OurBits</a><br><a href="http://bt.ourdisc.net/">OurDisc</a><br><a href="https://passthepopcorn.me/">Passthepopcorn（PTP）</a><br><a href="https://polishsource.cz/">PolishSource(PS)</a><br><a href="https://pornbay.org/">PornBay</a><br><a href="https://pornbits.net/">Pornbits</a><br><a href="https://www.pornorip.si/">Pornorip</a><br><a href="https://privatehd.to/">PrivateHD(PHD)</a><br><a href="http://www.proaudiotorrents.org/">ProAudioTorrents(PAT)</a><br><a href="http://pwtorrents.net/">ProWrestlingTorrents(PWT)</a><br><a href="https://pterclub.com/">PTer</a><br><a href="https://www.pthome.net/">PTHOME</a><br><a href="https://pt.msg.vg/">PTMSG</a><br><a href="https://www.pttime.org/">PTtime(PT时间&#x2F;PTT)</a><br><a href="https://pterclub.com/">PT之友俱乐部(猫站)</a><br><a href="https://pussytorrents.org/">pussytorrents</a><br><a href="https://redacted.ch/">RED</a><br><a href="https://revolutiontt.me/">REVOLUTIONTT(RT)</a><br><a href="http://rgfootball.net/">RGFootball</a><br><a href="https://metal.iplay.ro/">RomanianMetalTorrents</a><br><a href="https://scene-rush.com/">SceneRush</a><br><a href="http://www.scenetorrents.org/">SceneTorrents</a><br><a href="http://sdbits.org/">SDB</a><br><a href="https://secret-cinema.pw/">SecretCinema</a><br><a href="https://seedfile.io/">SeedFile(SF)</a><br><a href="https://www.sharewood.tv/">ShareWood</a><br><a href="https://www.skyey2.com/">SkyeySnow(天雪动漫)</a><br><a href="https://sportscult.org/">sportscult</a><br><a href="https://springsunday.net/">SSD</a><br><a href="https://sugoimusic.me/">SugoiMusic</a><br><a href="https://superbits.org/">Superbits</a><br><a href="https://teamhd.org/">TeamHD</a><br><a href="https://tekno3d.com/">Tekno3DHDR-X</a><br><a href="https://thegeeks.click/">TG</a><br><a href="https://horrorcharnel.org/">TheHorrorCharnel(THC)</a><br><a href="https://themixingbowl.org/">TheMixingBowl(TMB)</a><br><a href="https://pt.eastgame.org/">TLFBits</a><br><a href="http://www.torrentbits.ro/">TorrentBits(TBits&#x2F;TBS)</a><br><a href="https://torrentbytes.net/">TorrentBytes(TB&#x2F;TBy)</a><br><a href="https://et8.org/">TorrentCCF(TCCF)</a><br><a href="https://www.torrentech.org/">TorrenTech(TTech&#x2F;TTC)</a><br><a href="https://www.torrenthr.org/">TorrentHr(TrHR&#x2F;THR)</a><br><a href="https://www.torrentleech.org/">TorrentLeech</a><br><a href="https://www.torrentseeds.org/">TorrentSeeds</a><br><a href="https://www.torrentday.com/">TorrentsTD</a><br><a href="http://www.trancetraffic.com/">TranceTraffic(TT)</a><br><a href="https://www.tribalmixes.com/">TribalMixes(TM)</a><br><a href="https://totheglory.im/">TTG</a><br><a href="https://uhdbits.org/">UHDBits</a><br><a href="http://www.uniongang.tv/">UnionGang</a><br><a href="https://tracker.uniotaku.com/">UniOtaku</a><br><a href="https://www.xspeeds.eu/">XSpeeds(XS)</a><br><a href="https://extremlymtorrents.ws/">XTR</a><br><a href="https://www.youiv.info/">youiv</a><br><a href="http://zombtracker.the-zomb.com/">ZOMBTorrents(ZOMB)</a><br><a href="http://pt.zhixing.bjtu.edu.cn/">ZXPT(北京交通大学知行PT)</a><br><a href="http://avgv.cc/">爱薇网</a><br><a href="https://club.hares.top/">白兔俱乐部</a><br><a href="https://www.hitpt.com/">百川PT</a><br><a href="https://tjupt.org/">北洋园PT</a><br><a href="https://www.beitai.pt/">备胎</a><br><a href="https://ptneko.com/">超科学PT喵</a><br><a href="http://discfan.net/">港知堂</a><br><a href="https://www.haidan.video/">海胆之家</a><br><a href="https://www.htpt.cc/">海棠PT</a><br><a href="https://hudbt.hust.edu.cn/">蝴蝶-HUDBT</a><br><a href="http://bitpt.cn/">极速之星</a><br><a href="https://pt.soulvoice.club/">聆音Club</a><br><a href="http://bt.neu6.edu.cn/">六维空间</a><br><a href="https://pt.nwsuaf6.edu.cn/">麦田PT</a><br><a href="https://nanyangpt.com/">南洋PT</a><br><a href="https://pt.sjtu.edu.cn/">上交葡萄PT站</a><br><a href="https://ptsbao.club/">烧包</a><br><a href="http://pt.xauat6.edu.cn/">溪涧草堂PT</a><br><a href="https://pt.hdbd.us/login.php">伊甸园</a><br><a href="https://www.tjupt.org/login.php">北洋园PT</a><br><a href="https://x-ite.me/">(XM)</a><br><a href="https://ntorrents.net/">NTorrents</a></p>
@@ -51,33 +8,6 @@
       <categories>
         <category>趣站</category>
       </categories>
-  </entry>
-  <entry>
-    <title>YouTube第三方客户端&amp;去广告方案</title>
-    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
-<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
-<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
-<ul>
-<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
-</ul>
-<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
-<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
-<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
-<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
-<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
-<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
-<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
-<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
-<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
-<p><a href="https://piped.video/">Piped在线播放</a></p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-      <tags>
-        <tag>YouTube</tag>
-      </tags>
   </entry>
   <entry>
     <title>Prism主题高亮样式通用CSS片段</title>
@@ -104,6 +34,33 @@
       </categories>
       <tags>
         <tag>Obsidian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>YouTube第三方客户端&amp;去广告方案</title>
+    <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
+<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
+<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
+<ul>
+<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
+</ul>
+<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
+<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
+<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
+<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
+<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
+<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
+<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
+<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
+<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
+<p><a href="https://piped.video/">Piped在线播放</a></p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+      <tags>
+        <tag>YouTube</tag>
       </tags>
   </entry>
   <entry>
@@ -227,23 +184,47 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
-    <title>如何找到优质博客</title>
-    <url>/2023/11/27/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E4%BC%98%E8%B4%A8%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>开往 Travelling：随机访问优质博客的任意门<br><a href="https://www.travellings.cn/">Travelling</a> | <a href="https://github.com/travellings-link/travellings">GitHub</a></p>
-<p>虫洞：通过虫洞访问十年之约博客<br><a href="https://www.foreverblog.cn/go.html">虫洞-随机访问十年之约成员博客</a></p>
-<p>博客志：<br><a href="http://www.jetli.com.cn/">博客志 - 优秀个人独立博客导航</a></p>
-<p>BlogFinder：<br><a href="https://bf.zzxworld.com/">BlogFinder - 发现优秀的个人博客</a></p>
-<p>中文博客列表导航：<br><a href="https://list.zhblogs.org/">网站</a> | <a href="https://github.com/zh-blogs">GitHub</a></p>
-<p>CN-Indie 中文独立博客列表：<br><a href="https://feeds.pub/cn-indie">网站</a> |  <a href="https://github.com/timqian/chinese-independent-blogs">GitHub</a></p>
-<p>Twitter Bloggers List：<br><a href="https://twitter.com/i/lists/1370920338448523266">Twitter Bloggers List</a></p>
-<p>积薪博客精选<br><a href="https://firewood.news/">积薪</a></p>
-<p>xlog：书写在区块链上的开源创作社区<br><a href="https://xlog.app/">xLog - Write. Own. Earn.</a></p>
-<p><a href="https://blogscn.fun/">笔墨记</a></p>
-<p><a href="https://storeweb.cn/">个站商店</a></p>
+    <title>MemosSync插件同步问题解决</title>
+    <url>/2023/08/19/MemosSync%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
+<p>这个自建 memos 不仅可以网页访问，iPhone 和 Android 端也有一个名叫 MoeMemos 的 APP，所以随身记录非常方便。</p>
+<p>那么接下来的一个需求就是通过 memos 本身的 api 同步到 Obsidian</p>
+<p>我在 memos 的 tg 群中得到了两个方案，一个是 Obsidian 的第三方插件 <a href="https://github.com/hyoban/obsidian-memos-plugin">Memos Sync</a>，另外一个就是叫做 <a href="https://github.com/hyoban/kirika/releases">Kirika</a> 的桌面客户端（包括 pc 和 mac），我选择了比较方便的 OB 插件版本，一开始使用很正常，能导入类似下面这样的一条记录一个文件的形式<br>![[MemosSync导入文件截图.png]]</p>
+<p>但更新了一个 OB 版本之后我遇到了这个问题：unable to verfy the first certificate<br>![[MemosSync同步问题.png]]<br>在咨询了插件作者之后，发现不是插件本身的问题，而是我的 nas 证书出现了问题<br>在查询了很多 [^1] 资料之后，我找到了解决方法<br>![[MemosSync服务器中间证书.png]]<br>我的服务器证书中未正确发送中间证书，也就是我可以把中间证书直接和服务器证书合并，然后重新上传上去，再重启 nginx 就可以了，尝试了一下确实有作用了，成功同步！<br>![[MemosSync同步成功.png]]</p>
+<p>[^1]: <a href="https://community.nodebb.org/topic/14920/error-unable-to-verify-the-first-certificate-how-to-fix">Error: unable to verify the first certificate. How to fix? | NodeBB Community</a><br><a href="https://stackoverflow.com/questions/31673587/error-unable-to-verify-the-first-certificate-in-nodejs">node.js - Error: unable to verify the first certificate in nodejs - Stack Overflow</a><br><a href="https://www.jianshu.com/p/18decb471817">nginx 1.18配置有chain中间证书的ssl服务 - 简书</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Obsidian dataview 引用本地图片</title>
+    <url>/2023/07/14/Obsidian_dataview_%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h1 id="Obsidian-dataview-引用本地图片"><a href="#Obsidian-dataview-引用本地图片" class="headerlink" title="Obsidian dataview 引用本地图片"></a>Obsidian dataview 引用本地图片</h1><hr>
+<p>事情是这样的：<br>7 月 13 日我用 douban 插件抓取 Reading 页面书籍封面的时候遇到了无法抓取的问题<br>我的 yaml 引用图片直接是引用的豆瓣的网络图片，见下图 cover：字段<br>![[内文yaml.png|200]]<br>明明豆瓣链接已经抓取到，但是出现了以下图片无法显示的情况（mac 端和 pc 端都是这种情况）<br>![[内文callout无图片.png|200]]<br>所以我判断有可能是插件的问题，还有一种最大的可能是豆瓣网站做了站外防盗链措施，我通过浏览器进入抓取的图片网址也无法显示图片，这证明有可能就是豆瓣不定期抽风的问题。<br>我也联系了 obsidian douban 插件的作者反馈了无法抓取图片并且后台插件无法登录豆瓣的问题，我也抓取了 douban 插件运行时候的日志提示 403 错误。</p>
+<blockquote>
+<p>![[403错误 (1).png]]<br><em>图片 403 错误</em><br>![[豆瓣无法登录.png]]<br><em>无法登录豆瓣</em></p>
+</blockquote>
+<p>问题无法定位，如果是豆瓣本身的问题更是无法解决了。<br>所以我想，莫不如我把书库封面里面的网络图片都改为本地图片，或者让我的书库同时支持网络图片和本地图片。<br>下面是我之前的 dataview 代码，只支持网络图片的显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table &quot;![](&quot; + cover + &quot;)&quot; as Cover, </span><br><span class="line">author as &quot;作者&quot;,startime as &quot;阅读日期&quot;, score as &quot;评分&quot;</span><br><span class="line">from #reading</span><br><span class="line">where contains(type,&quot;book&quot;)</span><br><span class="line">where !contains(file.folder, &quot;Extra/Templates&quot;)</span><br><span class="line">sort file.ctime desc</span><br></pre></td></tr></table></figure>
+
+<p>于是我经过一系列查询，最终在 dataview 文档中找到了解决方案：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table embed(link(cover)) ,&quot;![](&quot; + cover + &quot;)&quot; as Cover, </span><br><span class="line">author as &quot;作者&quot;,startime as &quot;阅读日期&quot;, score as &quot;评分&quot;</span><br><span class="line">from #reading</span><br><span class="line">where contains(type,&quot;book&quot;)</span><br><span class="line">where !contains(file.folder, &quot;Extra/Templates&quot;)</span><br><span class="line">sort file.ctime desc</span><br></pre></td></tr></table></figure>
+
+<p>利用 embed 来显示本地图片也是收到了 cuman 大佬 BT 示例库的启发<br>![[Pasted image 20230715111320.png]]<br>我直接照搬了 BT 库中的代码发现并没有效果，可能是参数不全的缘故。</p>
+<p>查询文档之后发现<br>![[Pasted image 20230715113406.png|400]]<br>要在 embed 之后加 (link (cover)) 就像下面这样：<br>&#x3D;&#x3D;table embed(link(cover))&#x3D;&#x3D;<br>link 参数代表的是要放一个链接，cover 变量引用的是 yaml 里面的 cover 字段后面本地图片路径（相对和绝对路径都可以）类似下图这样：<br>![[Pasted image 20230715111758.png]]<br>然后我们就得到了<br>![[9ac3b168247046cf3db4e03997dbc4b.png|400]]<br>但是我们会发现图片上方会多出本地图片的名字<br>![[Pasted image 20230715112317.png|400]]<br>那是因为我们上面那段 dataview 代码中表单里多了一项本地图片，而我此时是网络图片和本地图片混用的情况，而上方有本地图片名称显示的就是网络图片，这时我们如果有混用需求的话就要去掉上方的名称显示，我想了一个方法，就是加载 css 片段去掉网络图片显示时上方的本地图片名称。<br>大家可以复制以下代码到 css 片段中加载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*embed隐藏本地图片名称*/</span><br><span class="line"></span><br><span class="line">.cards table.dataview span.internal-embed &#123;</span><br><span class="line"></span><br><span class="line">  display: none;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">/*dataview视图 embed隐藏本地图片名称*/</span><br><span class="line"></span><br><span class="line">.internal-embed:not(.image-embed) &#123;</span><br><span class="line"></span><br><span class="line">  display: none;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>OK，搞定，上面的代码可能应用到不同主题会出现不同的小问题，大家可以在 pkmer 群中反馈。</p>
+<p>%% 出处<br>link::</p>
+<p>%%</p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+      <tags>
+        <tag>Obsidian</tag>
+      </tags>
   </entry>
   <entry>
     <title>影视下载和字幕站</title>
@@ -374,7 +355,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#108;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#x78;&#64;&#122;&#108;&#x69;&#x62;&#46;&#115;&#x65;">&#98;&#108;&#x61;&#x63;&#x6b;&#x62;&#x6f;&#x78;&#64;&#122;&#108;&#x69;&#x62;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#x40;&#122;&#108;&#105;&#98;&#46;&#x73;&#101;">&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#x40;&#122;&#108;&#105;&#98;&#46;&#x73;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
@@ -454,6 +435,25 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 </li>
 </ul>
 <p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何找到优质博客</title>
+    <url>/2023/11/27/%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E4%BC%98%E8%B4%A8%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>开往 Travelling：随机访问优质博客的任意门<br><a href="https://www.travellings.cn/">Travelling</a> | <a href="https://github.com/travellings-link/travellings">GitHub</a></p>
+<p>虫洞：通过虫洞访问十年之约博客<br><a href="https://www.foreverblog.cn/go.html">虫洞-随机访问十年之约成员博客</a></p>
+<p>博客志：<br><a href="http://www.jetli.com.cn/">博客志 - 优秀个人独立博客导航</a></p>
+<p>BlogFinder：<br><a href="https://bf.zzxworld.com/">BlogFinder - 发现优秀的个人博客</a></p>
+<p>中文博客列表导航：<br><a href="https://list.zhblogs.org/">网站</a> | <a href="https://github.com/zh-blogs">GitHub</a></p>
+<p>CN-Indie 中文独立博客列表：<br><a href="https://feeds.pub/cn-indie">网站</a> |  <a href="https://github.com/timqian/chinese-independent-blogs">GitHub</a></p>
+<p>Twitter Bloggers List：<br><a href="https://twitter.com/i/lists/1370920338448523266">Twitter Bloggers List</a></p>
+<p>积薪博客精选<br><a href="https://firewood.news/">积薪</a></p>
+<p>xlog：书写在区块链上的开源创作社区<br><a href="https://xlog.app/">xLog - Write. Own. Earn.</a></p>
+<p><a href="https://blogscn.fun/">笔墨记</a></p>
+<p><a href="https://storeweb.cn/">个站商店</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
