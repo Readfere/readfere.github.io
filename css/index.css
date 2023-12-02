@@ -5954,6 +5954,38 @@ i.bber-gotobb {
   margin-top: 1rem;
   width: 100%;
 }
+#bber .meta {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  margin-bottom: 4px;
+}
+#bber .meta .avatar {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+#bber .meta .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#bber .meta .info span.bber_nick {
+  color: #6dbdc3;
+  font-size: 0.9rem;
+}
+#bber .meta .info time.bber_date {
+  font-size: 14px;
+  opacity: 0.6;
+}
+#bber .meta .goComment {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #bber div.bber-content {
   display: flex;
   flex-direction: initial;
@@ -5968,61 +6000,6 @@ i.bber-gotobb {
 #bber .bber-reply {
   cursor: pointer;
   margin: 0 4px;
-}
-#bber .bber-bottom {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  -webkit-user-select: none;
-  user-select: none;
-}
-#bber .bber-info {
-  display: flex;
-  align-items: center;
-}
-#bber .bber-info .fa-rectangles-mixed {
-  margin-right: 8px;
-}
-#bber .bber-info .bber-info-time {
-  color: var(--sco-fontcolor);
-  font-size: 0.7rem;
-  background-color: var(--sco-gray-op);
-  padding: 0 8px;
-  border-radius: 20px;
-  cursor: default;
-  display: flex;
-  align-items: center;
-}
-#bber .bber-info .bber-info-time i {
-  margin-right: 8px;
-  font-size: 16px;
-}
-#bber .bber-info .bber-info-time .datafrom {
-  order: 2;
-  color: var(--sco-secondtext);
-  font-size: 0.7rem;
-  margin-left: 8px;
-}
-#bber .bber-info .bber-info-time .datafrom small {
-  font-size: 0.7rem;
-}
-#bber .bber-info .bber-content-link {
-  display: flex;
-  margin-left: 0.5rem;
-  color: var(--sco-secondtext);
-  font-size: 0.7rem;
-  align-items: center;
-  background-color: rgba(245,108,108,0.13);
-  padding: 0 8px;
-  border-radius: 20px;
-}
-#bber .bber-info .bber-content-link:hover {
-  background-color: var(--sco-main);
-  color: var(--sco-white);
-}
-#bber .bber-info .bber-content-link i {
-  margin-right: 3px;
-  font-size: 16px;
 }
 #bber .count {
   color: var(--sco-secondtext);
