@@ -80,25 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iPhone导入自定义字体</title>
-    <url>/2023/08/27/iPhone%E5%AF%BC%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
-<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 AppStore 中下载 <a href="https://apps.apple.com/sa/app/ifont-find-install-any-font/id1173222289">iFont APP</a><br><img src="https://bu.dusays.com/2023/12/02/656aabb25230e.png" alt="ifont.png"></p>
-<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
-<li>用 safari 访问字体网站下载你需要的字体<br><img src="https://bu.dusays.com/2023/12/02/656aa846261a8.png" alt="字体网站.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab64b1e3.png" alt="下载字体.png"></li>
-<li>下载完成后点击下载按钮-下载-点击字体后面的放大镜<br><img src="https://bu.dusays.com/2023/12/02/656aab00306de.png" alt="找到下载的字体.png"><br><img src="https://bu.dusays.com/2023/12/02/656aa7e0921a0.png" alt="点击放大镜.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab47b471.png" alt="跳转到文件管理器.png"></li>
-<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br><img src="https://bu.dusays.com/2023/12/02/656aa7e26f096.png" alt="点击字体并分享.png"></li>
-<li>分享到 iFont APP 中<br><img src="https://bu.dusays.com/2023/12/02/656aaab6b7315.png" alt="分享到iFont.png"></li>
-<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br><img src="https://bu.dusays.com/2023/12/02/656aa7e18a0f9.png" alt="点击安装.png"></li>
-<li>打开手机的设置 界面-通用-vpn与设备管理，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！<img src="https://bu.dusays.com/2023/12/02/656aa7e243651.png" alt="点击安装-1.png"></li>
-<li>进入 obsidian 设置-外观-字体，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br><img src="https://bu.dusays.com/2023/12/02/656aa7e036a7a.png" alt="成功设置字体.png"></li>
-</ol>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>YouTube第三方客户端&amp;去广告方案</title>
     <url>/2023/11/08/YouTube%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF&amp;%E5%8E%BB%E5%B9%BF%E5%91%8A%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
@@ -124,6 +105,25 @@
       <tags>
         <tag>YouTube</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>iPhone导入自定义字体</title>
+    <url>/2023/08/27/iPhone%E5%AF%BC%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
+<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 AppStore 中下载 <a href="https://apps.apple.com/sa/app/ifont-find-install-any-font/id1173222289">iFont APP</a><br><img src="https://bu.dusays.com/2023/12/02/656aabb25230e.png" alt="ifont.png"></p>
+<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
+<li>用 safari 访问字体网站下载你需要的字体<br><img src="https://bu.dusays.com/2023/12/02/656aa846261a8.png" alt="字体网站.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab64b1e3.png" alt="下载字体.png"></li>
+<li>下载完成后点击下载按钮-下载-点击字体后面的放大镜<br><img src="https://bu.dusays.com/2023/12/02/656aab00306de.png" alt="找到下载的字体.png"><br><img src="https://bu.dusays.com/2023/12/02/656aa7e0921a0.png" alt="点击放大镜.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab47b471.png" alt="跳转到文件管理器.png"></li>
+<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br><img src="https://bu.dusays.com/2023/12/02/656aa7e26f096.png" alt="点击字体并分享.png"></li>
+<li>分享到 iFont APP 中<br><img src="https://bu.dusays.com/2023/12/02/656aaab6b7315.png" alt="分享到iFont.png"></li>
+<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br><img src="https://bu.dusays.com/2023/12/02/656aa7e18a0f9.png" alt="点击安装.png"></li>
+<li>打开手机的设置 界面-通用-vpn与设备管理，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！<img src="https://bu.dusays.com/2023/12/02/656aa7e243651.png" alt="点击安装-1.png"></li>
+<li>进入 obsidian 设置-外观-字体，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br><img src="https://bu.dusays.com/2023/12/02/656aa7e036a7a.png" alt="成功设置字体.png"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
   </entry>
   <entry>
     <title>创建hexo博客</title>
@@ -199,20 +199,6 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
-    <title>好用的聚合搜索推荐</title>
-    <url>/2023/11/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%81%9A%E5%90%88%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="聚合搜索"><a href="#聚合搜索" class="headerlink" title="聚合搜索"></a>聚合搜索</h2><p><a href="https://allsear.ch/">AllSearch</a> | <a href="https://github.com/andersonaddo/allsearch">AllSearch项目地址</a> <a href="https://searchaggregate.com/">SearchAggregate</a> <a href="https://www.gnod.com/search/">Compare Search Engines - Gnod Search</a> <a href="https://sou.best/">SouBest</a></p>
-<h2 id="收费搜索引擎"><a href="#收费搜索引擎" class="headerlink" title="收费搜索引擎"></a>收费搜索引擎</h2><p><a href="https://kagi.com/">Kagi</a> —— 没有免费方案 关于 kagi 搜索的介绍可以看少数派的 <a href="https://sspai.com/post/84160">这篇文章</a></p>
-<h2 id="儿童搜索"><a href="#儿童搜索" class="headerlink" title="儿童搜索"></a>儿童搜索</h2><p><a href="https://www.kidzsearch.com/">kidzsearch</a> <a href="https://www.alarms.org/kidrex/">kidrex</a> <a href="https://www.kiddle.co/">kiddle</a></p>
-<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://panyq.com/">盘友圈</a> <a href="https://www.pansearch.me/">pansearch</a></p>
-<h2 id="程序员搜索-搜索代码等技术问题"><a href="#程序员搜索-搜索代码等技术问题" class="headerlink" title="程序员搜索 (搜索代码等技术问题)"></a>程序员搜索 (搜索代码等技术问题)</h2><p><a href="https://devv.ai/">devv</a></p>
-<h2 id="磁力链接搜索"><a href="#磁力链接搜索" class="headerlink" title="磁力链接搜索"></a>磁力链接搜索</h2><p><a href="https://www.btsearch.love/zh">btsearch</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>图片 API 接口网站</title>
     <url>/2023/11/11/%E5%9B%BE%E7%89%87API%20%E6%8E%A5%E5%8F%A3%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<p>这两天在折腾博客，博客有一些头图和文章图片需要用到图片 API 接口，就上网搜到了一些公用接口，这些站不知道能用多久，且行且珍惜</p>
@@ -221,6 +207,20 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h2><p><a href="https://imgapi.cn/">https://imgapi.cn/</a> <a href="https://api.likepoems.com/">https://api.likepoems.com/</a></p>
 <h2 id="韩小韩-API-接口站"><a href="#韩小韩-API-接口站" class="headerlink" title="韩小韩 API 接口站"></a>韩小韩 API 接口站</h2><p><a href="https://api.vvhan.com/">https://api.vvhan.com/</a></p>
 <h2 id="每日-bing："><a href="#每日-bing：" class="headerlink" title="每日 bing："></a>每日 bing：</h2><p><a href="https://api.isoyu.com/bing/_images.php">https://api.isoyu.com/bing\_images.php</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>好用的聚合搜索推荐</title>
+    <url>/2023/11/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%81%9A%E5%90%88%E6%90%9C%E7%B4%A2%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="聚合搜索"><a href="#聚合搜索" class="headerlink" title="聚合搜索"></a>聚合搜索</h2><p><a href="https://allsear.ch/">AllSearch</a> | <a href="https://github.com/andersonaddo/allsearch">AllSearch项目地址</a> <a href="https://searchaggregate.com/">SearchAggregate</a> <a href="https://www.gnod.com/search/">Compare Search Engines - Gnod Search</a> <a href="https://sou.best/">SouBest</a></p>
+<h2 id="收费搜索引擎"><a href="#收费搜索引擎" class="headerlink" title="收费搜索引擎"></a>收费搜索引擎</h2><p><a href="https://kagi.com/">Kagi</a> —— 没有免费方案 关于 kagi 搜索的介绍可以看少数派的 <a href="https://sspai.com/post/84160">这篇文章</a></p>
+<h2 id="儿童搜索"><a href="#儿童搜索" class="headerlink" title="儿童搜索"></a>儿童搜索</h2><p><a href="https://www.kidzsearch.com/">kidzsearch</a> <a href="https://www.alarms.org/kidrex/">kidrex</a> <a href="https://www.kiddle.co/">kiddle</a></p>
+<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://panyq.com/">盘友圈</a> <a href="https://www.pansearch.me/">pansearch</a></p>
+<h2 id="程序员搜索-搜索代码等技术问题"><a href="#程序员搜索-搜索代码等技术问题" class="headerlink" title="程序员搜索 (搜索代码等技术问题)"></a>程序员搜索 (搜索代码等技术问题)</h2><p><a href="https://devv.ai/">devv</a></p>
+<h2 id="磁力链接搜索"><a href="#磁力链接搜索" class="headerlink" title="磁力链接搜索"></a>磁力链接搜索</h2><p><a href="https://www.btsearch.love/zh">btsearch</a></p>
 ]]></content>
       <categories>
         <category>趣站</category>
@@ -240,6 +240,19 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <p>xlog：书写在区块链上的开源创作社区<br><a href="https://xlog.app/">xLog - Write. Own. Earn.</a></p>
 <p><a href="https://blogscn.fun/">笔墨记</a></p>
 <p><a href="https://storeweb.cn/">个站商店</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>影视下载和字幕站</title>
+    <url>/2023/11/07/%E5%BD%B1%E8%A7%86%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AD%97%E5%B9%95%E7%AB%99/</url>
+    <content><![CDATA[<p>IMDb: Ratings, Reviews,<br><a href="https://www.imdb.com/">https://www.imdb.com/</a></p>
+<p>字幕库 (zimuku) – 字幕下载网站<br><a href="https://zimuku.org/">https://zimuku.org/</a></p>
+<p>The Movie Database (TMDB)<br><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
+<p>分享交流下载字幕平台<br><a href="https://subhd.tv/">https://subhd.tv/</a></p>
+<p>Subtitles - download movie and TV Series subtitles<br><a href="https://www.opensubtitles.org/en/captcha/redirect-%7Czh">https://www.opensubtitles.org/en/captcha/redirect-%7Czh</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
@@ -337,6 +350,41 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
+    <title>洛雪音乐助手切换自定义音源</title>
+    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
+    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
+<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
+<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
+<p>切换后，会显示初始化成功</p>
+<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
+<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
+<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
+<p>感谢💖大佬辛苦付出！</p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>电子书搜索网站推荐</title>
+    <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
+<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
+<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
+<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#99;&#x6b;&#x62;&#111;&#120;&#x40;&#122;&#108;&#x69;&#x62;&#46;&#115;&#x65;">&#x62;&#108;&#x61;&#99;&#x6b;&#x62;&#111;&#120;&#x40;&#122;&#108;&#x69;&#x62;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
+<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
+<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
+<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>程序员身心灵成长指南</title>
     <url>/2023/12/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%BA%AB%E5%BF%83%E7%81%B5%E6%88%90%E9%95%BF%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p>程序员群体为中国的互联网进程贡献了很大力量，是时候关爱他们一下了，下面这些开源项目从身心灵方面来帮助程序员个人成长。</p>
@@ -406,54 +454,6 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 </li>
 </ul>
 <p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛雪音乐助手切换自定义音源</title>
-    <url>/2023/11/11/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E5%8A%A9%E6%89%8B%E5%88%87%E6%8D%A2%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9F%B3%E6%BA%90/</url>
-    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
-<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
-<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
-<p>切换后，会显示初始化成功</p>
-<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
-<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
-<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
-<p>感谢💖大佬辛苦付出！</p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>电子书搜索网站推荐</title>
-    <url>/2023/11/23/%E7%94%B5%E5%AD%90%E4%B9%A6%E6%90%9C%E7%B4%A2%E7%BD%91%E7%AB%99%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
-<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
-<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
-<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#x63;&#x6b;&#98;&#x6f;&#120;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;">&#98;&#x6c;&#97;&#x63;&#x6b;&#98;&#x6f;&#120;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
-<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
-<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
-<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
-<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>影视下载和字幕站</title>
-    <url>/2023/11/07/%E5%BD%B1%E8%A7%86%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AD%97%E5%B9%95%E7%AB%99/</url>
-    <content><![CDATA[<p>IMDb: Ratings, Reviews,<br><a href="https://www.imdb.com/">https://www.imdb.com/</a></p>
-<p>字幕库 (zimuku) – 字幕下载网站<br><a href="https://zimuku.org/">https://zimuku.org/</a></p>
-<p>The Movie Database (TMDB)<br><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
-<p>分享交流下载字幕平台<br><a href="https://subhd.tv/">https://subhd.tv/</a></p>
-<p>Subtitles - download movie and TV Series subtitles<br><a href="https://www.opensubtitles.org/en/captcha/redirect-%7Czh">https://www.opensubtitles.org/en/captcha/redirect-%7Czh</a></p>
 ]]></content>
       <categories>
         <category>折腾记</category>
