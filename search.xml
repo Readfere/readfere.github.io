@@ -398,7 +398,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#99;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;">&#x62;&#108;&#97;&#99;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#x73;&#101;">&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#x62;&#x2e;&#x73;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan/_bot">https://t.me/libsan\_bot</a></p>
@@ -478,6 +478,59 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 </li>
 </ul>
 <p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>静态博客永久链接变更后修改twikoo评论地址</title>
+    <url>/posts/twikoo_url_modified.html</url>
+    <content><![CDATA[<h2 id="修改起因"><a href="#修改起因" class="headerlink" title="修改起因"></a>修改起因</h2><p>之前我的博客文章地址是下面这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/2023/12/05/如何找到优质博客.html</span><br></pre></td></tr></table></figure>
+
+<p>这样的地址不仅长，而且粘贴到微信等聊天软件中中文将不被识别为链接的一部分<br><img src="https://s2.loli.net/2023/12/05/RMbwfLDiXAOaN7y.png" alt="image.png"></p>
+<h2 id="先优化地址链接"><a href="#先优化地址链接" class="headerlink" title="先优化地址链接"></a>先优化地址链接</h2><p>所以我用这个 hexo 插件<br><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<p>来缩短我的链接成以下这种比较友好的样式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/posts/How_to_find_a_quality_blog.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改步骤"><a href="#修改步骤" class="headerlink" title="修改步骤"></a>修改步骤</h3><ol>
+<li>安装 hexo-abbrlink</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改 Hexo 根目录配置文件 _config.yml</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在每篇 markdown 文章的 frontmatter 中加入这个字段</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink: &quot;这里填写这篇文章永久地址的缩略名&quot; # 例如：How_to_find_a_quality_blog</span><br></pre></td></tr></table></figure>
+
+<p>文章中如果没配置这个字段，那么插件就会自动生成随机数字版链接</p>
+<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>当我点击首页评论的时候出现 404 页面，发现应该跟我改变永久链接油管</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="寻找解决方法"><a href="#寻找解决方法" class="headerlink" title="寻找解决方法"></a>寻找解决方法</h3><p>去主题群里问作者大佬得到以下回答：<br><img src="https://s2.loli.net/2023/12/05/ctUXbndRxjShEwM.png" alt="image.png"></p>
+<p>然后就搜索了以下下载 twikoo 评论数据的方法：<br><a href="https://www.imaegoo.com/2022/twikoo-data-export/">Twikoo 评论数据导出教程 - iMaeGoo’s Blog</a></p>
+<h3 id="导出-Twikoo-评论数据"><a href="#导出-Twikoo-评论数据" class="headerlink" title="导出 Twikoo 评论数据"></a>导出 Twikoo 评论数据</h3><p>导出 Twikoo 在 Vercel 的数据</p>
+<ol>
+<li>下载并安装 MongoDB 数据库工具（下载地址： <a href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a> ）；<br> 下载并解压之后需要配置环境变量，命令行工具才能生效，参考 <a href="https://blog.csdn.net/Alisa_Sheng/article/details/122621415">MongoDB数据库：安装、配置系统环境变量、和基础命令</a></li>
+<li>登录 Vercel&#x2F;Netlify（我部署在 Netlify，方法差不多） 管理后台，点开 Twikoo 的环境，点击上方的 Settings，点击左侧的 Environment Variables，在页面下方找到 MONGODB_URI，点击对应的小眼睛图标，会出现数据库连接地址，点击以复制这串地址；</li>
+<li>如果地址中包含参数，请先删去参数，参数即 “?” 和 “?” 后面的部分，例如 ?journal&#x3D;true&amp;w&#x3D;majority；</li>
+<li>打开一个命令行窗口，粘贴以下命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri 这里换成刚才复制的地址 --collection comment --type json --out twikoo-comments. json</span><br></pre></td></tr></table></figure>
+
+<p>例如我的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri mongodb+srv://twikoo:****@****.mongodb.net --collection comment --type json --out twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>命令运行完成后会在文件夹看到一个 twikoo-comments.json 文件<br>要修改下面这几个链接地址为现在的地址<br><img src="https://s2.loli.net/2023/12/05/l2kirS1ThP6Uc4D.png" alt="image.png"></p>
+<p>如果评论多的话，这个工作量会很大，建议用 vscode 结合正则表达式批量替换</p>
+<h3 id="上传修改后的-Twikoo-评论数据"><a href="#上传修改后的-Twikoo-评论数据" class="headerlink" title="上传修改后的 Twikoo 评论数据"></a>上传修改后的 Twikoo 评论数据</h3><p>完成后需要回传到 MongoDB 中覆盖原有 json 文件<br>命令是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoimport --uri &quot;mongodb+srv://twikoo:****@****.mongodb.net&quot; --collection comment --type json --mode merge --file twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>搞定！</p>
 ]]></content>
       <categories>
         <category>折腾记</category>
