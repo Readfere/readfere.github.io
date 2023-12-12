@@ -458,11 +458,29 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#x6c;&#x61;&#x63;&#x6b;&#98;&#x6f;&#x78;&#x40;&#x7a;&#108;&#105;&#98;&#x2e;&#115;&#x65;">&#x62;&#x6c;&#x61;&#x63;&#x6b;&#98;&#x6f;&#x78;&#x40;&#x7a;&#108;&#105;&#98;&#x2e;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#99;&#x6b;&#x62;&#x6f;&#x78;&#x40;&#x7a;&#108;&#x69;&#x62;&#46;&#115;&#x65;">&#98;&#x6c;&#97;&#99;&#x6b;&#x62;&#x6f;&#x78;&#x40;&#x7a;&#108;&#x69;&#x62;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
 <h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>程序员身心灵成长指南</title>
+    <url>/posts/programmer_physical_mental_spiritual_growth_guide.html</url>
+    <content><![CDATA[<p>程序员群体为中国的互联网进程贡献了很大力量，是时候关爱他们一下了，下面这些开源项目从身心灵方面来帮助程序员个人成长。</p>
+<p>身体是革命的本钱，如果身体好，思维就清朗，如果身体不好也会影响思维水平。</p>
+<p>所以首先要考虑到身体的康健：</p>
+<p><a href="https://github.com/zijie0/HumanSystemOptimization">健康学习到 150 岁 - 人体系统调优不完全指南</a></p>
+<p><a href="https://github.com/geekan/HowToLiveLonger">程序员延寿指南 | A programmer’s guide to live longer</a></p>
+<p>身体健康了要提升下自身技能：<br><a href="https://a-programmers-guide-to-english.harryyu.me/">程序员英语学习指南 · A Programmer’s Guide to English</a></p>
+<p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/software/mac/software-list.html">常用软件 | 程序员的自我修养</a></p>
+<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a></p>
+<p>技能够用了，想着要开创自己的副业，赚点美刀吧！<br><a href="https://github.com/easychen/lean-side-bussiness">精益副业：程序员如何优雅地做副业</a></p>
+<p>这些项目不局限于程序员群体，我们都可以参考，很多理念和工具我正在饯行，比如其中《程序员延寿指南》和《健康学习到 150 岁》中关于饮食控制的饯行，我已经养成 168 断食习惯 4 个月，还有一些思维习惯的养成。</p>
 ]]></content>
       <categories>
         <category>趣站</category>
@@ -523,24 +541,6 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 ]]></content>
       <categories>
         <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>程序员身心灵成长指南</title>
-    <url>/posts/programmer_physical_mental_spiritual_growth_guide.html</url>
-    <content><![CDATA[<p>程序员群体为中国的互联网进程贡献了很大力量，是时候关爱他们一下了，下面这些开源项目从身心灵方面来帮助程序员个人成长。</p>
-<p>身体是革命的本钱，如果身体好，思维就清朗，如果身体不好也会影响思维水平。</p>
-<p>所以首先要考虑到身体的康健：</p>
-<p><a href="https://github.com/zijie0/HumanSystemOptimization">健康学习到 150 岁 - 人体系统调优不完全指南</a></p>
-<p><a href="https://github.com/geekan/HowToLiveLonger">程序员延寿指南 | A programmer’s guide to live longer</a></p>
-<p>身体健康了要提升下自身技能：<br><a href="https://a-programmers-guide-to-english.harryyu.me/">程序员英语学习指南 · A Programmer’s Guide to English</a></p>
-<p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/software/mac/software-list.html">常用软件 | 程序员的自我修养</a></p>
-<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a></p>
-<p>技能够用了，想着要开创自己的副业，赚点美刀吧！<br><a href="https://github.com/easychen/lean-side-bussiness">精益副业：程序员如何优雅地做副业</a></p>
-<p>这些项目不局限于程序员群体，我们都可以参考，很多理念和工具我正在饯行，比如其中《程序员延寿指南》和《健康学习到 150 岁》中关于饮食控制的饯行，我已经养成 168 断食习惯 4 个月，还有一些思维习惯的养成。</p>
-]]></content>
-      <categories>
-        <category>趣站</category>
       </categories>
   </entry>
   <entry>
