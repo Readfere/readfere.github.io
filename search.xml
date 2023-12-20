@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CDN服务指南</title>
+    <url>/posts/Guide_for_CDN_Services.html</url>
+    <content><![CDATA[<h2 id="🏞公共库-CDN-资源"><a href="#🏞公共库-CDN-资源" class="headerlink" title="🏞公共库 CDN 资源"></a>🏞公共库 CDN 资源</h2><h3 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h3><ul>
+<li>七牛云存储: <a href="https://staticfile.org/">https://staticfile.org/</a></li>
+<li>360 前端静态资源库: <a href="https://cdn.baomitu.com/">https://cdn.baomitu.com/</a></li>
+<li>字节跳动静态资源公共库: <a href="https://cdn.bytedance.com/">https://cdn.bytedance.com/</a></li>
+<li>又拍云: <a href="http://jscdn.upai.com/">http://jscdn.upai.com</a></li>
+<li>新浪云计算 CDN 公共库:：<a href="https://lib.sinaapp.com/">https://lib.sinaapp.com/</a></li>
+<li>极兔云 联合 Bootstrap 中文网 ：<a href="https://www.bootcdn.cn/">https://www.bootcdn.cn/</a></li>
+<li>cdnjs 相关：<ul>
+<li><a href="https://github.com/cdnjs/cdnjs/discussions/14115">cdnjs</a></li>
+<li><a href="https://cdnjs.com/">cdnjs - open source CDN</a></li>
+</ul>
+</li>
+<li><a href="https://cdnjs.loli.net/">SM.MS图片CDN - loli</a></li>
+<li><a href="https://unpkg.com/">UNPKG</a><ul>
+<li>饿了么： <a href="https://npm.elemecdn.com/">https://npm.elemecdn.com/</a></li>
+<li>知乎： <a href="https://unpkg.zhimg.com/">https://unpkg.zhimg.com/</a></li>
+<li><a href="https://cdn.cbd.int/">https://cdn.cbd.int/</a></li>
+</ul>
+</li>
+<li><a href="https://esm.sh/#docs">ESM&gt;CDN</a></li>
+<li>渺软公益 CDN<br>  <a href="https://cdn.onmicrosoft.cn/">https://cdn.onmicrosoft.cn/</a><br>  <a href="https://npm.onmicrosoft.cn/">https://npm.onmicrosoft.cn/</a></li>
+<li><a href="https://www.jsdelivr.com/">jsDelivr</a></li>
+</ul>
+<h3 id="个人"><a href="#个人" class="headerlink" title="个人"></a>个人</h3><ul>
+<li><a href="https://u.sb/css-cdn/">css-cdn&#x2F;</a></li>
+<li><a href="https://www.sourcegcdn.com/">Sourcegcdn</a></li>
+<li><a href="https://bilicdn.tk/">bilicdn</a></li>
+<li><a href="https://blog.1id.top/post/zi-zhi-de-yi-ge-jsdelivr-jing-xiang-fen-xiang">blog.1id.top</a></li>
+<li><a href="https://www.xxhzm.cn/archives/733/">xxhzm</a></li>
+<li><a href="https://cdn.haorwen.tk/">haorwen.tk</a></li>
+<li><a href="https://jsew.cky.codes/">jsew.cky.codes</a></li>
+<li><a href="https://a-js.cc/archives/128.html">a-js.cc</a></li>
+<li><a href="https://github.com/54ayao/Chinajsdelivr">Chinajsdelivr</a></li>
+<li><a href="https://jsd.cdn.zzko.cn/">jsd.cdn.zzko.cn</a></li>
+<li><a href="https://cdn.akass.cn/">cdn.akass.cn</a></li>
+<li><a href="https://cdn2.chuqis.com/">cdn2.chuqis.com</a></li>
+</ul>
+<h3 id="知名院校"><a href="#知名院校" class="headerlink" title="知名院校"></a>知名院校</h3><ul>
+<li><a href="https://mirrors.sustech.edu.cn/help/cdnjs.html">南方科技大cdnjs</a></li>
+</ul>
+<h3 id="收费-CDN-服务"><a href="#收费-CDN-服务" class="headerlink" title="收费 CDN 服务"></a>收费 CDN 服务</h3><ul>
+<li><a href="https://www.chuqiyun.com/">初七云</a></li>
+<li><a href="https://www.dogecloud.com/">多吉云 | 视频云 - 云存储 - 网站加速</a></li>
+<li><a href="https://su.sctes.com/">无畏云加速-免费CDN加速-全球海量节点资源</a></li>
+</ul>
+<h3 id="免费图床"><a href="#免费图床" class="headerlink" title="免费图床"></a>免费图床</h3><ul>
+<li><a href="https://i.niupic.com/">牛图网</a></li>
+<li><a href="https://i.loli.wiki/">不知名的图床</a></li>
+<li><a href="https://imgur.com/">Imgur</a></li>
+<li><a href="https://sm.ms/">SM.MS</a><ul>
+<li><a href="https://smms.app/">SM.MS另一个域名 </a></li>
+</ul>
+</li>
+<li><a href="https://imgse.com/">路过图床</a></li>
+<li><a href="https://www.ikunpan.com/">IKUN网盘</a></li>
+<li><a href="https://nft.storage/">NFT.Storage</a></li>
+<li><a href="https://shz.al/">Yet Another Pastebin</a></li>
+<li><a href="https://pic.j20.cc/">图床机 - 把GitHub变成图床</a></li>
+<li><a href="https://mjjzp.cf/">白嫖图床|免费|起飞中</a></li>
+<li><a href="https://mjj.today/">MJJ.TODAY - 免费图床 上传图片分享</a></li>
+<li><a href="https://tc.dhmip.cn/">网站排行榜图床</a></li>
+<li><a href="https://wmimg.com/">无铭图床 - 您的极致云上图床</a></li>
+<li><a href="https://pan.vv1234.cn/">零玖图床 - 您的云上相册。</a></li>
+<li><a href="https://www.imgw.cc/">图网图床 - 免费图片外链</a></li>
+<li><a href="https://png.cm/">简单图床 - EasyImage</a></li>
+<li><a href="https://www.imgurl.org/">ImgURL免费图床</a></li>
+<li><a href="https://pnglog.com/">盘络图床-免费图片存储,图片外链生成</a></li>
+</ul>
+<h3 id="收费图床"><a href="#收费图床" class="headerlink" title="收费图床"></a>收费图床</h3><p>目前在用的图床：<br><a href="https://7bu.top/">杜老师的去不图床</a></p>
+
+    <div class="introduction-card" style="">
+      <div class="introduction-card-top" style="">
+        <div class="int-card-info">
+          <div class="int-tip">dusays.</div>
+          <div class="int-cardTitle">com</div>
+        </div>
+        <img src="https://cdn.dusays.com/logo.png" class="no-lightbox" alt="introduction"/>
+      </div>
+      
+      <div class="introduction-card-bottom">
+        <div class="left">
+          <img src="/%E6%9D%9C%E8%80%81%E5%B8%88%E8%AF%B4" class="no-lightbox" alt="introduction"/>
+          <div class="info">
+            <div class="title">https://cdn.dusays.com/logo.png</div>
+            <div class="subTitle">杜老师说</div>
+          </div>
+        </div>
+        <div class="right">
+          <a href="https://dusays.com" tableindex="-1" class="no-text-decoration">前往</a>
+        </div>
+      </div>
+    
+    </div>
+  
+<h3 id="开源图床工具"><a href="#开源图床工具" class="headerlink" title="开源图床工具"></a>开源图床工具</h3><ul>
+<li><p><a href="https://github.com/xpoet/picx">PicX</a></p>
+<ul>
+<li><a href="https://picx.xpoet.cn/">PicX 在线实例</a></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/pluveto/upgit/">Upgit</a></p>
+</li>
+<li><p><a href="https://github.com/SharzyL/pastebin-worker">Pastebin-worker</a></p>
+</li>
+<li><p><a href="https://github.com/cf-pages/Telegraph-Image">Telegraph-Image</a></p>
+<ul>
+<li><a href="https://im.gurl.eu.org/">Telegraph-Image图床实例</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="图床上传工具"><a href="#图床上传工具" class="headerlink" title="图床上传工具"></a>图床上传工具</h3><ul>
+<li><a href="https://github.com/ZenEcho/PLExtension">PLExtension: 盘络上传</a><ul>
+<li>是一款免费的上传扩展程序提供兰空图床,简单图床,chevereto,阿里云 oss,AWS S3,GitHub 等程序的文件上传</li>
+</ul>
+</li>
+<li><a href="https://github.com/Molunerfinn/PicGo">GitHub - Molunerfinn&#x2F;PicGo</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>MemosSync插件同步问题解决</title>
     <url>/posts/memos_sync_solving.html</url>
     <content><![CDATA[<p>我现在的笔记流程中用于记录闪念笔记的方式是通过在 nas 上面自建 Memos 的方式<br>界面是这样的：<br>![[自建Memos界面.png]]</p>
@@ -458,7 +580,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#x6f;&#120;&#64;&#122;&#108;&#x69;&#98;&#46;&#115;&#101;">&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#x6f;&#120;&#64;&#122;&#108;&#x69;&#98;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#108;&#x61;&#x63;&#107;&#x62;&#111;&#120;&#x40;&#122;&#x6c;&#x69;&#x62;&#x2e;&#x73;&#101;">&#98;&#108;&#x61;&#x63;&#107;&#x62;&#111;&#120;&#x40;&#122;&#x6c;&#x69;&#x62;&#x2e;&#x73;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
