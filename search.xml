@@ -133,34 +133,34 @@
     <url>/posts/null.html</url>
     <content><![CDATA[<p>git（&#x2F;ɡɪt&#x2F;[3]，吉特）是一个分布式版本控制软件。</p>
 <p>GitHub 是一个在线软件源代码托管服务平台，使用 Git 作为 版本控制软件，由开发者克里斯・汪斯崔斯、P・J・海特和汤姆・普雷斯顿・沃纳使用 Ruby on Rails 编写而成。在 2018 年，GitHub 被 微软公司收购。</p>
-<h2 id="Git-下载安装以及配置"><a href="#Git-下载安装以及配置" class="headerlink" title="Git 下载安装以及配置"></a>Git 下载安装以及配置</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p> <a href="https://git-scm.com/downloads">Git 官方下载页</a></p>
-<h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3><h4 id="2-1-配置用户名及邮箱"><a href="#2-1-配置用户名及邮箱" class="headerlink" title="2.1.配置用户名及邮箱"></a>2.1.配置用户名及邮箱</h4><p>配置 Git 用户名和邮箱</p>
+<h2 id="Git下载安装以及配置"><a href="#Git下载安装以及配置" class="headerlink" title="Git下载安装以及配置"></a>Git下载安装以及配置</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://git-scm.com/downloads">Git下载</a></p>
+<h3 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h3><h4 id="2-1-配置用户名及邮箱"><a href="#2-1-配置用户名及邮箱" class="headerlink" title="2.1 配置用户名及邮箱"></a>2.1 配置用户名及邮箱</h4><p>配置 Git 用户名和邮箱</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &lt;用户名&gt;</span><br><span class="line">git config --global user.email &lt;邮箱&gt;</span><br></pre></td></tr></table></figure>
 
 <p>检查配置是否生效</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
 
-<h4 id="2-2-配置-ssh-密钥"><a href="#2-2-配置-ssh-密钥" class="headerlink" title="2 .2 配置 ssh 密钥"></a>2 .2 配置 ssh 密钥</h4><p>本地代码与远程仓库交互。SSH 密钥是一种安全的验证方式，可以帮助我们在本地和远程仓库之间建立信任关系，从而安全地进行代码管理。生成 SSH 密钥是使用 Git 的必要步骤之一。</p>
+<h4 id="2-2-配置-ssh-密钥"><a href="#2-2-配置-ssh-密钥" class="headerlink" title="2.2 配置 ssh 密钥"></a>2.2 配置 ssh 密钥</h4><p>本地代码与远程仓库交互。SSH 密钥是一种安全的验证方式，可以帮助我们在本地和远程仓库之间建立信任关系，从而安全地进行代码管理。生成 SSH 密钥是使用 Git 的必要步骤之一。</p>
 <p>使用如下的命令进行生成密钥，然后连续按三次 Enter 键，会生成两个文件，只需要将.pub 结尾的命令输入到 github 的后台设置中，就可以进行连接。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 2048 -C &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure>
 
 <p><code>-t</code> 指定加密方式<br><code>-b</code> 指定密钥位数为 2048 位</p>
 <h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><ol>
-<li> <strong>初始化一个新的仓库：</strong></li>
+<li><strong>初始化一个新的仓库：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
-<li> <strong>克隆（Clone）仓库：</strong></li>
+<li><strong>克隆（Clone）仓库：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone &lt;repository_url&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li> <strong>添加文件到暂存区：</strong></li>
+<li><strong>添加文件到暂存区：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure>
 
-<p>   如果要添加所有文件，可以使用：</p>
+<p>如果要添加所有文件，可以使用：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
 
 <ol start="4">
@@ -169,12 +169,12 @@
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;修改说明&quot;</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
-<li> <strong>查看当前仓库状态：</strong></li>
+<li><strong>查看当前仓库状态：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
 
 <ol start="6">
-<li> <strong>查看提交日志：</strong></li>
+<li><strong>查看提交日志：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
 
@@ -182,48 +182,47 @@
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git log --oneline</span><br></pre></td></tr></table></figure>
 
 <ol start="7">
-<li> <strong>创建新分支：</strong></li>
+<li><strong>创建新分支：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="8">
-<li> <strong>切换分支：</strong></li>
+<li><strong>切换分支：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
 
-<p>   Git 2.23 版本后推荐：</p>
+<p> Git 2.23 版本后推荐：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git switch &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="9">
-<li> <strong>创建并切换到新分支：</strong></li>
+<li><strong>创建并切换到新分支：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout -b &lt;new_branch_name&gt;</span><br></pre></td></tr></table></figure>
 
-<p>   或者使用：</p>
+<p>或者使用：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git switch -c &lt;new_branch_name&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="10">
-<li> <strong>合并分支：</strong></li>
+<li><strong>合并分支：</strong></li>
 </ol>
-<p>  </p>
-<p>   先切换到要合并到的分支，然后执行：</p>
+<p>先切换到要合并到的分支，然后执行：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="11">
-<li> <strong>拉取远程仓库的变化：</strong></li>
+<li><strong>拉取远程仓库的变化：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"> git pull</span><br></pre></td></tr></table></figure>
 
 <ol start="12">
-<li> <strong>推送本地变化到远程仓库：</strong></li>
+<li><strong>推送本地变化到远程仓库：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
 
-<p>   如果是首次推送，可能需要指定远程仓库和分支：</p>
+<p>如果是首次推送，可能需要指定远程仓库和分支：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push -u origin &lt;branch_name&gt;</span><br></pre></td></tr></table></figure>
 
 <ol start="13">
-<li> <strong>查看远程仓库信息：</strong></li>
+<li><strong>查看远程仓库信息：</strong></li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -787,7 +786,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#107;&#x62;&#x6f;&#x78;&#x40;&#x7a;&#108;&#105;&#x62;&#46;&#115;&#101;">&#x62;&#108;&#x61;&#x63;&#107;&#x62;&#x6f;&#x78;&#x40;&#x7a;&#108;&#105;&#x62;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#99;&#x6b;&#98;&#x6f;&#x78;&#x40;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;">&#x62;&#108;&#x61;&#99;&#x6b;&#98;&#x6f;&#x78;&#x40;&#122;&#x6c;&#105;&#x62;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
