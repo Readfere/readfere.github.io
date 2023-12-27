@@ -134,8 +134,7 @@
     <content><![CDATA[<p>git（&#x2F;ɡɪt&#x2F;[3]，吉特）是一个分布式版本控制软件。</p>
 <p>GitHub 是一个在线软件源代码托管服务平台，使用 Git 作为 版本控制软件，由开发者克里斯・汪斯崔斯、P・J・海特和汤姆・普雷斯顿・沃纳使用 Ruby on Rails 编写而成。在 2018 年，GitHub 被微软公司收购。</p>
 <h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p><a href="https://git-scm.com/downloads">Git下载</a></p>
-<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><h3 id="配置用户名及邮箱"><a href="#配置用户名及邮箱" class="headerlink" title="配置用户名及邮箱"></a>配置用户名及邮箱</h3><p>配置 Git 用户名和邮箱</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &lt;用户名&gt;</span><br><span class="line">git config --global user.email &lt;邮箱&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><h3 id="配置用户名及邮箱"><a href="#配置用户名及邮箱" class="headerlink" title="配置用户名及邮箱"></a>配置用户名及邮箱</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &lt;用户名&gt;</span><br><span class="line">git config --global user.email &lt;邮箱&gt;</span><br></pre></td></tr></table></figure>
 
 <p>检查配置是否生效</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
@@ -786,7 +785,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#x40;&#122;&#x6c;&#105;&#98;&#x2e;&#x73;&#x65;">&#x62;&#108;&#x61;&#x63;&#107;&#98;&#111;&#120;&#x40;&#122;&#x6c;&#105;&#98;&#x2e;&#x73;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#x6c;&#x61;&#99;&#x6b;&#98;&#111;&#x78;&#x40;&#x7a;&#108;&#x69;&#x62;&#46;&#x73;&#x65;">&#x62;&#x6c;&#x61;&#99;&#x6b;&#98;&#111;&#x78;&#x40;&#x7a;&#108;&#x69;&#x62;&#46;&#x73;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
