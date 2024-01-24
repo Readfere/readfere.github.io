@@ -1,3 +1,4 @@
+https://readfere.com/wordScenery/index.html
 https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/common_git_operations.html
 https://readfere.com/posts/memos_sync_solving.html
@@ -35,7 +36,6 @@ https://readfere.com/json/music.json
 https://readfere.com/link/index.html
 https://readfere.com/music/index.html
 https://readfere.com/tags/index.html
-https://readfere.com/wordScenery/index.html
 https://readfere.com/
 https://readfere.com/tags/CDN/
 https://readfere.com/tags/Obsidian/
