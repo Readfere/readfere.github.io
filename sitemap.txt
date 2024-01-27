@@ -1,4 +1,3 @@
-https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/common_git_operations.html
 https://readfere.com/posts/memos_sync_solving.html
 https://readfere.com/posts/obsidian_dataview_local_pics.html
@@ -12,17 +11,17 @@ https://readfere.com/posts/create_a_hexo_blog.html
 https://readfere.com/posts/Image_API_website.html
 https://readfere.com/posts/aggregate_search_recommendation.html
 https://readfere.com/posts/Switch_GitHub_account_locally.html
+https://readfere.com/posts/ebook_search_sites.html
+https://readfere.com/posts/programmer_physical_mental_spiritual_growth_guide.html
+https://readfere.com/posts/first_time_with_a_UK_giffgaff_card.html
+https://readfere.com/posts/aggregate_info_sources.html
+https://readfere.com/posts/twikoo_url_modified.html
 https://readfere.com/posts/How_to_find_a_quality_blog.html
 https://readfere.com/posts/movies_subtitles_download_sites.html
 https://readfere.com/posts/quick_way_to_access_GitHub.html
 https://readfere.com/posts/create_a_hugo_blog.html
 https://readfere.com/posts/lx_music_sound_source.html
 https://readfere.com/posts/github_hexo_autodeploy.html
-https://readfere.com/posts/ebook_search_sites.html
-https://readfere.com/posts/programmer_physical_mental_spiritual_growth_guide.html
-https://readfere.com/posts/first_time_with_a_UK_giffgaff_card.html
-https://readfere.com/posts/aggregate_info_sources.html
-https://readfere.com/posts/twikoo_url_modified.html
 https://readfere.com/about/index.html
 https://readfere.com/album/index.html
 https://readfere.com/books/index.html
@@ -36,6 +35,7 @@ https://readfere.com/link/index.html
 https://readfere.com/music/index.html
 https://readfere.com/tags/index.html
 https://readfere.com/wordScenery/index.html
+https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/
 https://readfere.com/tags/CDN/
 https://readfere.com/tags/Obsidian/

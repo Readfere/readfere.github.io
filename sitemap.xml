@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://readfere.com/posts/Guide_for_CDN_Services.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://readfere.com/posts/common_git_operations.html</loc>
     
     <lastmod>2024-01-27</lastmod>
@@ -128,6 +119,51 @@
   </url>
   
   <url>
+    <loc>https://readfere.com/posts/ebook_search_sites.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/programmer_physical_mental_spiritual_growth_guide.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/first_time_with_a_UK_giffgaff_card.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/aggregate_info_sources.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/twikoo_url_modified.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://readfere.com/posts/How_to_find_a_quality_blog.html</loc>
     
     <lastmod>2024-01-27</lastmod>
@@ -174,51 +210,6 @@
   
   <url>
     <loc>https://readfere.com/posts/github_hexo_autodeploy.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/ebook_search_sites.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/programmer_physical_mental_spiritual_growth_guide.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/first_time_with_a_UK_giffgaff_card.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/aggregate_info_sources.html</loc>
-    
-    <lastmod>2024-01-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/twikoo_url_modified.html</loc>
     
     <lastmod>2024-01-27</lastmod>
     
@@ -336,6 +327,15 @@
   
   <url>
     <loc>https://readfere.com/wordScenery/index.html</loc>
+    
+    <lastmod>2024-01-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/Guide_for_CDN_Services.html</loc>
     
     <lastmod>2024-01-27</lastmod>
     
