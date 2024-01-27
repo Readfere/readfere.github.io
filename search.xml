@@ -1,344 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>快速访问 GitHub 的方法</title>
-    <url>/posts/quick_way_to_access_GitHub.html</url>
-    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
-<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
-<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
-<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
-</ol>
-<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
-<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
-<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
-<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
-<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
-<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
-<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>搭建hugo博客</title>
-    <url>/posts/create_a_hugo_blog.html</url>
-    <content><![CDATA[<h2 id="安装-Hugo-博客"><a href="#安装-Hugo-博客" class="headerlink" title="安装 Hugo 博客"></a>安装 Hugo 博客</h2><h3 id="安装-hugo："><a href="#安装-hugo：" class="headerlink" title="安装 hugo："></a>安装 hugo：</h3><p>Windows：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">choco install hugo --confirm</span><br><span class="line">或者 </span><br><span class="line">scoop install hugo</span><br></pre></td></tr></table></figure>
-
-<p>macOS：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install hugo</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建新站点："><a href="#创建新站点：" class="headerlink" title="创建新站点："></a>创建新站点：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
-
-<h3 id="切换到-blog"><a href="#切换到-blog" class="headerlink" title="切换到 blog"></a>切换到 blog</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
-
-<h3 id="在当前目录中初始化一个空的-Git-存储库"><a href="#在当前目录中初始化一个空的-Git-存储库" class="headerlink" title="在当前目录中初始化一个空的 Git 存储库"></a>在当前目录中初始化一个空的 Git 存储库</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装博客主题："><a href="#安装博客主题：" class="headerlink" title="安装博客主题："></a>安装博客主题：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt</span><br><span class="line">或者</span><br><span class="line">下面这种方法可以随时更新主题文件的修改，前提是先自己将主题文件fork到自己的库中</span><br><span class="line">git submodule add https://github.com/tsaoshuang/DoIt themes/DoIt</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建第一篇博文："><a href="#创建第一篇博文：" class="headerlink" title="创建第一篇博文："></a>创建第一篇博文：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new posts/first_post.md</span><br></pre></td></tr></table></figure>
-
-<h3 id="开启本地服务："><a href="#开启本地服务：" class="headerlink" title="开启本地服务："></a>开启本地服务：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo server</span><br></pre></td></tr></table></figure>
-
-<p>访问 <a href="http://localhost:1313/">http://localhost:1313</a> 本地查看</p>
-<h2 id="发布站点到-GitHub-上"><a href="#发布站点到-GitHub-上" class="headerlink" title="发布站点到 GitHub 上"></a>发布站点到 GitHub 上</h2><ol>
-<li>生成 public 文件夹</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo --theme=DoIt --baseURL=&quot;https://tsaoshuang.github.io/&quot; --buildDrafts</span><br></pre></td></tr></table></figure>
-
-<p>或者不加参数只用 hugo 命令 这个命令将生成一个 public 文件夹，其中包含您网站的所有静态内容，可以将其部署在任何 Web 服务器上。</p>
-<ol start="2">
-<li>git 操作（切换至 public 目录进行操作）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;建立hugo博客&quot;</span><br><span class="line">git remote add origin https://github.com/tsaoshuang/tsaoshuang.github.io.git</span><br></pre></td></tr></table></figure>
-
-<h2 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h2><p>运行 git remote add origin 时出现错误： failed to push some refs to</p>
-<p>如何修复此问题 运行以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase origin master</span><br></pre></td></tr></table></figure>
-
-<p>再运行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<h2 id="更新博客内容的命令"><a href="#更新博客内容的命令" class="headerlink" title="更新博客内容的命令"></a>更新博客内容的命令</h2><p>新建博文</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new post/FileName.md</span><br></pre></td></tr></table></figure>
-
-<p>更新配置文件之后重新用 hugo 命令生成新文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo --theme=DoIt --baseURL=&quot;https://tsaoshuang.github.io/</span><br><span class="line">&quot; --buildDrafts</span><br></pre></td></tr></table></figure>
-
-<p>或更新后只需要在 博客根目录运行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hogo</span><br></pre></td></tr></table></figure>
-
-<p>命令</p>
-<p>然后切换到 public 文件夹</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd public</span><br></pre></td></tr></table></figure>
-
-<p>提交：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;内容&quot;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-
-<h2 id="自动化部署"><a href="#自动化部署" class="headerlink" title="自动化部署"></a>自动化部署</h2><p>利用 Github Actions 实现将 hugo 站源文件自动化部署到 GitHub Pages 上</p>
-<p>创建 Github Actions 文件</p>
-<p>在站点源文件根目录，创建 .github&#x2F;workflows&#x2F;deploy.yml 文件：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is a basic workflow to help you get started with Actions</span></span><br><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">hugo-deploy-CI</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls when the action will run.</span></span><br><span class="line"><span class="attr">on:</span> <span class="string">push</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="comment"># docs：https://github.com/peaceiris/actions-gh-pages</span></span><br><span class="line">  <span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-18.04</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Git</span> <span class="string">checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">hugo</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-hugo@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">hugo-version:</span> <span class="string">&#x27;0.81.0&#x27;</span></span><br><span class="line">          <span class="attr">extended:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">hugo</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">personal_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.PERSONAL_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">external_repository:</span> <span class="string">xcbeyond/xcbeyond.github.io</span> <span class="comment"># 修改为自己的地址</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">        <span class="comment">#   keep_files: true</span></span><br><span class="line">          <span class="attr">publish_branch:</span> <span class="string">master</span></span><br><span class="line">          <span class="attr">cname:</span> <span class="string">blog.readfere.com</span> <span class="comment"># 如有独立域名，修改为自己的域名</span></span><br></pre></td></tr></table></figure>
-
-<p>另一个自动化脚本：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">deploy</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">    <span class="attr">push:</span></span><br><span class="line">    <span class="attr">workflow_dispatch:</span></span><br><span class="line">    <span class="attr">schedule:</span></span><br><span class="line">        <span class="comment"># Runs everyday at 8:00 AM</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">cron:</span> <span class="string">&quot;0 0 * * *&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">        <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">        <span class="attr">steps:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">submodules:</span> <span class="literal">true</span></span><br><span class="line">                  <span class="attr">fetch-depth:</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Hugo</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">peaceiris/actions-hugo@v2</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">hugo-version:</span> <span class="string">&quot;latest&quot;</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span> <span class="string">Web</span></span><br><span class="line">              <span class="attr">run:</span> <span class="string">hugo</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Web</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">PERSONAL_TOKEN:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.PERSONAL_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">                  <span class="attr">EXTERNAL_REPOSITORY:</span> <span class="string">pseudoyu/pseudoyu.github.io</span></span><br><span class="line">                  <span class="attr">PUBLISH_BRANCH:</span> <span class="string">master</span></span><br><span class="line">                  <span class="attr">PUBLISH_DIR:</span> <span class="string">./public</span></span><br><span class="line">                  <span class="attr">commit_message:</span> <span class="string">$&#123;&#123;</span> <span class="string">github.event.head_commit.message</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>其中，on: push 表示提交时触发 Action，自动编译并部署到 GitHub Pages。 以后提交个人站点内容时，会自动编译并部署。</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>除了在域名管理中绑定域名 cname 之外，还要在 GitHub setting 中的 pages 设置中绑定并验证域名 txt，这样域名才会生效 还有要在 Hugo 仓库的根目录新建一个 CNAME 文件里面写上你要绑定的域名或者子域名不带协议头的那种！</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛雪音乐助手切换自定义音源</title>
-    <url>/posts/lx_music_sound_source.html</url>
-    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
-<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
-<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
-<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
-<p>切换后，会显示初始化成功</p>
-<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
-<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
-<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
-<p>感谢💖大佬辛苦付出！</p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>用GitHub Actions自动化部署Hexo博客</title>
-    <url>/posts/github_hexo_autodeploy.html</url>
-    <content><![CDATA[<p>以下是用 solitude 主题部署 hexo 的 GitHub Actions 的 yml 文件：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="comment"># 部署</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span> <span class="comment"># 触发条件</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span> <span class="comment"># 推送到 main 分支（这里的分支名很重要，不要弄错了</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">workflow_dispatch:</span> <span class="comment"># 手动触发</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">1</span><span class="string">.</span> <span class="string">检出仓库</span> <span class="comment"># Checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">ref:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">2</span><span class="string">.</span> <span class="string">安装</span> <span class="string">Node.js</span> <span class="comment"># Setup Node</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&quot;16.x&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">3</span><span class="string">.</span> <span class="string">安装</span> <span class="string">Hexo</span> <span class="comment"># Install Hexo</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          export TZ=&#x27;Asia/Shanghai&#x27;</span></span><br><span class="line"><span class="string">          npm install hexo-cli -g</span></span><br><span class="line"><span class="string"></span>        </span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">4</span><span class="string">.</span> <span class="string">缓存</span> <span class="string">Node</span> <span class="string">插件</span> <span class="comment"># Cache Modules</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v3</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">cache-npm</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">cache-name:</span> <span class="string">cache-node-modules</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-build-$&#123;&#123;</span> <span class="string">env.cache-name</span> <span class="string">&#125;&#125;-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-build-</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-</span></span><br><span class="line"><span class="string"></span>        <span class="comment">#with:</span></span><br><span class="line">          <span class="comment">#path: node_modules</span></span><br><span class="line">          <span class="comment">#key: $&#123;&#123;runner.OS&#125;&#125;-$&#123;&#123;hashFiles(&#x27;**/package-lock.json&#x27;)&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#      - name: 安装主题</span></span><br><span class="line"><span class="comment">#        run: |</span></span><br><span class="line"><span class="comment">#          git clone -b main https://github.com/DuoSco/Hexo-theme-solitude.git themes/solitude</span></span><br><span class="line"><span class="comment">#          npm install hexo-renderer-pug hexo-renderer-stylus --save</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">5</span><span class="string">.</span> <span class="string">安装依赖</span> <span class="comment"># Install Dependencies 如果没有缓存或 插件有更新，则安装插件</span></span><br><span class="line">        <span class="attr">if:</span> <span class="string">steps.cache-npm.outputs.cache-hit</span> <span class="type">!=</span> <span class="string">&#x27;true&#x27;</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span> <span class="comment"># **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">gulp-cli</span> <span class="string">-g</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">--save</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-renderer-pug</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">6</span><span class="string">.</span> <span class="string">生成静态文件</span> <span class="comment"># Generate，其中hexo algolia为algolia搜索，hexo gulp为全站压缩，如果没安装则按需删除</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          hexo clean</span></span><br><span class="line"><span class="string">          hexo generate</span></span><br><span class="line"><span class="string">          hexo algolia</span></span><br><span class="line"><span class="string">          gulp</span></span><br><span class="line"><span class="string"></span>  </span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">7</span><span class="string">.</span> <span class="string">部署到</span> <span class="string">github</span> <span class="string">page</span> <span class="comment"># Deploy：github.io仓库中保存每次提交日志 其中clean-exclude为hexo-seo-autopush插件配置，如果没安装则按需删除</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">JamesIves/github-pages-deploy-action@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUBTOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">repository-name:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUBUSERNAME</span> <span class="string">&#125;&#125;/$&#123;&#123;</span> <span class="string">secrets.GITHUBUSERNAME</span> <span class="string">&#125;&#125;.github.io</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">          <span class="attr">folder:</span> <span class="string">public</span></span><br><span class="line">          <span class="comment"># clean-exclude: |</span></span><br><span class="line">          <span class="comment">#   public/.github/</span></span><br><span class="line">          <span class="attr">commit-message:</span> <span class="string">&quot;$<span class="template-variable">&#123;&#123; github.event.head_commit.message &#125;&#125;</span> Updated By Github Actions&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#      - name: 7. 部署到 github page # Deploy：github.io仓库中日志只保留最新</span></span><br><span class="line"><span class="comment">#        run: |</span></span><br><span class="line"><span class="comment">#          cd ./public</span></span><br><span class="line"><span class="comment">#          git init</span></span><br><span class="line"><span class="comment">#          git config --global user.name &#x27;$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;&#x27;</span></span><br><span class="line"><span class="comment">#          git config --global user.email &#x27;$&#123;&#123; secrets.GITHUBEMAIL &#125;&#125;&#x27;</span></span><br><span class="line"><span class="comment">#          git add .</span></span><br><span class="line"><span class="comment">#          git commit -m &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; $(date +&quot;%Z %Y-%m-%d %A %H:%M:%S&quot;) Updated By Github Actions&quot;</span></span><br><span class="line"><span class="comment">#          git push --force --quiet &quot;https://$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;:$&#123;&#123; secrets.GITHUBTOKEN &#125;&#125;@github.com/$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;/$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;.github.io.git&quot; master:main</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>前置条件：</p>
-<ol>
-<li>要新建一个私有仓库 hexo_blog 来存放未解析前的 Hexo 博客文件夹</li>
-<li>然后把所有文件拷贝进去</li>
-<li>GitHub上面申请actions secret：仓库目录下点击Settings-&gt;Actions-&gt;New repository secret</li>
-</ol>
-<ul>
-<li>添加三个参数 ：SERVER_PRIVATE_KEY(Github私钥)&#x2F;GITHUBUSERNAME(Github用户名)&#x2F;GITHUBEMAIL(Github注册邮箱)</li>
-<li>GitHub私钥（SERVER_PRIVATE_KEY）申请路径：点击账户右上角头像-settings-左下角最下面developer settings-左边点击tokens(classic)-右边generate new token(生成之后期限选择no expiration【不过期】)<br>  <img src="https://s2.loli.net/2023/12/05/zplh9HTDXNnsFwe.png"></li>
-<li>注意这个私钥只能显示一次，一定要备份好，在设置actions secret时候会用到</li>
-</ul>
-<ol start="4">
-<li>一定要把 package-lock.json 文件拷贝进去，这个文件是记录依赖安装的，没有的依赖会通过它重新安装</li>
-<li>安装依赖的时候出现了 hexo offline 错误提示：<br> <img src="https://s2.loli.net/2023/12/04/XTwYpy9aC4Ntg1F.png"><br> 说明：hexo-offline 是 solitude 主题中用于设置 PWA（<a href="https://docs.wzsco.top/guide/global-extra.html#pwa">渐进式 web app</a>）的，不是刚需<br> 解决方法：删除根目录里面 package.json 中关于 offline 的记录</li>
-<li>生成静态文件时出现错误 <img src="https://s2.loli.net/2023/12/04/QVdJjWa7y4rIhZu.png"><br>解决办法：在根目录建立 gulpfile.js 文件，并写入内容</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> cleanCSS = <span class="built_in">require</span>(<span class="string">&#x27;gulp-clean-css&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-html-minifier-terser&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> terser = <span class="built_in">require</span>(<span class="string">&#x27;gulp-terser&#x27;</span>);</span><br><span class="line"><span class="comment">// 压缩js</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;compress&#x27;</span>, <span class="function">() =&gt;</span></span><br><span class="line">gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.js&#x27;</span>, <span class="string">&#x27;!./public/**/*.min.js&#x27;</span>])</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">terser</span>())</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">)</span><br><span class="line"><span class="comment">//压缩css</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-css&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">return</span> gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.css&#x27;</span>])</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">cleanCSS</span>(&#123;</span><br><span class="line"><span class="attr">compatibility</span>: <span class="string">&#x27;ie11&#x27;</span></span><br><span class="line">&#125;))</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//压缩html</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">return</span> gulp.<span class="title function_">src</span>(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">htmlclean</span>())</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">htmlmin</span>(&#123;</span><br><span class="line"><span class="attr">removeComments</span>: <span class="literal">true</span>, <span class="comment">//清除html注释</span></span><br><span class="line"><span class="attr">collapseWhitespace</span>: <span class="literal">true</span>, <span class="comment">//压缩html</span></span><br><span class="line"><span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//省略布尔属性的值，例如：&lt;input checked=&quot;true&quot;/&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line"><span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除所有空格作属性值，例如：&lt;input id=&quot;&quot; /&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line"><span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除&lt;script&gt;的type=&quot;text/javascript&quot;</span></span><br><span class="line"><span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除&lt;style&gt;和&lt;link&gt;的 type=&quot;text/css&quot;</span></span><br><span class="line"><span class="attr">minifyJS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面 JS</span></span><br><span class="line"><span class="attr">minifyCSS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面 CSS</span></span><br><span class="line"><span class="attr">minifyURLs</span>: <span class="literal">true</span>  <span class="comment">//压缩页面URL</span></span><br><span class="line">&#125;))</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行gulp命令时依次执行以下任务</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;default&#x27;</span>, gulp.<span class="title function_">parallel</span>(</span><br><span class="line"><span class="string">&#x27;compress&#x27;</span>, <span class="string">&#x27;minify-css&#x27;</span>, <span class="string">&#x27;minify-html&#x27;</span></span><br><span class="line">))</span><br></pre></td></tr></table></figure>
-
-<p>说明：这个插件是用于对代码进行压缩<br>Reference: <a href="https://docs.wzsco.top/guide/advanced.html#gulp%E4%BD%BF%E7%94%A8">进阶配置 🚀 | Solitude 主题官方文档</a></p>
-<p>改完以上两项之后，autodeploy 成功运行，以后对仓库任何文件的增删改查都会自动部署到 GitHub Pages 中，简直太方便了</p>
-<p>Reference: <a href="https://zhsher.cn/posts/8779/index.html">张时贰-Hexo 博客利用 Github Action 自动化部署</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>电子书搜索网站推荐</title>
-    <url>/posts/ebook_search_sites.html</url>
-    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
-<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
-<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
-<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#x6c;&#97;&#x63;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;">&#x62;&#x6c;&#97;&#x63;&#x6b;&#98;&#111;&#x78;&#64;&#122;&#x6c;&#105;&#98;&#46;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
-<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
-<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
-<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
-<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>程序员身心灵成长指南</title>
-    <url>/posts/programmer_physical_mental_spiritual_growth_guide.html</url>
-    <content><![CDATA[<p>程序员群体为中国的互联网进程贡献了很大力量，是时候关爱他们一下了，下面这些开源项目从身心灵方面来帮助程序员个人成长。</p>
-<p>身体是革命的本钱，如果身体好，思维就清朗，如果身体不好也会影响思维水平。</p>
-<p>所以首先要考虑到身体的康健：</p>
-<p><a href="https://github.com/zijie0/HumanSystemOptimization">健康学习到 150 岁 - 人体系统调优不完全指南</a></p>
-<p><a href="https://github.com/geekan/HowToLiveLonger">程序员延寿指南 | A programmer’s guide to live longer</a></p>
-<p>身体健康了要提升下自身技能：<br><a href="https://a-programmers-guide-to-english.harryyu.me/">程序员英语学习指南 · A Programmer’s Guide to English</a></p>
-<p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/software/mac/software-list.html">常用软件 | 程序员的自我修养</a></p>
-<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a></p>
-<p>技能够用了，想着要开创自己的副业，赚点美刀吧！<br><a href="https://github.com/easychen/lean-side-bussiness">精益副业：程序员如何优雅地做副业</a></p>
-<p>这些项目不局限于程序员群体，我们都可以参考，很多理念和工具我正在饯行，比如其中《程序员延寿指南》和《健康学习到 150 岁》中关于饮食控制的饯行，我已经养成 168 断食习惯 4 个月，还有一些思维习惯的养成。</p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第一次用英国 giffgaff 电话卡</title>
-    <url>/posts/first_time_with_a_UK_giffgaff_card.html</url>
-    <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
-<h2 id="特点和主要用途："><a href="#特点和主要用途：" class="headerlink" title="特点和主要用途："></a>特点和主要用途：</h2><ul>
-<li>无月租</li>
-<li>180 天内卡内余额变动保号（发一条短信大概 3 块钱）</li>
-<li>注册外区服务</li>
-</ul>
-<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><ol>
-<li><p>正常情况下可以在官网申请免费卡（申请地址 <a href="https://www.giffgaff.com/freesim-international">https://www.giffgaff.com/freesim-international</a>）</p>
-</li>
-<li><p>但是听说官方邮寄的丢信率很高，所以就不折腾了，直接上网淘宝或京东购买（自行搜索并购买未激活卡）。</p>
-</li>
-</ol>
-<h2 id="激活这张卡的前置条件"><a href="#激活这张卡的前置条件" class="headerlink" title="激活这张卡的前置条件"></a>激活这张卡的前置条件</h2><p>你需要有一张 visa 或 mastercard 的信用卡（看网上有人用 depay 虚拟信用卡，或者到第三方网站购买 Voucher 充值）</p>
-<h2 id="激活过程"><a href="#激活过程" class="headerlink" title="激活过程"></a>激活过程</h2><ol>
-<li>打开 Giffgaff 官网激活页面 <a href="https://www.giffgaff.com/activate">https://www.giffgaff.com/activate</a> 输入卡上的六位激活码，点击 Activate your SIM ![激活 sim]<img src="https://bu.dusays.com/2023/12/01/656935dad4afd.jpg" alt="wp_editor_md_0fa7b036c2ef7149d3ec44a3a1d2253f.jpg"></li>
-<li>输入你的常用邮箱</li>
-<li>设置密码</li>
-<li>在是否接收推送信息页面可以直接选择 No Thanks</li>
-<li>你如果像我一样在中国内地使用，直接在套餐界面拉到最后选择「Pay as you go」即可</li>
-<li>选择充值金额，最少 10 英镑（大约 89 块软妹币）</li>
-<li>如实填写 visa 或 master 卡信息</li>
-<li>支付完成后即可看到自己的号码（但是可能需要几小时才能激活成功） 下载 giffgaff 官方 app 看下激活状态，我在以下状态呆了三个小时：<img src="https://bu.dusays.com/2023/12/01/656935dc59fba.jpg" alt="wp_editor_md_b021db434d6a532dc11b32edd3e2b1cf.jpg"></li>
-<li>手机插卡后，如果激活成功，会接收到一条短信</li>
-</ol>
-<h2 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h2><p>以下是在中国国内的漫游资费：<img src="https://bu.dusays.com/2023/12/01/656935db7c60d.jpg" alt="wp_editor_md_30fa8750cd3adb97bf5102c47c62bfd3.jpg"><br>如果你不想在使用过程中因为接电话，使用数据流量上网而扣费，那么就要进行一些设置。</p>
-<p>以下操作均会造成扣费： 1. 短信、电话、数据流量上网</p>
-<p><strong>解决方法：</strong> 手机设置中关闭蜂窝数据，不拨打电话，不发短信（保号除外）</p>
-<p>2. 手动拒接来电 giffgaff 默认开通语音信箱,拒接来电后将会自动接入语音信箱产生费用</p>
-<p><strong>解决方法：</strong> 关闭语音信箱,手机拨号键盘输入：”##002#” 并按拨号键,即可关闭语音信箱</p>
-<p>iPhone 会看到以下提示：<img src="https://bu.dusays.com/2023/12/01/656935dc34792.jpg" alt="wp_editor_md_441356fb2cf03007f0fefcf105f1875e.jpg"></p>
-<p>参考官网说明： <a href="https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off">https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off</a></p>
-<p>3.  FaceTime 与 iMessage</p>
-<p>iPhone 取消 FaceTime 与 iMessage 服务:</p>
-<blockquote>
-<p>請依照以下步驟關閉 iMessage。 將 SIM 卡移轉到 iPhone。 前往「設定」。 點一下「訊息」。 關閉 iMessage。 回到「設定」。 點一下 FaceTime。 關閉 FaceTime。 退出「設定」。</p>
-</blockquote>
-<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>
-<li><p>准备一张 VISA 或 MasterCard 卡</p>
-</li>
-<li><p>首次激活需要充值 10 英镑，官方会额外赠送 5 英镑</p>
-</li>
-<li><p>使用 Giffgaff 发送短信需要加上完整的国际区号</p>
-</li>
-<li><p>注册国外的服务时将 “0” 替换为英国的国际区号 “+44”</p>
-</li>
-<li><p>需要每 6 个月发送一条短信保号</p>
-</li>
-</ul>
-<p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>聚合信息源</title>
-    <url>/posts/aggregate_info_sources.html</url>
-    <content><![CDATA[<ul>
-<li>RSS 平台：<ul>
-<li><a href="https://www.144u.com/">144U.COM - 万物皆可聚合</a></li>
-<li><a href="https://webfollow.cc/welcome">WebFollow - 在线 RSS 阅读器</a></li>
-<li><a href="https://rss.ping8.top/">RSS Reader</a></li>
-<li><a href="https://vx.mk/">微讯模块 | vx.mk</a></li>
-<li><a href="https://www.fre123.com/weekly/">技术周刊精选推荐 - fre123 免费资源共享平台</a></li>
-</ul>
-</li>
-<li>中文优质 RSS 源：<ul>
-<li><a href="https://github.com/weekend-project-space/top-rss-list">订阅人数最多的rss源，中文优质rss源</a></li>
-</ul>
-</li>
-<li>热榜：<ul>
-<li><a href="https://tophub.today/">今日热榜官网</a></li>
-<li><a href="https://xyzrank.com/">中文播客榜</a></li>
-<li><a href="https://momoyu.cc/">摸摸鱼热榜</a></li>
-<li><a href="https://s.webfollow.cc/">今日热搜</a></li>
-<li><a href="https://smzdk.top/">什么值得看 - 现在正在发生什么</a></li>
-<li><a href="https://moyuduck.com/">摸鱼鸭 一站式摸鱼新体验</a></li>
-</ul>
-</li>
-<li>英文：<ul>
-<li><a href="https://www.newsminimalist.com/">News Minimalist</a></li>
-<li><a href="https://immersivetranslate.com/docs/sites/">探索互联网上高质量的内容 | 沉浸式翻译</a></li>
-</ul>
-</li>
-<li>发现优质 Newsletter：<ul>
-<li><a href="https://alleyread.com/">AlleyRead - 重塑你的信息源</a></li>
-<li><a href="https://github.com/chasays/newsletter-list">有趣，免费的 newsletter-list</a></li>
-<li><a href="https://wiki.geekplux.com/#/page/newsletters">geekplux</a></li>
-</ul>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>静态博客永久链接变更后修改twikoo评论地址</title>
-    <url>/posts/twikoo_url_modified.html</url>
-    <content><![CDATA[<h2 id="修改起因"><a href="#修改起因" class="headerlink" title="修改起因"></a>修改起因</h2><p>之前我的博客文章地址是下面这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/2023/12/05/如何找到优质博客.html</span><br></pre></td></tr></table></figure>
-
-<p>这样的地址不仅长，而且粘贴到微信等聊天软件中中文将不被识别为链接的一部分<br><img src="https://s2.loli.net/2023/12/05/RMbwfLDiXAOaN7y.png" alt="image.png"></p>
-<h2 id="先优化地址链接"><a href="#先优化地址链接" class="headerlink" title="先优化地址链接"></a>先优化地址链接</h2><p>所以我用这个 hexo 插件<br><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
-<p>来缩短我的链接成以下这种比较友好的样式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/posts/How_to_find_a_quality_blog.html</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改步骤"><a href="#修改步骤" class="headerlink" title="修改步骤"></a>修改步骤</h3><ol>
-<li>安装 hexo-abbrlink</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>修改 Hexo 根目录配置文件 _config.yml</li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>在每篇 markdown 文章的 frontmatter 中加入这个字段</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink: &quot;这里填写这篇文章永久地址的缩略名&quot; # 例如：How_to_find_a_quality_blog</span><br></pre></td></tr></table></figure>
-
-<p>文章中如果没配置这个字段，那么插件就会自动生成随机数字版链接</p>
-<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>当我点击首页评论的时候出现 404 页面，发现应该跟我改变永久链接油管</p>
-<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="寻找解决方法"><a href="#寻找解决方法" class="headerlink" title="寻找解决方法"></a>寻找解决方法</h3><p>去主题群里问作者大佬得到以下回答：<br><img src="https://s2.loli.net/2023/12/05/ctUXbndRxjShEwM.png" alt="image.png"></p>
-<p>然后就搜索了以下下载 twikoo 评论数据的方法：<br><a href="https://www.imaegoo.com/2022/twikoo-data-export/">Twikoo 评论数据导出教程 - iMaeGoo’s Blog</a></p>
-<h3 id="导出-Twikoo-评论数据"><a href="#导出-Twikoo-评论数据" class="headerlink" title="导出 Twikoo 评论数据"></a>导出 Twikoo 评论数据</h3><p>导出 Twikoo 在 Vercel 的数据</p>
-<ol>
-<li>下载并安装 MongoDB 数据库工具（下载地址： <a href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a> ）；<br> 下载并解压之后需要配置环境变量，命令行工具才能生效，参考 <a href="https://blog.csdn.net/Alisa_Sheng/article/details/122621415">MongoDB数据库：安装、配置系统环境变量、和基础命令</a></li>
-<li>登录 Vercel&#x2F;Netlify（我部署在 Netlify，方法差不多） 管理后台，点开 Twikoo 的环境，点击上方的 Settings，点击左侧的 Environment Variables，在页面下方找到 MONGODB_URI，点击对应的小眼睛图标，会出现数据库连接地址，点击以复制这串地址；</li>
-<li>如果地址中包含参数，请先删去参数，参数即 “?” 和 “?” 后面的部分，例如 ?journal&#x3D;true&amp;w&#x3D;majority；</li>
-<li>打开一个命令行窗口，粘贴以下命令：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri 这里换成刚才复制的地址 --collection comment --type json --out twikoo-comments. json</span><br></pre></td></tr></table></figure>
-
-<p>例如我的是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri mongodb+srv://twikoo:****@****.mongodb.net --collection comment --type json --out twikoo-comments.json</span><br></pre></td></tr></table></figure>
-
-<p>命令运行完成后会在文件夹看到一个 twikoo-comments.json 文件<br>要修改下面这几个链接地址为现在的地址<br><img src="https://s2.loli.net/2023/12/05/l2kirS1ThP6Uc4D.png" alt="image.png"></p>
-<p>如果评论多的话，这个工作量会很大，建议用 vscode 结合正则表达式批量替换</p>
-<h3 id="上传修改后的-Twikoo-评论数据"><a href="#上传修改后的-Twikoo-评论数据" class="headerlink" title="上传修改后的 Twikoo 评论数据"></a>上传修改后的 Twikoo 评论数据</h3><p>完成后需要回传到 MongoDB 中覆盖原有 json 文件<br>命令是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoimport --uri &quot;mongodb+srv://twikoo:****@****.mongodb.net&quot; --collection comment --type json --mode merge --file twikoo-comments.json</span><br></pre></td></tr></table></figure>
-
-<p>搞定！</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>影视下载和字幕站</title>
-    <url>/posts/movies_subtitles_download_sites.html</url>
-    <content><![CDATA[<p>IMDb: Ratings, Reviews,<br><a href="https://www.imdb.com/">https://www.imdb.com/</a></p>
-<p>字幕库 (zimuku) – 字幕下载网站<br><a href="https://zimuku.org/">https://zimuku.org/</a></p>
-<p>The Movie Database (TMDB)<br><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
-<p>分享交流下载字幕平台<br><a href="https://subhd.tv/">https://subhd.tv/</a></p>
-<p>Subtitles - download movie and TV Series subtitles<br><a href="https://www.opensubtitles.org/en/captcha/redirect-%7Czh">https://www.opensubtitles.org/en/captcha/redirect-%7Czh</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CDN服务指南</title>
     <url>/posts/Guide_for_CDN_Services.html</url>
     <content><![CDATA[<h2 id="🏞公共库-CDN-资源"><a href="#🏞公共库-CDN-资源" class="headerlink" title="🏞公共库 CDN 资源"></a>🏞公共库 CDN 资源</h2><h3 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h3><ul>
@@ -615,6 +277,31 @@
       </tags>
   </entry>
   <entry>
+    <title>TV 直播源项目推荐</title>
+    <url>/posts/TV_live_feed.html</url>
+    <content><![CDATA[<p>推荐几个目前为止还在维护的电视直播源项目，需要的你们也应该知道怎么用。</p>
+<p><a href="https://github.com/YanG-1989/m3u">https://github.com/YanG-1989/m3u</a></p>
+<p><a href="https://github.com/xxh-xx/HomeTV">https://github.com/xxh-xx/HomeTV</a></p>
+<p><a href="https://github.com/LeonoreShaw/IPTV">https://github.com/LeonoreShaw/IPTV</a></p>
+<p>TVBox 自用源以及仓库源、直播源：<br><a href="https://github.com/mengzehe/TVBox">https://github.com/mengzehe/TVBox</a></p>
+<p>范明明直播源：<br><a href="https://github.com/fanmingming/live">https://github.com/fanmingming/live</a></p>
+<p>蓝鲸直播源：<br><a href="https://github.com/Cyril0563/lanjing_live">https://github.com/Cyril0563/lanjing_live</a></p>
+<p>以下没有测试是否失效：<br>ull（2768 個頻道）<br><a href="https://iptv-bahtya.vercel.app/full_list.m3u">https://iptv-bahtya.vercel.app/full_list.m3u</a></p>
+<p>部分（1784 個頻道）<br><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
+<p>EPG 節目表<br><a href="http://epg.51zmt.top:8000/e.xml">http://epg.51zmt.top:8000/e.xml</a></p>
+<p><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
+<p><a href="https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u">https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u</a></p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+      <tags>
+        <tag>TVSources</tag>
+        <tag>开源工具</tag>
+        <tag>直播源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>YouTube第三方客户端&amp;去广告方案</title>
     <url>/posts/youtube_third_party_apps.html</url>
     <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
@@ -639,31 +326,6 @@
       </categories>
       <tags>
         <tag>YouTube</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TV 直播源项目推荐</title>
-    <url>/posts/TV_live_feed.html</url>
-    <content><![CDATA[<p>推荐几个目前为止还在维护的电视直播源项目，需要的你们也应该知道怎么用。</p>
-<p><a href="https://github.com/YanG-1989/m3u">https://github.com/YanG-1989/m3u</a></p>
-<p><a href="https://github.com/xxh-xx/HomeTV">https://github.com/xxh-xx/HomeTV</a></p>
-<p><a href="https://github.com/LeonoreShaw/IPTV">https://github.com/LeonoreShaw/IPTV</a></p>
-<p>TVBox 自用源以及仓库源、直播源：<br><a href="https://github.com/mengzehe/TVBox">https://github.com/mengzehe/TVBox</a></p>
-<p>范明明直播源：<br><a href="https://github.com/fanmingming/live">https://github.com/fanmingming/live</a></p>
-<p>蓝鲸直播源：<br><a href="https://github.com/Cyril0563/lanjing_live">https://github.com/Cyril0563/lanjing_live</a></p>
-<p>以下没有测试是否失效：<br>ull（2768 個頻道）<br><a href="https://iptv-bahtya.vercel.app/full_list.m3u">https://iptv-bahtya.vercel.app/full_list.m3u</a></p>
-<p>部分（1784 個頻道）<br><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
-<p>EPG 節目表<br><a href="http://epg.51zmt.top:8000/e.xml">http://epg.51zmt.top:8000/e.xml</a></p>
-<p><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
-<p><a href="https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u">https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u</a></p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-      <tags>
-        <tag>TVSources</tag>
-        <tag>开源工具</tag>
-        <tag>直播源</tag>
       </tags>
   </entry>
   <entry>
@@ -930,6 +592,344 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <p>个站商店：<br><a href="https://storeweb.cn/">个站商店</a></p>
 <p>Discovery Insights：<br><a href="https://discoveryinsights.site/">独立博客推荐 - Discovery Insights</a></p>
 <p>发现博客 tg 频道：<br><a href="https://t.me/findblog">Telegram: @findblog</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>影视下载和字幕站</title>
+    <url>/posts/movies_subtitles_download_sites.html</url>
+    <content><![CDATA[<p>IMDb: Ratings, Reviews,<br><a href="https://www.imdb.com/">https://www.imdb.com/</a></p>
+<p>字幕库 (zimuku) – 字幕下载网站<br><a href="https://zimuku.org/">https://zimuku.org/</a></p>
+<p>The Movie Database (TMDB)<br><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
+<p>分享交流下载字幕平台<br><a href="https://subhd.tv/">https://subhd.tv/</a></p>
+<p>Subtitles - download movie and TV Series subtitles<br><a href="https://www.opensubtitles.org/en/captcha/redirect-%7Czh">https://www.opensubtitles.org/en/captcha/redirect-%7Czh</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>快速访问 GitHub 的方法</title>
+    <url>/posts/quick_way_to_access_GitHub.html</url>
+    <content><![CDATA[<p>你是否会遇到无法正常访问 GitHub 页面的问题，如果你也和我一样不仅直连的时候链接 GitHub 困难，就连爬🪜都很难正常连接 GitHub 页面或服务，那么这几种方法绝对可以让你快速访问 GitHub。</p>
+<h2 id="第一种方法：切换-hosts-文件"><a href="#第一种方法：切换-hosts-文件" class="headerlink" title="第一种方法：切换 hosts 文件"></a>第一种方法：切换 hosts 文件</h2><ol>
+<li>首先你需要在这里下载 <a href="https://github.com/oldj/SwitchHosts/releases">SwitchHosts</a> 软件（支持 Windows 和 Mac）</li>
+<li>然后去下面的地址： <a href="https://github.com/521xueweihan/GitHub520">GitHub520国外地址</a> <a href="https://gitee.com/klmahuaw/GitHub520">GitHub520国内地址</a> <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> 获取最新的 GitHub hosts 文件</li>
+</ol>
+<p>将获取到的 hosts 远程文件写入 switchhosts 软件，随时可以切换，非常方便</p>
+<h2 id="第二种方法：使用-Steamcommunity-302"><a href="#第二种方法：使用-Steamcommunity-302" class="headerlink" title="第二种方法：使用 Steamcommunity 302"></a>第二种方法：使用 Steamcommunity 302</h2><p>该软件支持很多不能正常访问的网站或软件的加速，记得打开时右键使用管理员权限打开</p>
+<p><a href="https://www.dogfight360.com/blog/686/">Steamcommunity 302下载地址</a></p>
+<h2 id="第三种方法：Watt-Toolkit"><a href="#第三种方法：Watt-Toolkit" class="headerlink" title="第三种方法：Watt Toolkit"></a>第三种方法：Watt Toolkit</h2><p>Watt Toolkit（原 Steam++）是一个开源跨平台的多功能游戏工具箱。 使 Steam 、epic 、Github 等国内难以访问的网页正常访问，支持 Windows 、macOS 、Android 平台。 <a href="https://steampp.net/">下载地址</a></p>
+<h2 id="第四种方法：Fetch-Github-Hosts"><a href="#第四种方法：Fetch-Github-Hosts" class="headerlink" title="第四种方法：Fetch-Github-Hosts"></a>第四种方法：Fetch-Github-Hosts</h2><p>这个项目可以随时获取最新的 GitHub hosts 结合上面所说的 switchhosts 软件可以随时切换最新 hosts 客户端支持 Windows Linux Mac <a href="https://hosts.gitcdn.top/">项目主页</a> | <a href="https://github.com/Licoy/fetch-github-hosts">项目地址</a></p>
+<h2 id="第五种方法：GitHub-第三方镜像"><a href="#第五种方法：GitHub-第三方镜像" class="headerlink" title="第五种方法：GitHub 第三方镜像"></a>第五种方法：GitHub 第三方镜像</h2><p><a href="http://lib.zuotiyi.cn/tool/github.html">镜像列表</a></p>
+<p>还有一个镜像只需要在 GitHub 项目地址前面加上两个字母 kk 比如：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a> 只需变为：<a href="https://kkgithub.com/Licoy/fetch-github-hosts">https://kkgithub.com/Licoy/fetch-github-hosts</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>搭建hugo博客</title>
+    <url>/posts/create_a_hugo_blog.html</url>
+    <content><![CDATA[<h2 id="安装-Hugo-博客"><a href="#安装-Hugo-博客" class="headerlink" title="安装 Hugo 博客"></a>安装 Hugo 博客</h2><h3 id="安装-hugo："><a href="#安装-hugo：" class="headerlink" title="安装 hugo："></a>安装 hugo：</h3><p>Windows：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">choco install hugo --confirm</span><br><span class="line">或者 </span><br><span class="line">scoop install hugo</span><br></pre></td></tr></table></figure>
+
+<p>macOS：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install hugo</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建新站点："><a href="#创建新站点：" class="headerlink" title="创建新站点："></a>创建新站点：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
+
+<h3 id="切换到-blog"><a href="#切换到-blog" class="headerlink" title="切换到 blog"></a>切换到 blog</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+
+<h3 id="在当前目录中初始化一个空的-Git-存储库"><a href="#在当前目录中初始化一个空的-Git-存储库" class="headerlink" title="在当前目录中初始化一个空的 Git 存储库"></a>在当前目录中初始化一个空的 Git 存储库</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装博客主题："><a href="#安装博客主题：" class="headerlink" title="安装博客主题："></a>安装博客主题：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt</span><br><span class="line">或者</span><br><span class="line">下面这种方法可以随时更新主题文件的修改，前提是先自己将主题文件fork到自己的库中</span><br><span class="line">git submodule add https://github.com/tsaoshuang/DoIt themes/DoIt</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建第一篇博文："><a href="#创建第一篇博文：" class="headerlink" title="创建第一篇博文："></a>创建第一篇博文：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new posts/first_post.md</span><br></pre></td></tr></table></figure>
+
+<h3 id="开启本地服务："><a href="#开启本地服务：" class="headerlink" title="开启本地服务："></a>开启本地服务：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo server</span><br></pre></td></tr></table></figure>
+
+<p>访问 <a href="http://localhost:1313/">http://localhost:1313</a> 本地查看</p>
+<h2 id="发布站点到-GitHub-上"><a href="#发布站点到-GitHub-上" class="headerlink" title="发布站点到 GitHub 上"></a>发布站点到 GitHub 上</h2><ol>
+<li>生成 public 文件夹</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo --theme=DoIt --baseURL=&quot;https://tsaoshuang.github.io/&quot; --buildDrafts</span><br></pre></td></tr></table></figure>
+
+<p>或者不加参数只用 hugo 命令 这个命令将生成一个 public 文件夹，其中包含您网站的所有静态内容，可以将其部署在任何 Web 服务器上。</p>
+<ol start="2">
+<li>git 操作（切换至 public 目录进行操作）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;建立hugo博客&quot;</span><br><span class="line">git remote add origin https://github.com/tsaoshuang/tsaoshuang.github.io.git</span><br></pre></td></tr></table></figure>
+
+<h2 id="遇到的问题："><a href="#遇到的问题：" class="headerlink" title="遇到的问题："></a>遇到的问题：</h2><p>运行 git remote add origin 时出现错误： failed to push some refs to</p>
+<p>如何修复此问题 运行以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase origin master</span><br></pre></td></tr></table></figure>
+
+<p>再运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h2 id="更新博客内容的命令"><a href="#更新博客内容的命令" class="headerlink" title="更新博客内容的命令"></a>更新博客内容的命令</h2><p>新建博文</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo new post/FileName.md</span><br></pre></td></tr></table></figure>
+
+<p>更新配置文件之后重新用 hugo 命令生成新文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hugo --theme=DoIt --baseURL=&quot;https://tsaoshuang.github.io/</span><br><span class="line">&quot; --buildDrafts</span><br></pre></td></tr></table></figure>
+
+<p>或更新后只需要在 博客根目录运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hogo</span><br></pre></td></tr></table></figure>
+
+<p>命令</p>
+<p>然后切换到 public 文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd public</span><br></pre></td></tr></table></figure>
+
+<p>提交：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;内容&quot;</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h2 id="自动化部署"><a href="#自动化部署" class="headerlink" title="自动化部署"></a>自动化部署</h2><p>利用 Github Actions 实现将 hugo 站源文件自动化部署到 GitHub Pages 上</p>
+<p>创建 Github Actions 文件</p>
+<p>在站点源文件根目录，创建 .github&#x2F;workflows&#x2F;deploy.yml 文件：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This is a basic workflow to help you get started with Actions</span></span><br><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">hugo-deploy-CI</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Controls when the action will run.</span></span><br><span class="line"><span class="attr">on:</span> <span class="string">push</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># A workflow run is made up of one or more jobs that can run sequentially or in parallel</span></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="comment"># docs：https://github.com/peaceiris/actions-gh-pages</span></span><br><span class="line">  <span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-18.04</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Git</span> <span class="string">checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">hugo</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-hugo@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">hugo-version:</span> <span class="string">&#x27;0.81.0&#x27;</span></span><br><span class="line">          <span class="attr">extended:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">hugo</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">personal_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.PERSONAL_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">external_repository:</span> <span class="string">xcbeyond/xcbeyond.github.io</span> <span class="comment"># 修改为自己的地址</span></span><br><span class="line">          <span class="attr">publish_dir:</span> <span class="string">./public</span></span><br><span class="line">        <span class="comment">#   keep_files: true</span></span><br><span class="line">          <span class="attr">publish_branch:</span> <span class="string">master</span></span><br><span class="line">          <span class="attr">cname:</span> <span class="string">blog.readfere.com</span> <span class="comment"># 如有独立域名，修改为自己的域名</span></span><br></pre></td></tr></table></figure>
+
+<p>另一个自动化脚本：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">deploy</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">    <span class="attr">push:</span></span><br><span class="line">    <span class="attr">workflow_dispatch:</span></span><br><span class="line">    <span class="attr">schedule:</span></span><br><span class="line">        <span class="comment"># Runs everyday at 8:00 AM</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">cron:</span> <span class="string">&quot;0 0 * * *&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">        <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">        <span class="attr">steps:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">submodules:</span> <span class="literal">true</span></span><br><span class="line">                  <span class="attr">fetch-depth:</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Setup</span> <span class="string">Hugo</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">peaceiris/actions-hugo@v2</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">hugo-version:</span> <span class="string">&quot;latest&quot;</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Build</span> <span class="string">Web</span></span><br><span class="line">              <span class="attr">run:</span> <span class="string">hugo</span></span><br><span class="line"></span><br><span class="line">            <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Deploy</span> <span class="string">Web</span></span><br><span class="line">              <span class="attr">uses:</span> <span class="string">peaceiris/actions-gh-pages@v3</span></span><br><span class="line">              <span class="attr">with:</span></span><br><span class="line">                  <span class="attr">PERSONAL_TOKEN:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.PERSONAL_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">                  <span class="attr">EXTERNAL_REPOSITORY:</span> <span class="string">pseudoyu/pseudoyu.github.io</span></span><br><span class="line">                  <span class="attr">PUBLISH_BRANCH:</span> <span class="string">master</span></span><br><span class="line">                  <span class="attr">PUBLISH_DIR:</span> <span class="string">./public</span></span><br><span class="line">                  <span class="attr">commit_message:</span> <span class="string">$&#123;&#123;</span> <span class="string">github.event.head_commit.message</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，on: push 表示提交时触发 Action，自动编译并部署到 GitHub Pages。 以后提交个人站点内容时，会自动编译并部署。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>除了在域名管理中绑定域名 cname 之外，还要在 GitHub setting 中的 pages 设置中绑定并验证域名 txt，这样域名才会生效 还有要在 Hugo 仓库的根目录新建一个 CNAME 文件里面写上你要绑定的域名或者子域名不带协议头的那种！</p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>洛雪音乐助手切换自定义音源</title>
+    <url>/posts/lx_music_sound_source.html</url>
+    <content><![CDATA[<p>好像得有一个多月了，洛雪音乐播放器自带音源失效，今天找到了一个自定义音源方法，洛雪播放器复活！</p>
+<h2 id="如何切换音源"><a href="#如何切换音源" class="headerlink" title="如何切换音源"></a>如何切换音源</h2><p>打开洛雪音乐助手的设置，找到音乐来源，点击自定义源管理，然后点击导入，选择之前下载后解压出来的 sixyin-music-resource.js 文件</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935db4e4b0.jpg" alt="wp_editor_md_25a06245ae0737055b983edecc48f734.jpg"></p>
+<p>导入完成后，关闭弹窗，然后切换音乐来源为六音音源</p>
+<p><img src="https://bu.dusays.com/2023/12/01/656935dc62a7d.jpg" alt="wp_editor_md_e3f2a6dfd9b9aafb3e5961cda7175bc1.jpg"></p>
+<p>切换后，会显示初始化成功</p>
+<h2 id="洛雪音乐助手下载"><a href="#洛雪音乐助手下载" class="headerlink" title="洛雪音乐助手下载"></a>洛雪音乐助手下载</h2><p><a href="https://github.com/lyswhut/lx-music-desktop/releases" title="洛雪音乐助手下载">洛雪音乐助手下载</a></p>
+<h2 id="六音自定义音源下载"><a href="#六音自定义音源下载" class="headerlink" title="六音自定义音源下载"></a>六音自定义音源下载</h2><p><a href="https://soso.lanzouj.com/b00p9c94f#8mno" title="六音自定义音源">六音自定义音源</a> 提取码：8mno</p>
+<p>信息来源： <a href="https://www.sixyin.com/8498.html" title="六音软件">六音软件</a></p>
+<p>感谢💖大佬辛苦付出！</p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>用GitHub Actions自动化部署Hexo博客</title>
+    <url>/posts/github_hexo_autodeploy.html</url>
+    <content><![CDATA[<p>以下是用 solitude 主题部署 hexo 的 GitHub Actions 的 yml 文件：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">Deploy</span> <span class="comment"># 部署</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span> <span class="comment"># 触发条件</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span> <span class="comment"># 推送到 main 分支（这里的分支名很重要，不要弄错了</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">workflow_dispatch:</span> <span class="comment"># 手动触发</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">1</span><span class="string">.</span> <span class="string">检出仓库</span> <span class="comment"># Checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">ref:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">2</span><span class="string">.</span> <span class="string">安装</span> <span class="string">Node.js</span> <span class="comment"># Setup Node</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@v3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">node-version:</span> <span class="string">&quot;16.x&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">3</span><span class="string">.</span> <span class="string">安装</span> <span class="string">Hexo</span> <span class="comment"># Install Hexo</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          export TZ=&#x27;Asia/Shanghai&#x27;</span></span><br><span class="line"><span class="string">          npm install hexo-cli -g</span></span><br><span class="line"><span class="string"></span>        </span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">4</span><span class="string">.</span> <span class="string">缓存</span> <span class="string">Node</span> <span class="string">插件</span> <span class="comment"># Cache Modules</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/cache@v3</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">cache-npm</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">cache-name:</span> <span class="string">cache-node-modules</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">node_modules</span></span><br><span class="line">          <span class="attr">key:</span> <span class="string">$&#123;&#123;</span> <span class="string">runner.os</span> <span class="string">&#125;&#125;-build-$&#123;&#123;</span> <span class="string">env.cache-name</span> <span class="string">&#125;&#125;-$&#123;&#123;</span> <span class="string">hashFiles(&#x27;**/package-lock.json&#x27;)</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">restore-keys:</span> <span class="string">|</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-build-$&#123;&#123; env.cache-name &#125;&#125;-</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-build-</span></span><br><span class="line"><span class="string">            $&#123;&#123; runner.os &#125;&#125;-</span></span><br><span class="line"><span class="string"></span>        <span class="comment">#with:</span></span><br><span class="line">          <span class="comment">#path: node_modules</span></span><br><span class="line">          <span class="comment">#key: $&#123;&#123;runner.OS&#125;&#125;-$&#123;&#123;hashFiles(&#x27;**/package-lock.json&#x27;)&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#      - name: 安装主题</span></span><br><span class="line"><span class="comment">#        run: |</span></span><br><span class="line"><span class="comment">#          git clone -b main https://github.com/DuoSco/Hexo-theme-solitude.git themes/solitude</span></span><br><span class="line"><span class="comment">#          npm install hexo-renderer-pug hexo-renderer-stylus --save</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">5</span><span class="string">.</span> <span class="string">安装依赖</span> <span class="comment"># Install Dependencies 如果没有缓存或 插件有更新，则安装插件</span></span><br><span class="line">        <span class="attr">if:</span> <span class="string">steps.cache-npm.outputs.cache-hit</span> <span class="type">!=</span> <span class="string">&#x27;true&#x27;</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span> <span class="comment"># **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">gulp-cli</span> <span class="string">-g</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">--save</span></span><br><span class="line">          <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-renderer-pug</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">6</span><span class="string">.</span> <span class="string">生成静态文件</span> <span class="comment"># Generate，其中hexo algolia为algolia搜索，hexo gulp为全站压缩，如果没安装则按需删除</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          hexo clean</span></span><br><span class="line"><span class="string">          hexo generate</span></span><br><span class="line"><span class="string">          hexo algolia</span></span><br><span class="line"><span class="string">          gulp</span></span><br><span class="line"><span class="string"></span>  </span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="number">7</span><span class="string">.</span> <span class="string">部署到</span> <span class="string">github</span> <span class="string">page</span> <span class="comment"># Deploy：github.io仓库中保存每次提交日志 其中clean-exclude为hexo-seo-autopush插件配置，如果没安装则按需删除</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">JamesIves/github-pages-deploy-action@v4</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUBTOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">          <span class="attr">repository-name:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUBUSERNAME</span> <span class="string">&#125;&#125;/$&#123;&#123;</span> <span class="string">secrets.GITHUBUSERNAME</span> <span class="string">&#125;&#125;.github.io</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">          <span class="attr">folder:</span> <span class="string">public</span></span><br><span class="line">          <span class="comment"># clean-exclude: |</span></span><br><span class="line">          <span class="comment">#   public/.github/</span></span><br><span class="line">          <span class="attr">commit-message:</span> <span class="string">&quot;$<span class="template-variable">&#123;&#123; github.event.head_commit.message &#125;&#125;</span> Updated By Github Actions&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#      - name: 7. 部署到 github page # Deploy：github.io仓库中日志只保留最新</span></span><br><span class="line"><span class="comment">#        run: |</span></span><br><span class="line"><span class="comment">#          cd ./public</span></span><br><span class="line"><span class="comment">#          git init</span></span><br><span class="line"><span class="comment">#          git config --global user.name &#x27;$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;&#x27;</span></span><br><span class="line"><span class="comment">#          git config --global user.email &#x27;$&#123;&#123; secrets.GITHUBEMAIL &#125;&#125;&#x27;</span></span><br><span class="line"><span class="comment">#          git add .</span></span><br><span class="line"><span class="comment">#          git commit -m &quot;$&#123;&#123; github.event.head_commit.message &#125;&#125; $(date +&quot;%Z %Y-%m-%d %A %H:%M:%S&quot;) Updated By Github Actions&quot;</span></span><br><span class="line"><span class="comment">#          git push --force --quiet &quot;https://$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;:$&#123;&#123; secrets.GITHUBTOKEN &#125;&#125;@github.com/$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;/$&#123;&#123; secrets.GITHUBUSERNAME &#125;&#125;.github.io.git&quot; master:main</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>前置条件：</p>
+<ol>
+<li>要新建一个私有仓库 hexo_blog 来存放未解析前的 Hexo 博客文件夹</li>
+<li>然后把所有文件拷贝进去</li>
+<li>GitHub上面申请actions secret：仓库目录下点击Settings-&gt;Actions-&gt;New repository secret</li>
+</ol>
+<ul>
+<li>添加三个参数 ：SERVER_PRIVATE_KEY(Github私钥)&#x2F;GITHUBUSERNAME(Github用户名)&#x2F;GITHUBEMAIL(Github注册邮箱)</li>
+<li>GitHub私钥（SERVER_PRIVATE_KEY）申请路径：点击账户右上角头像-settings-左下角最下面developer settings-左边点击tokens(classic)-右边generate new token(生成之后期限选择no expiration【不过期】)<br>  <img src="https://s2.loli.net/2023/12/05/zplh9HTDXNnsFwe.png"></li>
+<li>注意这个私钥只能显示一次，一定要备份好，在设置actions secret时候会用到</li>
+</ul>
+<ol start="4">
+<li>一定要把 package-lock.json 文件拷贝进去，这个文件是记录依赖安装的，没有的依赖会通过它重新安装</li>
+<li>安装依赖的时候出现了 hexo offline 错误提示：<br> <img src="https://s2.loli.net/2023/12/04/XTwYpy9aC4Ntg1F.png"><br> 说明：hexo-offline 是 solitude 主题中用于设置 PWA（<a href="https://docs.wzsco.top/guide/global-extra.html#pwa">渐进式 web app</a>）的，不是刚需<br> 解决方法：删除根目录里面 package.json 中关于 offline 的记录</li>
+<li>生成静态文件时出现错误 <img src="https://s2.loli.net/2023/12/04/QVdJjWa7y4rIhZu.png"><br>解决办法：在根目录建立 gulpfile.js 文件，并写入内容</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> cleanCSS = <span class="built_in">require</span>(<span class="string">&#x27;gulp-clean-css&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-html-minifier-terser&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> terser = <span class="built_in">require</span>(<span class="string">&#x27;gulp-terser&#x27;</span>);</span><br><span class="line"><span class="comment">// 压缩js</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;compress&#x27;</span>, <span class="function">() =&gt;</span></span><br><span class="line">gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.js&#x27;</span>, <span class="string">&#x27;!./public/**/*.min.js&#x27;</span>])</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">terser</span>())</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">)</span><br><span class="line"><span class="comment">//压缩css</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-css&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">return</span> gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.css&#x27;</span>])</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">cleanCSS</span>(&#123;</span><br><span class="line"><span class="attr">compatibility</span>: <span class="string">&#x27;ie11&#x27;</span></span><br><span class="line">&#125;))</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//压缩html</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line"><span class="keyword">return</span> gulp.<span class="title function_">src</span>(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">htmlclean</span>())</span><br><span class="line">.<span class="title function_">pipe</span>(<span class="title function_">htmlmin</span>(&#123;</span><br><span class="line"><span class="attr">removeComments</span>: <span class="literal">true</span>, <span class="comment">//清除html注释</span></span><br><span class="line"><span class="attr">collapseWhitespace</span>: <span class="literal">true</span>, <span class="comment">//压缩html</span></span><br><span class="line"><span class="attr">collapseBooleanAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//省略布尔属性的值，例如：&lt;input checked=&quot;true&quot;/&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line"><span class="attr">removeEmptyAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除所有空格作属性值，例如：&lt;input id=&quot;&quot; /&gt; ==&gt; &lt;input /&gt;</span></span><br><span class="line"><span class="attr">removeScriptTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除&lt;script&gt;的type=&quot;text/javascript&quot;</span></span><br><span class="line"><span class="attr">removeStyleLinkTypeAttributes</span>: <span class="literal">true</span>,</span><br><span class="line"><span class="comment">//删除&lt;style&gt;和&lt;link&gt;的 type=&quot;text/css&quot;</span></span><br><span class="line"><span class="attr">minifyJS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面 JS</span></span><br><span class="line"><span class="attr">minifyCSS</span>: <span class="literal">true</span>, <span class="comment">//压缩页面 CSS</span></span><br><span class="line"><span class="attr">minifyURLs</span>: <span class="literal">true</span>  <span class="comment">//压缩页面URL</span></span><br><span class="line">&#125;))</span><br><span class="line">.<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行gulp命令时依次执行以下任务</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;default&#x27;</span>, gulp.<span class="title function_">parallel</span>(</span><br><span class="line"><span class="string">&#x27;compress&#x27;</span>, <span class="string">&#x27;minify-css&#x27;</span>, <span class="string">&#x27;minify-html&#x27;</span></span><br><span class="line">))</span><br></pre></td></tr></table></figure>
+
+<p>说明：这个插件是用于对代码进行压缩<br>Reference: <a href="https://docs.wzsco.top/guide/advanced.html#gulp%E4%BD%BF%E7%94%A8">进阶配置 🚀 | Solitude 主题官方文档</a></p>
+<p>改完以上两项之后，autodeploy 成功运行，以后对仓库任何文件的增删改查都会自动部署到 GitHub Pages 中，简直太方便了</p>
+<p>Reference: <a href="https://zhsher.cn/posts/8779/index.html">张时贰-Hexo 博客利用 Github Action 自动化部署</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>电子书搜索网站推荐</title>
+    <url>/posts/ebook_search_sites.html</url>
+    <content><![CDATA[<h2 id="无名图书"><a href="#无名图书" class="headerlink" title="无名图书"></a>无名图书</h2><p><a href="https://www.book123.info/">https://www.book123.info/</a></p>
+<h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
+<h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
+<h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#x6f;&#x78;&#64;&#x7a;&#108;&#x69;&#98;&#46;&#115;&#101;">&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#x6f;&#x78;&#64;&#x7a;&#108;&#x69;&#98;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
+<h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
+<h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
+<h2 id="PlanetEbook"><a href="#PlanetEbook" class="headerlink" title="PlanetEbook"></a>PlanetEbook</h2><p><a href="https://www.planetebook.com/">PlanetEbook</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>程序员身心灵成长指南</title>
+    <url>/posts/programmer_physical_mental_spiritual_growth_guide.html</url>
+    <content><![CDATA[<p>程序员群体为中国的互联网进程贡献了很大力量，是时候关爱他们一下了，下面这些开源项目从身心灵方面来帮助程序员个人成长。</p>
+<p>身体是革命的本钱，如果身体好，思维就清朗，如果身体不好也会影响思维水平。</p>
+<p>所以首先要考虑到身体的康健：</p>
+<p><a href="https://github.com/zijie0/HumanSystemOptimization">健康学习到 150 岁 - 人体系统调优不完全指南</a></p>
+<p><a href="https://github.com/geekan/HowToLiveLonger">程序员延寿指南 | A programmer’s guide to live longer</a></p>
+<p>身体健康了要提升下自身技能：<br><a href="https://a-programmers-guide-to-english.harryyu.me/">程序员英语学习指南 · A Programmer’s Guide to English</a></p>
+<p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/software/mac/software-list.html">常用软件 | 程序员的自我修养</a></p>
+<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines">中文文案排版指北</a></p>
+<p>技能够用了，想着要开创自己的副业，赚点美刀吧！<br><a href="https://github.com/easychen/lean-side-bussiness">精益副业：程序员如何优雅地做副业</a></p>
+<p>这些项目不局限于程序员群体，我们都可以参考，很多理念和工具我正在饯行，比如其中《程序员延寿指南》和《健康学习到 150 岁》中关于饮食控制的饯行，我已经养成 168 断食习惯 4 个月，还有一些思维习惯的养成。</p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第一次用英国 giffgaff 电话卡</title>
+    <url>/posts/first_time_with_a_UK_giffgaff_card.html</url>
+    <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
+<h2 id="特点和主要用途："><a href="#特点和主要用途：" class="headerlink" title="特点和主要用途："></a>特点和主要用途：</h2><ul>
+<li>无月租</li>
+<li>180 天内卡内余额变动保号（发一条短信大概 3 块钱）</li>
+<li>注册外区服务</li>
+</ul>
+<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><ol>
+<li><p>正常情况下可以在官网申请免费卡（申请地址 <a href="https://www.giffgaff.com/freesim-international">https://www.giffgaff.com/freesim-international</a>）</p>
+</li>
+<li><p>但是听说官方邮寄的丢信率很高，所以就不折腾了，直接上网淘宝或京东购买（自行搜索并购买未激活卡）。</p>
+</li>
+</ol>
+<h2 id="激活这张卡的前置条件"><a href="#激活这张卡的前置条件" class="headerlink" title="激活这张卡的前置条件"></a>激活这张卡的前置条件</h2><p>你需要有一张 visa 或 mastercard 的信用卡（看网上有人用 depay 虚拟信用卡，或者到第三方网站购买 Voucher 充值）</p>
+<h2 id="激活过程"><a href="#激活过程" class="headerlink" title="激活过程"></a>激活过程</h2><ol>
+<li>打开 Giffgaff 官网激活页面 <a href="https://www.giffgaff.com/activate">https://www.giffgaff.com/activate</a> 输入卡上的六位激活码，点击 Activate your SIM ![激活 sim]<img src="https://bu.dusays.com/2023/12/01/656935dad4afd.jpg" alt="wp_editor_md_0fa7b036c2ef7149d3ec44a3a1d2253f.jpg"></li>
+<li>输入你的常用邮箱</li>
+<li>设置密码</li>
+<li>在是否接收推送信息页面可以直接选择 No Thanks</li>
+<li>你如果像我一样在中国内地使用，直接在套餐界面拉到最后选择「Pay as you go」即可</li>
+<li>选择充值金额，最少 10 英镑（大约 89 块软妹币）</li>
+<li>如实填写 visa 或 master 卡信息</li>
+<li>支付完成后即可看到自己的号码（但是可能需要几小时才能激活成功） 下载 giffgaff 官方 app 看下激活状态，我在以下状态呆了三个小时：<img src="https://bu.dusays.com/2023/12/01/656935dc59fba.jpg" alt="wp_editor_md_b021db434d6a532dc11b32edd3e2b1cf.jpg"></li>
+<li>手机插卡后，如果激活成功，会接收到一条短信</li>
+</ol>
+<h2 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h2><p>以下是在中国国内的漫游资费：<img src="https://bu.dusays.com/2023/12/01/656935db7c60d.jpg" alt="wp_editor_md_30fa8750cd3adb97bf5102c47c62bfd3.jpg"><br>如果你不想在使用过程中因为接电话，使用数据流量上网而扣费，那么就要进行一些设置。</p>
+<p>以下操作均会造成扣费： 1. 短信、电话、数据流量上网</p>
+<p><strong>解决方法：</strong> 手机设置中关闭蜂窝数据，不拨打电话，不发短信（保号除外）</p>
+<p>2. 手动拒接来电 giffgaff 默认开通语音信箱,拒接来电后将会自动接入语音信箱产生费用</p>
+<p><strong>解决方法：</strong> 关闭语音信箱,手机拨号键盘输入：”##002#” 并按拨号键,即可关闭语音信箱</p>
+<p>iPhone 会看到以下提示：<img src="https://bu.dusays.com/2023/12/01/656935dc34792.jpg" alt="wp_editor_md_441356fb2cf03007f0fefcf105f1875e.jpg"></p>
+<p>参考官网说明： <a href="https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off">https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off</a></p>
+<p>3.  FaceTime 与 iMessage</p>
+<p>iPhone 取消 FaceTime 与 iMessage 服务:</p>
+<blockquote>
+<p>請依照以下步驟關閉 iMessage。 將 SIM 卡移轉到 iPhone。 前往「設定」。 點一下「訊息」。 關閉 iMessage。 回到「設定」。 點一下 FaceTime。 關閉 FaceTime。 退出「設定」。</p>
+</blockquote>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>
+<li><p>准备一张 VISA 或 MasterCard 卡</p>
+</li>
+<li><p>首次激活需要充值 10 英镑，官方会额外赠送 5 英镑</p>
+</li>
+<li><p>使用 Giffgaff 发送短信需要加上完整的国际区号</p>
+</li>
+<li><p>注册国外的服务时将 “0” 替换为英国的国际区号 “+44”</p>
+</li>
+<li><p>需要每 6 个月发送一条短信保号</p>
+</li>
+</ul>
+<p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>聚合信息源</title>
+    <url>/posts/aggregate_info_sources.html</url>
+    <content><![CDATA[<ul>
+<li>RSS 平台：<ul>
+<li><a href="https://www.144u.com/">144U.COM - 万物皆可聚合</a></li>
+<li><a href="https://webfollow.cc/welcome">WebFollow - 在线 RSS 阅读器</a></li>
+<li><a href="https://rss.ping8.top/">RSS Reader</a></li>
+<li><a href="https://vx.mk/">微讯模块 | vx.mk</a></li>
+<li><a href="https://www.fre123.com/weekly/">技术周刊精选推荐 - fre123 免费资源共享平台</a></li>
+</ul>
+</li>
+<li>中文优质 RSS 源：<ul>
+<li><a href="https://github.com/weekend-project-space/top-rss-list">订阅人数最多的rss源，中文优质rss源</a></li>
+</ul>
+</li>
+<li>热榜：<ul>
+<li><a href="https://tophub.today/">今日热榜官网</a></li>
+<li><a href="https://xyzrank.com/">中文播客榜</a></li>
+<li><a href="https://momoyu.cc/">摸摸鱼热榜</a></li>
+<li><a href="https://s.webfollow.cc/">今日热搜</a></li>
+<li><a href="https://smzdk.top/">什么值得看 - 现在正在发生什么</a></li>
+<li><a href="https://moyuduck.com/">摸鱼鸭 一站式摸鱼新体验</a></li>
+</ul>
+</li>
+<li>英文：<ul>
+<li><a href="https://www.newsminimalist.com/">News Minimalist</a></li>
+<li><a href="https://immersivetranslate.com/docs/sites/">探索互联网上高质量的内容 | 沉浸式翻译</a></li>
+</ul>
+</li>
+<li>发现优质 Newsletter：<ul>
+<li><a href="https://alleyread.com/">AlleyRead - 重塑你的信息源</a></li>
+<li><a href="https://github.com/chasays/newsletter-list">有趣，免费的 newsletter-list</a></li>
+<li><a href="https://wiki.geekplux.com/#/page/newsletters">geekplux</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>静态博客永久链接变更后修改twikoo评论地址</title>
+    <url>/posts/twikoo_url_modified.html</url>
+    <content><![CDATA[<h2 id="修改起因"><a href="#修改起因" class="headerlink" title="修改起因"></a>修改起因</h2><p>之前我的博客文章地址是下面这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/2023/12/05/如何找到优质博客.html</span><br></pre></td></tr></table></figure>
+
+<p>这样的地址不仅长，而且粘贴到微信等聊天软件中中文将不被识别为链接的一部分<br><img src="https://s2.loli.net/2023/12/05/RMbwfLDiXAOaN7y.png" alt="image.png"></p>
+<h2 id="先优化地址链接"><a href="#先优化地址链接" class="headerlink" title="先优化地址链接"></a>先优化地址链接</h2><p>所以我用这个 hexo 插件<br><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<p>来缩短我的链接成以下这种比较友好的样式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/posts/How_to_find_a_quality_blog.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改步骤"><a href="#修改步骤" class="headerlink" title="修改步骤"></a>修改步骤</h3><ol>
+<li>安装 hexo-abbrlink</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改 Hexo 根目录配置文件 _config.yml</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在每篇 markdown 文章的 frontmatter 中加入这个字段</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink: &quot;这里填写这篇文章永久地址的缩略名&quot; # 例如：How_to_find_a_quality_blog</span><br></pre></td></tr></table></figure>
+
+<p>文章中如果没配置这个字段，那么插件就会自动生成随机数字版链接</p>
+<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>当我点击首页评论的时候出现 404 页面，发现应该跟我改变永久链接油管</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="寻找解决方法"><a href="#寻找解决方法" class="headerlink" title="寻找解决方法"></a>寻找解决方法</h3><p>去主题群里问作者大佬得到以下回答：<br><img src="https://s2.loli.net/2023/12/05/ctUXbndRxjShEwM.png" alt="image.png"></p>
+<p>然后就搜索了以下下载 twikoo 评论数据的方法：<br><a href="https://www.imaegoo.com/2022/twikoo-data-export/">Twikoo 评论数据导出教程 - iMaeGoo’s Blog</a></p>
+<h3 id="导出-Twikoo-评论数据"><a href="#导出-Twikoo-评论数据" class="headerlink" title="导出 Twikoo 评论数据"></a>导出 Twikoo 评论数据</h3><p>导出 Twikoo 在 Vercel 的数据</p>
+<ol>
+<li>下载并安装 MongoDB 数据库工具（下载地址： <a href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a> ）；<br> 下载并解压之后需要配置环境变量，命令行工具才能生效，参考 <a href="https://blog.csdn.net/Alisa_Sheng/article/details/122621415">MongoDB数据库：安装、配置系统环境变量、和基础命令</a></li>
+<li>登录 Vercel&#x2F;Netlify（我部署在 Netlify，方法差不多） 管理后台，点开 Twikoo 的环境，点击上方的 Settings，点击左侧的 Environment Variables，在页面下方找到 MONGODB_URI，点击对应的小眼睛图标，会出现数据库连接地址，点击以复制这串地址；</li>
+<li>如果地址中包含参数，请先删去参数，参数即 “?” 和 “?” 后面的部分，例如 ?journal&#x3D;true&amp;w&#x3D;majority；</li>
+<li>打开一个命令行窗口，粘贴以下命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri 这里换成刚才复制的地址 --collection comment --type json --out twikoo-comments. json</span><br></pre></td></tr></table></figure>
+
+<p>例如我的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri mongodb+srv://twikoo:****@****.mongodb.net --collection comment --type json --out twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>命令运行完成后会在文件夹看到一个 twikoo-comments.json 文件<br>要修改下面这几个链接地址为现在的地址<br><img src="https://s2.loli.net/2023/12/05/l2kirS1ThP6Uc4D.png" alt="image.png"></p>
+<p>如果评论多的话，这个工作量会很大，建议用 vscode 结合正则表达式批量替换</p>
+<h3 id="上传修改后的-Twikoo-评论数据"><a href="#上传修改后的-Twikoo-评论数据" class="headerlink" title="上传修改后的 Twikoo 评论数据"></a>上传修改后的 Twikoo 评论数据</h3><p>完成后需要回传到 MongoDB 中覆盖原有 json 文件<br>命令是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoimport --uri &quot;mongodb+srv://twikoo:****@****.mongodb.net&quot; --collection comment --type json --mode merge --file twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>搞定！</p>
 ]]></content>
       <categories>
         <category>折腾记</category>
