@@ -1,262 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第一次用英国 giffgaff 电话卡</title>
-    <url>/posts/first_time_with_a_UK_giffgaff_card.html</url>
-    <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
-<h2 id="特点和主要用途："><a href="#特点和主要用途：" class="headerlink" title="特点和主要用途："></a>特点和主要用途：</h2><ul>
-<li>无月租</li>
-<li>180 天内卡内余额变动保号（发一条短信大概 3 块钱）</li>
-<li>注册外区服务</li>
-</ul>
-<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><ol>
-<li><p>正常情况下可以在官网申请免费卡（申请地址 <a href="https://www.giffgaff.com/freesim-international">https://www.giffgaff.com/freesim-international</a>）</p>
-</li>
-<li><p>但是听说官方邮寄的丢信率很高，所以就不折腾了，直接上网淘宝或京东购买（自行搜索并购买未激活卡）。</p>
-</li>
-</ol>
-<h2 id="激活这张卡的前置条件"><a href="#激活这张卡的前置条件" class="headerlink" title="激活这张卡的前置条件"></a>激活这张卡的前置条件</h2><p>你需要有一张 visa 或 mastercard 的信用卡（看网上有人用 depay 虚拟信用卡，或者到第三方网站购买 Voucher 充值）</p>
-<h2 id="激活过程"><a href="#激活过程" class="headerlink" title="激活过程"></a>激活过程</h2><ol>
-<li>打开 Giffgaff 官网激活页面 <a href="https://www.giffgaff.com/activate">https://www.giffgaff.com/activate</a> 输入卡上的六位激活码，点击 Activate your SIM ![激活 sim]<img src="https://bu.dusays.com/2023/12/01/656935dad4afd.jpg" alt="wp_editor_md_0fa7b036c2ef7149d3ec44a3a1d2253f.jpg"></li>
-<li>输入你的常用邮箱</li>
-<li>设置密码</li>
-<li>在是否接收推送信息页面可以直接选择 No Thanks</li>
-<li>你如果像我一样在中国内地使用，直接在套餐界面拉到最后选择「Pay as you go」即可</li>
-<li>选择充值金额，最少 10 英镑（大约 89 块软妹币）</li>
-<li>如实填写 visa 或 master 卡信息</li>
-<li>支付完成后即可看到自己的号码（但是可能需要几小时才能激活成功） 下载 giffgaff 官方 app 看下激活状态，我在以下状态呆了三个小时：<img src="https://bu.dusays.com/2023/12/01/656935dc59fba.jpg" alt="wp_editor_md_b021db434d6a532dc11b32edd3e2b1cf.jpg"></li>
-<li>手机插卡后，如果激活成功，会接收到一条短信</li>
-</ol>
-<h2 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h2><p>以下是在中国国内的漫游资费：<img src="https://bu.dusays.com/2023/12/01/656935db7c60d.jpg" alt="wp_editor_md_30fa8750cd3adb97bf5102c47c62bfd3.jpg"><br>如果你不想在使用过程中因为接电话，使用数据流量上网而扣费，那么就要进行一些设置。</p>
-<p>以下操作均会造成扣费： 1. 短信、电话、数据流量上网</p>
-<p><strong>解决方法：</strong> 手机设置中关闭蜂窝数据，不拨打电话，不发短信（保号除外）</p>
-<p>2. 手动拒接来电 giffgaff 默认开通语音信箱,拒接来电后将会自动接入语音信箱产生费用</p>
-<p><strong>解决方法：</strong> 关闭语音信箱,手机拨号键盘输入：”##002#” 并按拨号键,即可关闭语音信箱</p>
-<p>iPhone 会看到以下提示：<img src="https://bu.dusays.com/2023/12/01/656935dc34792.jpg" alt="wp_editor_md_441356fb2cf03007f0fefcf105f1875e.jpg"></p>
-<p>参考官网说明： <a href="https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off">https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off</a></p>
-<p>3.  FaceTime 与 iMessage</p>
-<p>iPhone 取消 FaceTime 与 iMessage 服务:</p>
-<blockquote>
-<p>請依照以下步驟關閉 iMessage。 將 SIM 卡移轉到 iPhone。 前往「設定」。 點一下「訊息」。 關閉 iMessage。 回到「設定」。 點一下 FaceTime。 關閉 FaceTime。 退出「設定」。</p>
-</blockquote>
-<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>
-<li><p>准备一张 VISA 或 MasterCard 卡</p>
-</li>
-<li><p>首次激活需要充值 10 英镑，官方会额外赠送 5 英镑</p>
-</li>
-<li><p>使用 Giffgaff 发送短信需要加上完整的国际区号</p>
-</li>
-<li><p>注册国外的服务时将 “0” 替换为英国的国际区号 “+44”</p>
-</li>
-<li><p>需要每 6 个月发送一条短信保号</p>
-</li>
-</ul>
-<p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PT下载站大全</title>
-    <url>/posts/pt_sites.html</url>
-    <content><![CDATA[<h2 id="收集了网上比较全的-PT-下载站网址，需要的拿走："><a href="#收集了网上比较全的-PT-下载站网址，需要的拿走：" class="headerlink" title="收集了网上比较全的 PT 下载站网址，需要的拿走："></a>收集了网上比较全的 PT 下载站网址，需要的拿走：</h2><p><a href="https://carpt.net/">CarPT</a><br><a href="https://wintersakura.net/">WinterSakura</a><br><a href="https://piggo.me/">猪猪网</a><br><a href="http://www.hdzone.org/">HDzone高清地帶</a><br><a href="https://ptchina.org/">铂金学院</a><br><a href="https://broadcity.in/">HoşgeldinizBroadcity|BDC|Broadcity|BDC</a><br><a href="https://1ptba.com/login.php?returnto=torrents.php">1PTBar</a><br><a href="http://www.3dtorrents.org/">3DTorrents(3DT)</a><br><a href="https://www.3wmg.com/">3Wmg(芒果)</a><br><a href="https://52pt.site/">52PT</a><br><a href="https://ptpimg.me/">Ptpimg.me</a><br><a href="https://720pier.ru/">720pier</a><br><a href="https://aidoru-online.me/">Aidoru!Online</a><br><a href="https://aither.cc/">Aither</a><br><a href="http://all4nothin.net/">All4Nothin(A4N)</a><br><a href="https://alpharatio.cc/">AlphaRatio</a><br><a href="https://www.ansktracker.net/">AnimeNoSekai(AnimeNSK)</a><br><a href="https://animebytes.tv/">AnimeBytes(AB)</a><br><a href="https://animetorrents.me/">AnimeTorrents</a><br><a href="https://anthelion.me/">Anthelion</a><br><a href="http://arabscene.me/">ArabScene</a><br><a href="http://artofmisdirection.com/">Artofmisdirection</a><br><a href="https://asiancinema.me/">AsianCinema</a><br><a href="https://audiences.me/">Audiences</a><br><a href="https://aussierul.es/">AussieRul</a><br><a href="https://avistaz.to/">AvistaZ</a><br><a href="https://baconbits.org/">bB</a><br><a href="https://bemaniso.ws/">Bemaniso</a><br><a href="https://beyond-hd.me/">BeyondHD</a><br><a href="https://bibliotik.me/">Bibliotik</a><br><a href="https://www.bit-hdtv.com/">BitHDTV</a><br><a href="https://bithumen.be/">BitHUmen(BH)</a><br><a href="https://bitporn.eu/">BitPorn</a><br><a href="https://bitsexy.org/">BitSexy</a><br><a href="https://blutopia.xyz/">Bluetopia</a><br><a href="https://ssl.bootytape.com/">BootyTape</a><br><a href="https://brsociety.club/">BrSociety</a><br><a href="http://www.btarg.com.ar/">BTARG(Bt-Arg&#x2F;BTArg)</a><br><a href="https://broadcasthe.net/">BTN</a><br><a href="https://pt.btschool.club/">BTSCHOOL(比特校园)</a><br><a href="https://bwtorrents.tv/">BWT</a><br><a href="https://bt.byr.cn/">BYRBT</a><br><a href="http://www.cartoonchaos.org/">CartoonChaos(CC)</a><br><a href="https://www.cathode-ray.tube/">Cathode-Ray.Tube(CRT)</a><br><a href="https://ccfbits.org/">CCFBits(CCF&#x2F;吹吹风)</a><br><a href="https://www.cgpeers.com/">CGPeers</a><br><a href="https://chdbits.co/">CHDBits(CHD高清联盟&#x2F;彩虹岛)</a><br><a href="https://www.cherrykiss.org/">CherryKiss(CK)</a><br><a href="https://cinemageddon.net/">CinemaGeddon</a><br><a href="https://www.cinematik.net/">Cinematik(Tik)</a><br><a href="https://cinemaz.to/">CinemaZ</a><br><a href="https://hdcmct.org/">CMCT-PT</a><br><a href="https://concertos.live/">Concertos</a><br><a href="https://www.crnaberza.com/">CrnaBerza</a><br><a href="https://datatalli.net/">DataTalli</a><br><a href="https://dicmusic.club/">DIC(海豚音乐)</a><br><a href="https://dicmusic.club/">DICMusic(海豚音乐)</a><br><a href="https://discfan.net/">DiscFan(港知堂)</a><br><a href="https://www.empornium.is/">Empornium</a><br><a href="https://exoticaz.to/">ExoticaZ</a><br><a href="https://finelite.org/">FE</a><br><a href="https://femdomcult.org/">Femdomcult</a><br><a href="https://filelist.io/">FileList</a><br><a href="https://www.gaytorrent.ru/">GayTorrents</a><br><a href="https://gazellegames.net/">GazelleGames(GGN)</a><br><a href="https://gfxpeers.net/">GFXPeers</a><br><a href="http://www.grabthe.info/">GrabTheInfo(GTI)</a><br><a href="https://greatposterwall.com/">GreatPosterWall(GPW&#x2F;海豹影视)</a><br><a href="https://www.hddolby.com/">HDDolby(高清杜比)</a><br><a href="http://hdmayi.com/">HDMaYi(小蚂蚁PT站)</a><br><a href="https://pt.hd4fans.org/">HD4FANS</a><br><a href="https://www.hd.ai/">HDAI</a><br><a href="https://www.hdarea.co/">HDArea(高清视界)</a><br><a href="https://hdatmos.club/">HDAtmos(阿童木)</a><br><a href="https://hdbits.org/">HDB(海德堡)</a><br><a href="https://hdchina.org/">HDChina(瓷器)</a><br><a href="https://hdcity.city/">HDCity</a><br><a href="https://hdfans.org/">HDFans(红豆饭)</a><br><a href="https://hdf.world/">HD-Forever(HD-F)</a><br><a href="https://hdhome.org/">HDHome</a><br><a href="https://pt.hdpost.top/">HDPOST</a><br><a href="http://hdroute.org/">HDROUTE(思路高清)</a><br><a href="https://hdsky.me/">HDSky(天空)</a><br><a href="https://hd-space.org/">HD-Space</a><br><a href="https://hdtime.org/">HDTime</a><br><a href="https://hd-torrents.org/">HD-Torrents</a><br><a href="https://pt.hdupt.com/">HDU</a><br><a href="https://hdfun.me/">HDFun</a><br><a href="https://www.indietorrents.com/">IndieTorrents(IT)</a><br><a href="https://www.iptorrents.com/">IPTorrents</a><br><a href="https://www.joyhd.net/">JoyHD</a><br><a href="https://jpopsuki.eu/">JPopSuki</a><br><a href="https://jptv.club/">JPTV</a><br><a href="https://karagarga.in/">KaraGarga</a><br><a href="https://pt.keepfrds.com/">Keepfrds(朋友)</a><br><a href="https://kufirc.com/">Kufirc</a><br><a href="https://lemonhd.org/">LeagueHD(柠檬)</a><br><a href="http://learnbits.me/">LearnBits(LB)</a><br><a href="http://leohd59.ru/">Leohd59</a><br><a href="http://lesbians4u.org/">lesbians4u</a><br><a href="https://www.linkomanija.net/">Linkomanija(LM)</a><br><a href="https://lztr.me/">LzTr</a><br><a href="https://bt.mdan.org/">MDAN</a><br><a href="https://milkie.cc/">Milkie(ME)</a><br><a href="https://mma-tracker.net/">MMA-Tracker(MMA)</a><br><a href="https://kp.m-team.cc/">M-Team(馒头)</a><br><a href="https://www.morethantv.me/">MTV</a><br><a href="http://www.music-vid.com/">MusicVids</a><br><a href="https://www.myanonamouse.net/">MyAnonaMouse</a><br><a href="https://nebulance.io/">Nebulance</a><br><a href="https://www.nicept.net/">NicePT</a><br><a href="https://npupt.com/">NPUBits(蒲公英PT站)</a><br><a href="https://open.cd/">OpenCD(皇后)</a><br><a href="https://oppaiti.me/">Oppaitime</a><br><a href="https://orpheus.network/">OPS</a><br><a href="https://www.oshen.win/">OshenPT</a><br><a href="https://ourbits.club/">OurBits</a><br><a href="http://bt.ourdisc.net/">OurDisc</a><br><a href="https://passthepopcorn.me/">Passthepopcorn（PTP）</a><br><a href="https://polishsource.cz/">PolishSource(PS)</a><br><a href="https://pornbay.org/">PornBay</a><br><a href="https://pornbits.net/">Pornbits</a><br><a href="https://www.pornorip.si/">Pornorip</a><br><a href="https://privatehd.to/">PrivateHD(PHD)</a><br><a href="http://www.proaudiotorrents.org/">ProAudioTorrents(PAT)</a><br><a href="http://pwtorrents.net/">ProWrestlingTorrents(PWT)</a><br><a href="https://pterclub.com/">PTer</a><br><a href="https://www.pthome.net/">PTHOME</a><br><a href="https://pt.msg.vg/">PTMSG</a><br><a href="https://www.pttime.org/">PTtime(PT时间&#x2F;PTT)</a><br><a href="https://pterclub.com/">PT之友俱乐部(猫站)</a><br><a href="https://pussytorrents.org/">pussytorrents</a><br><a href="https://redacted.ch/">RED</a><br><a href="https://revolutiontt.me/">REVOLUTIONTT(RT)</a><br><a href="http://rgfootball.net/">RGFootball</a><br><a href="https://metal.iplay.ro/">RomanianMetalTorrents</a><br><a href="https://scene-rush.com/">SceneRush</a><br><a href="http://www.scenetorrents.org/">SceneTorrents</a><br><a href="http://sdbits.org/">SDB</a><br><a href="https://secret-cinema.pw/">SecretCinema</a><br><a href="https://seedfile.io/">SeedFile(SF)</a><br><a href="https://www.sharewood.tv/">ShareWood</a><br><a href="https://www.skyey2.com/">SkyeySnow(天雪动漫)</a><br><a href="https://sportscult.org/">sportscult</a><br><a href="https://springsunday.net/">SSD</a><br><a href="https://sugoimusic.me/">SugoiMusic</a><br><a href="https://superbits.org/">Superbits</a><br><a href="https://teamhd.org/">TeamHD</a><br><a href="https://tekno3d.com/">Tekno3DHDR-X</a><br><a href="https://thegeeks.click/">TG</a><br><a href="https://horrorcharnel.org/">TheHorrorCharnel(THC)</a><br><a href="https://themixingbowl.org/">TheMixingBowl(TMB)</a><br><a href="https://pt.eastgame.org/">TLFBits</a><br><a href="http://www.torrentbits.ro/">TorrentBits(TBits&#x2F;TBS)</a><br><a href="https://torrentbytes.net/">TorrentBytes(TB&#x2F;TBy)</a><br><a href="https://et8.org/">TorrentCCF(TCCF)</a><br><a href="https://www.torrentech.org/">TorrenTech(TTech&#x2F;TTC)</a><br><a href="https://www.torrenthr.org/">TorrentHr(TrHR&#x2F;THR)</a><br><a href="https://www.torrentleech.org/">TorrentLeech</a><br><a href="https://www.torrentseeds.org/">TorrentSeeds</a><br><a href="https://www.torrentday.com/">TorrentsTD</a><br><a href="http://www.trancetraffic.com/">TranceTraffic(TT)</a><br><a href="https://www.tribalmixes.com/">TribalMixes(TM)</a><br><a href="https://totheglory.im/">TTG</a><br><a href="https://uhdbits.org/">UHDBits</a><br><a href="http://www.uniongang.tv/">UnionGang</a><br><a href="https://tracker.uniotaku.com/">UniOtaku</a><br><a href="https://www.xspeeds.eu/">XSpeeds(XS)</a><br><a href="https://extremlymtorrents.ws/">XTR</a><br><a href="https://www.youiv.info/">youiv</a><br><a href="http://zombtracker.the-zomb.com/">ZOMBTorrents(ZOMB)</a><br><a href="http://pt.zhixing.bjtu.edu.cn/">ZXPT(北京交通大学知行PT)</a><br><a href="http://avgv.cc/">爱薇网</a><br><a href="https://club.hares.top/">白兔俱乐部</a><br><a href="https://www.hitpt.com/">百川PT</a><br><a href="https://tjupt.org/">北洋园PT</a><br><a href="https://www.beitai.pt/">备胎</a><br><a href="https://ptneko.com/">超科学PT喵</a><br><a href="http://discfan.net/">港知堂</a><br><a href="https://www.haidan.video/">海胆之家</a><br><a href="https://www.htpt.cc/">海棠PT</a><br><a href="https://hudbt.hust.edu.cn/">蝴蝶-HUDBT</a><br><a href="http://bitpt.cn/">极速之星</a><br><a href="https://pt.soulvoice.club/">聆音Club</a><br><a href="http://bt.neu6.edu.cn/">六维空间</a><br><a href="https://pt.nwsuaf6.edu.cn/">麦田PT</a><br><a href="https://nanyangpt.com/">南洋PT</a><br><a href="https://pt.sjtu.edu.cn/">上交葡萄PT站</a><br><a href="https://ptsbao.club/">烧包</a><br><a href="http://pt.xauat6.edu.cn/">溪涧草堂PT</a><br><a href="https://pt.hdbd.us/login.php">伊甸园</a><br><a href="https://www.tjupt.org/login.php">北洋园PT</a><br><a href="https://x-ite.me/">(XM)</a><br><a href="https://ntorrents.net/">NTorrents</a></p>
-]]></content>
-      <categories>
-        <category>趣站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Prism主题高亮样式通用CSS片段</title>
-    <url>/posts/obsidian_prism_highlight_css.html</url>
-    <content><![CDATA[<p>有一天看群友对 Prism 主题的高亮样式感兴趣了，当时有时间就去 Prism 主题的 <a href="https://github.com/damiankorcz/Prism-Theme">项目主页</a> 逛了逛，顺便把它的高亮样式移植了下来。<br>Prism 主题的高亮样式长这样：<br>![[Prism主题高亮样式-1.png]]<br>在 Prism 主题中高亮的用法是这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;mint mark-filled mark-text-color&quot;&gt;This highlighted text is Mint&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
-
-<p>可以用以下参数<br>边框背景参数：</p>
-<ul>
-<li>mark-default</li>
-<li>mark-border</li>
-<li>mark-filled</li>
-<li>mark-borderandfilled<br>字体样式参数</li>
-<li>mark-text-default</li>
-<li>mark-text-color<br>替换上面案例代码中的的 class 中的内容，以显示不同高亮效果</li>
-</ul>
-<p>我觉得这种方法比较麻烦，所以在 CSS 片段中加入了 StyleSetting 设置选项，直接可以在设置中设置高亮的样式，只不过是全局通用样式，而不是针对某个高亮单独设置样式</p>
-<p>![[Prism主题高亮样式设置.png]]</p>
-<p>效果是这样的<br>![[Prism高亮设置.gif]]<br>将以下片段放入到 ob 库的. obsidian&#x2F;snippets 文件夹中，然后加载此 CSS 片段就可以了</p>
-<p><a href="https://www.aliyundrive.com/s/Xffysji3Fef">Prism Mark Highlight System.css</a><br>提取码: zk95</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-      <tags>
-        <tag>Obsidian</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TV 直播源项目推荐</title>
-    <url>/posts/TV_live_feed.html</url>
-    <content><![CDATA[<p>推荐几个目前为止还在维护的电视直播源项目，需要的你们也应该知道怎么用。</p>
-<p><a href="https://github.com/YanG-1989/m3u">https://github.com/YanG-1989/m3u</a></p>
-<p><a href="https://github.com/xxh-xx/HomeTV">https://github.com/xxh-xx/HomeTV</a></p>
-<p><a href="https://github.com/LeonoreShaw/IPTV">https://github.com/LeonoreShaw/IPTV</a></p>
-<p>TVBox 自用源以及仓库源、直播源：<br><a href="https://github.com/mengzehe/TVBox">https://github.com/mengzehe/TVBox</a></p>
-<p>范明明直播源：<br><a href="https://github.com/fanmingming/live">https://github.com/fanmingming/live</a></p>
-<p>蓝鲸直播源：<br><a href="https://github.com/Cyril0563/lanjing_live">https://github.com/Cyril0563/lanjing_live</a></p>
-<p>以下没有测试是否失效：<br>ull（2768 個頻道）<br><a href="https://iptv-bahtya.vercel.app/full_list.m3u">https://iptv-bahtya.vercel.app/full_list.m3u</a></p>
-<p>部分（1784 個頻道）<br><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
-<p>EPG 節目表<br><a href="http://epg.51zmt.top:8000/e.xml">http://epg.51zmt.top:8000/e.xml</a></p>
-<p><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
-<p><a href="https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u">https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u</a></p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-      <tags>
-        <tag>TVSources</tag>
-        <tag>开源工具</tag>
-        <tag>直播源</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>YouTube第三方客户端&amp;去广告方案</title>
-    <url>/posts/youtube_third_party_apps.html</url>
-    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
-<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
-<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
-<ul>
-<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
-</ul>
-<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
-<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
-<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
-<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
-<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
-<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
-<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
-<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
-<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
-<p><a href="https://piped.video/">Piped在线播放</a></p>
-]]></content>
-      <categories>
-        <category>APPS</category>
-      </categories>
-      <tags>
-        <tag>YouTube</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iPhone导入自定义字体</title>
-    <url>/posts/iphone_import_fonts.html</url>
-    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
-<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 AppStore 中下载 <a href="https://apps.apple.com/sa/app/ifont-find-install-any-font/id1173222289">iFont APP</a><br><img src="https://bu.dusays.com/2023/12/02/656aabb25230e.png" alt="ifont.png"></p>
-<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
-<li>用 safari 访问字体网站下载你需要的字体<br><img src="https://bu.dusays.com/2023/12/02/656aa846261a8.png" alt="字体网站.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab64b1e3.png" alt="下载字体.png"></li>
-<li>下载完成后点击下载按钮-下载-点击字体后面的放大镜<br><img src="https://bu.dusays.com/2023/12/02/656aab00306de.png" alt="找到下载的字体.png"><br><img src="https://bu.dusays.com/2023/12/02/656aa7e0921a0.png" alt="点击放大镜.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab47b471.png" alt="跳转到文件管理器.png"></li>
-<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br><img src="https://bu.dusays.com/2023/12/02/656aa7e26f096.png" alt="点击字体并分享.png"></li>
-<li>分享到 iFont APP 中<br><img src="https://bu.dusays.com/2023/12/02/656aaab6b7315.png" alt="分享到iFont.png"></li>
-<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br><img src="https://bu.dusays.com/2023/12/02/656aa7e18a0f9.png" alt="点击安装.png"></li>
-<li>打开手机的设置 界面-通用-vpn与设备管理，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！<img src="https://bu.dusays.com/2023/12/02/656aa7e243651.png" alt="点击安装-1.png"></li>
-<li>进入 obsidian 设置-外观-字体，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br><img src="https://bu.dusays.com/2023/12/02/656aa7e036a7a.png" alt="成功设置字体.png"></li>
-</ol>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>聚合信息源</title>
-    <url>/posts/aggregate_info_sources.html</url>
-    <content><![CDATA[<ul>
-<li>RSS 平台：<ul>
-<li><a href="https://www.144u.com/">144U.COM - 万物皆可聚合</a></li>
-<li><a href="https://webfollow.cc/welcome">WebFollow - 在线 RSS 阅读器</a></li>
-<li><a href="https://rss.ping8.top/">RSS Reader</a></li>
-<li><a href="https://vx.mk/">微讯模块 | vx.mk</a></li>
-<li><a href="https://www.fre123.com/weekly/">技术周刊精选推荐 - fre123 免费资源共享平台</a></li>
-</ul>
-</li>
-<li>中文优质 RSS 源：<ul>
-<li><a href="https://github.com/weekend-project-space/top-rss-list">订阅人数最多的rss源，中文优质rss源</a></li>
-</ul>
-</li>
-<li>热榜：<ul>
-<li><a href="https://tophub.today/">今日热榜官网</a></li>
-<li><a href="https://xyzrank.com/">中文播客榜</a></li>
-<li><a href="https://momoyu.cc/">摸摸鱼热榜</a></li>
-<li><a href="https://s.webfollow.cc/">今日热搜</a></li>
-<li><a href="https://smzdk.top/">什么值得看 - 现在正在发生什么</a></li>
-<li><a href="https://moyuduck.com/">摸鱼鸭 一站式摸鱼新体验</a></li>
-</ul>
-</li>
-<li>英文：<ul>
-<li><a href="https://www.newsminimalist.com/">News Minimalist</a></li>
-<li><a href="https://immersivetranslate.com/docs/sites/">探索互联网上高质量的内容 | 沉浸式翻译</a></li>
-</ul>
-</li>
-<li>发现优质 Newsletter：<ul>
-<li><a href="https://alleyread.com/">AlleyRead - 重塑你的信息源</a></li>
-<li><a href="https://github.com/chasays/newsletter-list">有趣，免费的 newsletter-list</a></li>
-<li><a href="https://wiki.geekplux.com/#/page/newsletters">geekplux</a></li>
-</ul>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>静态博客永久链接变更后修改twikoo评论地址</title>
-    <url>/posts/twikoo_url_modified.html</url>
-    <content><![CDATA[<h2 id="修改起因"><a href="#修改起因" class="headerlink" title="修改起因"></a>修改起因</h2><p>之前我的博客文章地址是下面这样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/2023/12/05/如何找到优质博客.html</span><br></pre></td></tr></table></figure>
-
-<p>这样的地址不仅长，而且粘贴到微信等聊天软件中中文将不被识别为链接的一部分<br><img src="https://s2.loli.net/2023/12/05/RMbwfLDiXAOaN7y.png" alt="image.png"></p>
-<h2 id="先优化地址链接"><a href="#先优化地址链接" class="headerlink" title="先优化地址链接"></a>先优化地址链接</h2><p>所以我用这个 hexo 插件<br><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
-<p>来缩短我的链接成以下这种比较友好的样式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/posts/How_to_find_a_quality_blog.html</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改步骤"><a href="#修改步骤" class="headerlink" title="修改步骤"></a>修改步骤</h3><ol>
-<li>安装 hexo-abbrlink</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>修改 Hexo 根目录配置文件 _config.yml</li>
-</ol>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>在每篇 markdown 文章的 frontmatter 中加入这个字段</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink: &quot;这里填写这篇文章永久地址的缩略名&quot; # 例如：How_to_find_a_quality_blog</span><br></pre></td></tr></table></figure>
-
-<p>文章中如果没配置这个字段，那么插件就会自动生成随机数字版链接</p>
-<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>当我点击首页评论的时候出现 404 页面，发现应该跟我改变永久链接油管</p>
-<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="寻找解决方法"><a href="#寻找解决方法" class="headerlink" title="寻找解决方法"></a>寻找解决方法</h3><p>去主题群里问作者大佬得到以下回答：<br><img src="https://s2.loli.net/2023/12/05/ctUXbndRxjShEwM.png" alt="image.png"></p>
-<p>然后就搜索了以下下载 twikoo 评论数据的方法：<br><a href="https://www.imaegoo.com/2022/twikoo-data-export/">Twikoo 评论数据导出教程 - iMaeGoo’s Blog</a></p>
-<h3 id="导出-Twikoo-评论数据"><a href="#导出-Twikoo-评论数据" class="headerlink" title="导出 Twikoo 评论数据"></a>导出 Twikoo 评论数据</h3><p>导出 Twikoo 在 Vercel 的数据</p>
-<ol>
-<li>下载并安装 MongoDB 数据库工具（下载地址： <a href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a> ）；<br> 下载并解压之后需要配置环境变量，命令行工具才能生效，参考 <a href="https://blog.csdn.net/Alisa_Sheng/article/details/122621415">MongoDB数据库：安装、配置系统环境变量、和基础命令</a></li>
-<li>登录 Vercel&#x2F;Netlify（我部署在 Netlify，方法差不多） 管理后台，点开 Twikoo 的环境，点击上方的 Settings，点击左侧的 Environment Variables，在页面下方找到 MONGODB_URI，点击对应的小眼睛图标，会出现数据库连接地址，点击以复制这串地址；</li>
-<li>如果地址中包含参数，请先删去参数，参数即 “?” 和 “?” 后面的部分，例如 ?journal&#x3D;true&amp;w&#x3D;majority；</li>
-<li>打开一个命令行窗口，粘贴以下命令：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri 这里换成刚才复制的地址 --collection comment --type json --out twikoo-comments. json</span><br></pre></td></tr></table></figure>
-
-<p>例如我的是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri mongodb+srv://twikoo:****@****.mongodb.net --collection comment --type json --out twikoo-comments.json</span><br></pre></td></tr></table></figure>
-
-<p>命令运行完成后会在文件夹看到一个 twikoo-comments.json 文件<br>要修改下面这几个链接地址为现在的地址<br><img src="https://s2.loli.net/2023/12/05/l2kirS1ThP6Uc4D.png" alt="image.png"></p>
-<p>如果评论多的话，这个工作量会很大，建议用 vscode 结合正则表达式批量替换</p>
-<h3 id="上传修改后的-Twikoo-评论数据"><a href="#上传修改后的-Twikoo-评论数据" class="headerlink" title="上传修改后的 Twikoo 评论数据"></a>上传修改后的 Twikoo 评论数据</h3><p>完成后需要回传到 MongoDB 中覆盖原有 json 文件<br>命令是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoimport --uri &quot;mongodb+srv://twikoo:****@****.mongodb.net&quot; --collection comment --type json --mode merge --file twikoo-comments.json</span><br></pre></td></tr></table></figure>
-
-<p>搞定！</p>
-]]></content>
-      <categories>
-        <category>折腾记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CDN服务指南</title>
     <url>/posts/Guide_for_CDN_Services.html</url>
     <content><![CDATA[<h2 id="🏞公共库-CDN-资源"><a href="#🏞公共库-CDN-资源" class="headerlink" title="🏞公共库 CDN 资源"></a>🏞公共库 CDN 资源</h2><h3 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h3><ul>
@@ -495,6 +239,113 @@
       <tags>
         <tag>Obsidian</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>PT下载站大全</title>
+    <url>/posts/pt_sites.html</url>
+    <content><![CDATA[<h2 id="收集了网上比较全的-PT-下载站网址，需要的拿走："><a href="#收集了网上比较全的-PT-下载站网址，需要的拿走：" class="headerlink" title="收集了网上比较全的 PT 下载站网址，需要的拿走："></a>收集了网上比较全的 PT 下载站网址，需要的拿走：</h2><p><a href="https://carpt.net/">CarPT</a><br><a href="https://wintersakura.net/">WinterSakura</a><br><a href="https://piggo.me/">猪猪网</a><br><a href="http://www.hdzone.org/">HDzone高清地帶</a><br><a href="https://ptchina.org/">铂金学院</a><br><a href="https://broadcity.in/">HoşgeldinizBroadcity|BDC|Broadcity|BDC</a><br><a href="https://1ptba.com/login.php?returnto=torrents.php">1PTBar</a><br><a href="http://www.3dtorrents.org/">3DTorrents(3DT)</a><br><a href="https://www.3wmg.com/">3Wmg(芒果)</a><br><a href="https://52pt.site/">52PT</a><br><a href="https://ptpimg.me/">Ptpimg.me</a><br><a href="https://720pier.ru/">720pier</a><br><a href="https://aidoru-online.me/">Aidoru!Online</a><br><a href="https://aither.cc/">Aither</a><br><a href="http://all4nothin.net/">All4Nothin(A4N)</a><br><a href="https://alpharatio.cc/">AlphaRatio</a><br><a href="https://www.ansktracker.net/">AnimeNoSekai(AnimeNSK)</a><br><a href="https://animebytes.tv/">AnimeBytes(AB)</a><br><a href="https://animetorrents.me/">AnimeTorrents</a><br><a href="https://anthelion.me/">Anthelion</a><br><a href="http://arabscene.me/">ArabScene</a><br><a href="http://artofmisdirection.com/">Artofmisdirection</a><br><a href="https://asiancinema.me/">AsianCinema</a><br><a href="https://audiences.me/">Audiences</a><br><a href="https://aussierul.es/">AussieRul</a><br><a href="https://avistaz.to/">AvistaZ</a><br><a href="https://baconbits.org/">bB</a><br><a href="https://bemaniso.ws/">Bemaniso</a><br><a href="https://beyond-hd.me/">BeyondHD</a><br><a href="https://bibliotik.me/">Bibliotik</a><br><a href="https://www.bit-hdtv.com/">BitHDTV</a><br><a href="https://bithumen.be/">BitHUmen(BH)</a><br><a href="https://bitporn.eu/">BitPorn</a><br><a href="https://bitsexy.org/">BitSexy</a><br><a href="https://blutopia.xyz/">Bluetopia</a><br><a href="https://ssl.bootytape.com/">BootyTape</a><br><a href="https://brsociety.club/">BrSociety</a><br><a href="http://www.btarg.com.ar/">BTARG(Bt-Arg&#x2F;BTArg)</a><br><a href="https://broadcasthe.net/">BTN</a><br><a href="https://pt.btschool.club/">BTSCHOOL(比特校园)</a><br><a href="https://bwtorrents.tv/">BWT</a><br><a href="https://bt.byr.cn/">BYRBT</a><br><a href="http://www.cartoonchaos.org/">CartoonChaos(CC)</a><br><a href="https://www.cathode-ray.tube/">Cathode-Ray.Tube(CRT)</a><br><a href="https://ccfbits.org/">CCFBits(CCF&#x2F;吹吹风)</a><br><a href="https://www.cgpeers.com/">CGPeers</a><br><a href="https://chdbits.co/">CHDBits(CHD高清联盟&#x2F;彩虹岛)</a><br><a href="https://www.cherrykiss.org/">CherryKiss(CK)</a><br><a href="https://cinemageddon.net/">CinemaGeddon</a><br><a href="https://www.cinematik.net/">Cinematik(Tik)</a><br><a href="https://cinemaz.to/">CinemaZ</a><br><a href="https://hdcmct.org/">CMCT-PT</a><br><a href="https://concertos.live/">Concertos</a><br><a href="https://www.crnaberza.com/">CrnaBerza</a><br><a href="https://datatalli.net/">DataTalli</a><br><a href="https://dicmusic.club/">DIC(海豚音乐)</a><br><a href="https://dicmusic.club/">DICMusic(海豚音乐)</a><br><a href="https://discfan.net/">DiscFan(港知堂)</a><br><a href="https://www.empornium.is/">Empornium</a><br><a href="https://exoticaz.to/">ExoticaZ</a><br><a href="https://finelite.org/">FE</a><br><a href="https://femdomcult.org/">Femdomcult</a><br><a href="https://filelist.io/">FileList</a><br><a href="https://www.gaytorrent.ru/">GayTorrents</a><br><a href="https://gazellegames.net/">GazelleGames(GGN)</a><br><a href="https://gfxpeers.net/">GFXPeers</a><br><a href="http://www.grabthe.info/">GrabTheInfo(GTI)</a><br><a href="https://greatposterwall.com/">GreatPosterWall(GPW&#x2F;海豹影视)</a><br><a href="https://www.hddolby.com/">HDDolby(高清杜比)</a><br><a href="http://hdmayi.com/">HDMaYi(小蚂蚁PT站)</a><br><a href="https://pt.hd4fans.org/">HD4FANS</a><br><a href="https://www.hd.ai/">HDAI</a><br><a href="https://www.hdarea.co/">HDArea(高清视界)</a><br><a href="https://hdatmos.club/">HDAtmos(阿童木)</a><br><a href="https://hdbits.org/">HDB(海德堡)</a><br><a href="https://hdchina.org/">HDChina(瓷器)</a><br><a href="https://hdcity.city/">HDCity</a><br><a href="https://hdfans.org/">HDFans(红豆饭)</a><br><a href="https://hdf.world/">HD-Forever(HD-F)</a><br><a href="https://hdhome.org/">HDHome</a><br><a href="https://pt.hdpost.top/">HDPOST</a><br><a href="http://hdroute.org/">HDROUTE(思路高清)</a><br><a href="https://hdsky.me/">HDSky(天空)</a><br><a href="https://hd-space.org/">HD-Space</a><br><a href="https://hdtime.org/">HDTime</a><br><a href="https://hd-torrents.org/">HD-Torrents</a><br><a href="https://pt.hdupt.com/">HDU</a><br><a href="https://hdfun.me/">HDFun</a><br><a href="https://www.indietorrents.com/">IndieTorrents(IT)</a><br><a href="https://www.iptorrents.com/">IPTorrents</a><br><a href="https://www.joyhd.net/">JoyHD</a><br><a href="https://jpopsuki.eu/">JPopSuki</a><br><a href="https://jptv.club/">JPTV</a><br><a href="https://karagarga.in/">KaraGarga</a><br><a href="https://pt.keepfrds.com/">Keepfrds(朋友)</a><br><a href="https://kufirc.com/">Kufirc</a><br><a href="https://lemonhd.org/">LeagueHD(柠檬)</a><br><a href="http://learnbits.me/">LearnBits(LB)</a><br><a href="http://leohd59.ru/">Leohd59</a><br><a href="http://lesbians4u.org/">lesbians4u</a><br><a href="https://www.linkomanija.net/">Linkomanija(LM)</a><br><a href="https://lztr.me/">LzTr</a><br><a href="https://bt.mdan.org/">MDAN</a><br><a href="https://milkie.cc/">Milkie(ME)</a><br><a href="https://mma-tracker.net/">MMA-Tracker(MMA)</a><br><a href="https://kp.m-team.cc/">M-Team(馒头)</a><br><a href="https://www.morethantv.me/">MTV</a><br><a href="http://www.music-vid.com/">MusicVids</a><br><a href="https://www.myanonamouse.net/">MyAnonaMouse</a><br><a href="https://nebulance.io/">Nebulance</a><br><a href="https://www.nicept.net/">NicePT</a><br><a href="https://npupt.com/">NPUBits(蒲公英PT站)</a><br><a href="https://open.cd/">OpenCD(皇后)</a><br><a href="https://oppaiti.me/">Oppaitime</a><br><a href="https://orpheus.network/">OPS</a><br><a href="https://www.oshen.win/">OshenPT</a><br><a href="https://ourbits.club/">OurBits</a><br><a href="http://bt.ourdisc.net/">OurDisc</a><br><a href="https://passthepopcorn.me/">Passthepopcorn（PTP）</a><br><a href="https://polishsource.cz/">PolishSource(PS)</a><br><a href="https://pornbay.org/">PornBay</a><br><a href="https://pornbits.net/">Pornbits</a><br><a href="https://www.pornorip.si/">Pornorip</a><br><a href="https://privatehd.to/">PrivateHD(PHD)</a><br><a href="http://www.proaudiotorrents.org/">ProAudioTorrents(PAT)</a><br><a href="http://pwtorrents.net/">ProWrestlingTorrents(PWT)</a><br><a href="https://pterclub.com/">PTer</a><br><a href="https://www.pthome.net/">PTHOME</a><br><a href="https://pt.msg.vg/">PTMSG</a><br><a href="https://www.pttime.org/">PTtime(PT时间&#x2F;PTT)</a><br><a href="https://pterclub.com/">PT之友俱乐部(猫站)</a><br><a href="https://pussytorrents.org/">pussytorrents</a><br><a href="https://redacted.ch/">RED</a><br><a href="https://revolutiontt.me/">REVOLUTIONTT(RT)</a><br><a href="http://rgfootball.net/">RGFootball</a><br><a href="https://metal.iplay.ro/">RomanianMetalTorrents</a><br><a href="https://scene-rush.com/">SceneRush</a><br><a href="http://www.scenetorrents.org/">SceneTorrents</a><br><a href="http://sdbits.org/">SDB</a><br><a href="https://secret-cinema.pw/">SecretCinema</a><br><a href="https://seedfile.io/">SeedFile(SF)</a><br><a href="https://www.sharewood.tv/">ShareWood</a><br><a href="https://www.skyey2.com/">SkyeySnow(天雪动漫)</a><br><a href="https://sportscult.org/">sportscult</a><br><a href="https://springsunday.net/">SSD</a><br><a href="https://sugoimusic.me/">SugoiMusic</a><br><a href="https://superbits.org/">Superbits</a><br><a href="https://teamhd.org/">TeamHD</a><br><a href="https://tekno3d.com/">Tekno3DHDR-X</a><br><a href="https://thegeeks.click/">TG</a><br><a href="https://horrorcharnel.org/">TheHorrorCharnel(THC)</a><br><a href="https://themixingbowl.org/">TheMixingBowl(TMB)</a><br><a href="https://pt.eastgame.org/">TLFBits</a><br><a href="http://www.torrentbits.ro/">TorrentBits(TBits&#x2F;TBS)</a><br><a href="https://torrentbytes.net/">TorrentBytes(TB&#x2F;TBy)</a><br><a href="https://et8.org/">TorrentCCF(TCCF)</a><br><a href="https://www.torrentech.org/">TorrenTech(TTech&#x2F;TTC)</a><br><a href="https://www.torrenthr.org/">TorrentHr(TrHR&#x2F;THR)</a><br><a href="https://www.torrentleech.org/">TorrentLeech</a><br><a href="https://www.torrentseeds.org/">TorrentSeeds</a><br><a href="https://www.torrentday.com/">TorrentsTD</a><br><a href="http://www.trancetraffic.com/">TranceTraffic(TT)</a><br><a href="https://www.tribalmixes.com/">TribalMixes(TM)</a><br><a href="https://totheglory.im/">TTG</a><br><a href="https://uhdbits.org/">UHDBits</a><br><a href="http://www.uniongang.tv/">UnionGang</a><br><a href="https://tracker.uniotaku.com/">UniOtaku</a><br><a href="https://www.xspeeds.eu/">XSpeeds(XS)</a><br><a href="https://extremlymtorrents.ws/">XTR</a><br><a href="https://www.youiv.info/">youiv</a><br><a href="http://zombtracker.the-zomb.com/">ZOMBTorrents(ZOMB)</a><br><a href="http://pt.zhixing.bjtu.edu.cn/">ZXPT(北京交通大学知行PT)</a><br><a href="http://avgv.cc/">爱薇网</a><br><a href="https://club.hares.top/">白兔俱乐部</a><br><a href="https://www.hitpt.com/">百川PT</a><br><a href="https://tjupt.org/">北洋园PT</a><br><a href="https://www.beitai.pt/">备胎</a><br><a href="https://ptneko.com/">超科学PT喵</a><br><a href="http://discfan.net/">港知堂</a><br><a href="https://www.haidan.video/">海胆之家</a><br><a href="https://www.htpt.cc/">海棠PT</a><br><a href="https://hudbt.hust.edu.cn/">蝴蝶-HUDBT</a><br><a href="http://bitpt.cn/">极速之星</a><br><a href="https://pt.soulvoice.club/">聆音Club</a><br><a href="http://bt.neu6.edu.cn/">六维空间</a><br><a href="https://pt.nwsuaf6.edu.cn/">麦田PT</a><br><a href="https://nanyangpt.com/">南洋PT</a><br><a href="https://pt.sjtu.edu.cn/">上交葡萄PT站</a><br><a href="https://ptsbao.club/">烧包</a><br><a href="http://pt.xauat6.edu.cn/">溪涧草堂PT</a><br><a href="https://pt.hdbd.us/login.php">伊甸园</a><br><a href="https://www.tjupt.org/login.php">北洋园PT</a><br><a href="https://x-ite.me/">(XM)</a><br><a href="https://ntorrents.net/">NTorrents</a></p>
+]]></content>
+      <categories>
+        <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Prism主题高亮样式通用CSS片段</title>
+    <url>/posts/obsidian_prism_highlight_css.html</url>
+    <content><![CDATA[<p>有一天看群友对 Prism 主题的高亮样式感兴趣了，当时有时间就去 Prism 主题的 <a href="https://github.com/damiankorcz/Prism-Theme">项目主页</a> 逛了逛，顺便把它的高亮样式移植了下来。<br>Prism 主题的高亮样式长这样：<br>![[Prism主题高亮样式-1.png]]<br>在 Prism 主题中高亮的用法是这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;mark class=&quot;mint mark-filled mark-text-color&quot;&gt;This highlighted text is Mint&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以用以下参数<br>边框背景参数：</p>
+<ul>
+<li>mark-default</li>
+<li>mark-border</li>
+<li>mark-filled</li>
+<li>mark-borderandfilled<br>字体样式参数</li>
+<li>mark-text-default</li>
+<li>mark-text-color<br>替换上面案例代码中的的 class 中的内容，以显示不同高亮效果</li>
+</ul>
+<p>我觉得这种方法比较麻烦，所以在 CSS 片段中加入了 StyleSetting 设置选项，直接可以在设置中设置高亮的样式，只不过是全局通用样式，而不是针对某个高亮单独设置样式</p>
+<p>![[Prism主题高亮样式设置.png]]</p>
+<p>效果是这样的<br>![[Prism高亮设置.gif]]<br>将以下片段放入到 ob 库的. obsidian&#x2F;snippets 文件夹中，然后加载此 CSS 片段就可以了</p>
+<p><a href="https://www.aliyundrive.com/s/Xffysji3Fef">Prism Mark Highlight System.css</a><br>提取码: zk95</p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+      <tags>
+        <tag>Obsidian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TV 直播源项目推荐</title>
+    <url>/posts/TV_live_feed.html</url>
+    <content><![CDATA[<p>推荐几个目前为止还在维护的电视直播源项目，需要的你们也应该知道怎么用。</p>
+<p><a href="https://github.com/YanG-1989/m3u">https://github.com/YanG-1989/m3u</a></p>
+<p><a href="https://github.com/xxh-xx/HomeTV">https://github.com/xxh-xx/HomeTV</a></p>
+<p><a href="https://github.com/LeonoreShaw/IPTV">https://github.com/LeonoreShaw/IPTV</a></p>
+<p>TVBox 自用源以及仓库源、直播源：<br><a href="https://github.com/mengzehe/TVBox">https://github.com/mengzehe/TVBox</a></p>
+<p>范明明直播源：<br><a href="https://github.com/fanmingming/live">https://github.com/fanmingming/live</a></p>
+<p>蓝鲸直播源：<br><a href="https://github.com/Cyril0563/lanjing_live">https://github.com/Cyril0563/lanjing_live</a></p>
+<p>以下没有测试是否失效：<br>ull（2768 個頻道）<br><a href="https://iptv-bahtya.vercel.app/full_list.m3u">https://iptv-bahtya.vercel.app/full_list.m3u</a></p>
+<p>部分（1784 個頻道）<br><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
+<p>EPG 節目表<br><a href="http://epg.51zmt.top:8000/e.xml">http://epg.51zmt.top:8000/e.xml</a></p>
+<p><a href="https://iptv-bahtya.vercel.app/list.m3u">https://iptv-bahtya.vercel.app/list.m3u</a></p>
+<p><a href="https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u">https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u</a></p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+      <tags>
+        <tag>TVSources</tag>
+        <tag>开源工具</tag>
+        <tag>直播源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>YouTube第三方客户端&amp;去广告方案</title>
+    <url>/posts/youtube_third_party_apps.html</url>
+    <content><![CDATA[<p>有小伙伴在群组中问我有没有 YouTube 去广告的方案，今天我总结了一些方案分享给大家。<br>分享这些方案不是让大家一直白嫖 YouTube 视频，而是根据大家条件，希望有条件的可以支持你喜欢的 YouTuber 一下，多看看广告，我自己是常年的 YouTube Premium 用户，所以喜欢还是支持，条件有限的可以使用以下方案。</p>
+<h2 id="Haker-News-专题贴"><a href="#Haker-News-专题贴" class="headerlink" title="Haker News 专题贴"></a>Haker News 专题贴</h2><p><a href="https://news.ycombinator.com/item?id=37884683">HN thread</a></p>
+<h2 id="第三方客户端"><a href="#第三方客户端" class="headerlink" title="第三方客户端"></a>第三方客户端</h2><h3 id="iOS："><a href="#iOS：" class="headerlink" title="iOS："></a>iOS：</h3><p><a href="https://apps.apple.com/us/app/oitube-music-player-videos/id6443921093">OiTube</a><br><a href="https://apps.apple.com/us/app/tubemax-video-and-live-stream/id1634335563">TubeMax</a><br><a href="https://github.com/MiRO92/uYou-for-YouTube">uYou</a> <strong>—— 需要自签名</strong></p>
+<ul>
+<li>uYou Modified 版本：<br><a href="https://github.com/arichorn/uYouPlusExtra">uYouPlusExtra: uYou+ is a modified version of uYou</a><br><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus: uYou+ is a modified version of uYou</a></li>
+</ul>
+<h3 id="Android："><a href="#Android：" class="headerlink" title="Android："></a>Android：</h3><p><a href="https://youtubevanced.com/">YouTube Vanced</a> <strong>—— 群友说已经被 DMCA 了</strong><br><a href="https://github.com/revanced">Revanced</a> <strong>—— vanced 替代项目</strong><br><a href="https://songtube.github.io/">SongTube</a><br><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a><br><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
+<h3 id="PC"><a href="#PC" class="headerlink" title="PC"></a>PC</h3><p><a href="https://freetubeapp.io/">FreeTube</a></p>
+<p><a href="https://friendly.io/">Friendly, Simple Apps for iOS and Android</a> <strong>—— 支持 iOS&#x2F;Mac&#x2F;Android 的流媒体播放器</strong></p>
+<h2 id="去广告脚本"><a href="#去广告脚本" class="headerlink" title="去广告脚本"></a>去广告脚本</h2><p><a href="https://greasyfork.org/zh-CN/scripts/459541-youtube%E5%8E%BB%E5%B9%BF%E5%91%8A-youtube-ad-blocker">YouTube去广告脚本</a> <strong>—— 需要浏览器安装油猴插件</strong></p>
+<h2 id="浏览器扩展"><a href="#浏览器扩展" class="headerlink" title="浏览器扩展"></a>浏览器扩展</h2><p><a href="https://sponsor.ajay.app/">SponsorBlock</a> 浏览器扩展可以自动跳过 YouTube 视频内容中与赞助商和求订阅有关的片段。它的实现原理是让每个使用者众包参与赞助商片段的标记，存储在一个中心化的数据库中，其他用户在播放视频时，扩展会从数据库读取当前视频的赞助商片段时间，并根据用户配置执行跳过或提示。</p>
+<p><a href="https://github.com/dmunozv04/iSponsorBlockTV#isponsorblocktv">iSponsorBlockTV</a> 使用 SponsorBlock 的数据库实现了一个自部署的家庭服务，它会连接到局域网中的媒体设备（Apple TV, Android TV 等)，持续检查当前播放的 YouTube 视频，自动跳过赞助商片段。</p>
+<p><a href="https://libredirect.github.io/">LibRedirect</a> 可以将 youtube. com 的链接自动跳转到配置好的 Piped 或 Invidious 实例上。</p>
+<h2 id="匿名访问"><a href="#匿名访问" class="headerlink" title="匿名访问"></a>匿名访问</h2><p><a href="https://invidious.io/">Invidious</a></p>
+<p><a href="https://github.com/TeamPiped/Piped/">Piped项目地址</a><br>开源的 YouTube 前端，无广告和追踪，但需要连接已部署的实例才能使用，也可以自部署。</p>
+<p><a href="https://piped.video/">Piped在线播放</a></p>
+]]></content>
+      <categories>
+        <category>APPS</category>
+      </categories>
+      <tags>
+        <tag>YouTube</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iPhone导入自定义字体</title>
+    <url>/posts/iphone_import_fonts.html</url>
+    <content><![CDATA[<h3 id="缘起-："><a href="#缘起-：" class="headerlink" title="缘起 ："></a>缘起 ：</h3><p>群里使用 iPhone 的小伙伴有在 obsidian 中使用自定义字体的需求，但是却不知道怎样将下载的字体导入到 iPhone 中。</p>
+<h3 id="前置条件-："><a href="#前置条件-：" class="headerlink" title="前置条件 ："></a>前置条件 ：</h3><p>在 AppStore 中下载 <a href="https://apps.apple.com/sa/app/ifont-find-install-any-font/id1173222289">iFont APP</a><br><img src="https://bu.dusays.com/2023/12/02/656aabb25230e.png" alt="ifont.png"></p>
+<h3 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h3><ol>
+<li>用 safari 访问字体网站下载你需要的字体<br><img src="https://bu.dusays.com/2023/12/02/656aa846261a8.png" alt="字体网站.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab64b1e3.png" alt="下载字体.png"></li>
+<li>下载完成后点击下载按钮-下载-点击字体后面的放大镜<br><img src="https://bu.dusays.com/2023/12/02/656aab00306de.png" alt="找到下载的字体.png"><br><img src="https://bu.dusays.com/2023/12/02/656aa7e0921a0.png" alt="点击放大镜.png"><br><img src="https://bu.dusays.com/2023/12/02/656aaab47b471.png" alt="跳转到文件管理器.png"></li>
+<li>这时会跳转到 iPhone 自带的文件管理器中，找到刚刚下载的字体文件，点击左下角的分享按钮<br><img src="https://bu.dusays.com/2023/12/02/656aa7e26f096.png" alt="点击字体并分享.png"></li>
+<li>分享到 iFont APP 中<br><img src="https://bu.dusays.com/2023/12/02/656aaab6b7315.png" alt="分享到iFont.png"></li>
+<li>跳转到 iFont 中点击字体后面的安装按钮进行安装，会安装一个配置文件，点击允许，安装成功<br><img src="https://bu.dusays.com/2023/12/02/656aa7e18a0f9.png" alt="点击安装.png"></li>
+<li>打开手机的设置 界面-通用-vpn与设备管理，找到刚才安装的配置文件，点击安装，安装完成后，自定义字体就安装成功了！<img src="https://bu.dusays.com/2023/12/02/656aa7e243651.png" alt="点击安装-1.png"></li>
+<li>进入 obsidian 设置-外观-字体，填写你安装字体的首字母并选择你安装的字体，然后成功设置字体<br><img src="https://bu.dusays.com/2023/12/02/656aa7e036a7a.png" alt="成功设置字体.png"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
   </entry>
   <entry>
     <title>优质博客主题收集</title>
@@ -749,6 +600,40 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
       </categories>
   </entry>
   <entry>
+    <title>安装 App Store 下架应用</title>
+    <url>/posts/7f759228.html</url>
+    <content><![CDATA[<p>我一共有两台 iPhone 设备和一台 mac 设备，最近我其中一台 iPhone 出现了 Handoff 功能失效的情况（也就是剪贴板接力功能，从一台设备复制，另一台设备粘贴），这台 iPhone 设备先后使用了重新登录 iCloud 账号，重置网络设置，重置所有设置等等方法，到最后都没有任何效果，而且也不是网络的问题。</p>
+<p>后来我咨询了苹果的售后，他们同样也让我进行以上的设置，我之前基本把他们说的解决方案都做过了，然后她祭出了最后一个大招，备份系统，还原所有设置。</p>
+<p>最后我经历了两次还原设置后并恢复了系统备份文件，终于 Handoff 恢复了正常（有的时候也抽风，比如只能接力网址，文字就无法接力，我最后觉得是系统的 bug，很玄学）</p>
+<p>最最让我焦虑的事来了，那就是我恢复系统之后发现，“shu 文件管理 ”这个 app 由于已经在 App Store 下架，下载不了了，这样导致的结果是我的 shu 文件夹里面保存的一千多个文件也回不来了，这下我着急了。我要做的就是找到能重新安装 shu 的方法，在网上找了很久经历了很多失败后，我终于找到了以下方案！</p>
+<p>前置条件：</p>
+<ol>
+<li>下载 <a href="https://www.52pojie.cn/thread-1863801-1-1.html">IPAdown</a> 软件（此为 Windows 软件）——功能是下载旧版 app</li>
+<li>Windows 上安装 iTunes 和 iCloud，两个都是最新版就行</li>
+<li>下载 <a href="https://sideloadly.io/">Sideloadly</a> ——此为自签名 ipa 工具</li>
+</ol>
+<p>下载并安装了以上软件之后：</p>
+<ol>
+<li>首先打开 IPAdown 软件<br> <img src="https://bu.dusays.com/2024/03/12/65f00dc99c2d4.png" alt="gg32rkoo.lfq.png"><br> 在 Google 搜索你想要下载的下架 app 的软件 id，然后输入到上图的软件 id 框中，点击“软 id 查旧版本”然后下面会出现软件的各版本 id，点击一个你想要下载的软件版本，然后点击右上角的：“下载”按钮，就会下载该 app 的旧版本 ipa。</li>
+<li>得到这个 ipa 之后你需要用你的 Apple ID 登录你的 iTunes 和 iCloud</li>
+<li>用数据线连接你的 iPhone 到电脑并打开 Sideloadly 软件<br> <img src="https://bu.dusays.com/2024/03/12/65f01044ba9ff.png" alt="gbqo0eik.rzp.png"><br> 根据以上截图的步骤操作<br> 1. 选择连接的 iPhone<br> 2. 点击“Advanced Options”<br> 3. 在 signing mode 中选择 “normal install”（这步对于已下架的 app 安装很重要，我试过用 apple id sideload 没有成功）<br> 4. 将你的 ipa 文件拖入到 4️⃣的框中<br> 5. 点击“start”开始安装<br> 6. 不出意外就会成功将 ipa 文件安装到你的手机里面。</li>
+</ol>
+<p>注意：自签名软件需要每七天按照以上步骤重新签名一次</p>
+<p>%%Reference<br>link::</p>
+<ol>
+<li><a href="https://www.52pojie.cn/thread-1863801-1-1.html">IPAdown</a></li>
+<li><a href="https://sideloadly.io/">Sideloadly - iOS, Apple Silicon &amp; TV Sideloading</a><br>%%</li>
+</ol>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+      <tags>
+        <tag>iPhone</tag>
+        <tag>旧版应用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>影视下载和字幕站</title>
     <url>/posts/movies_subtitles_download_sites.html</url>
     <content><![CDATA[<p>IMDb: Ratings, Reviews,<br><a href="https://www.imdb.com/">https://www.imdb.com/</a></p>
@@ -909,7 +794,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#x63;&#x6b;&#x62;&#111;&#120;&#64;&#x7a;&#108;&#105;&#x62;&#46;&#115;&#101;">&#98;&#x6c;&#97;&#x63;&#x6b;&#x62;&#111;&#120;&#64;&#x7a;&#108;&#105;&#x62;&#46;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#111;&#x78;&#x40;&#122;&#x6c;&#105;&#98;&#x2e;&#115;&#101;">&#98;&#x6c;&#97;&#x63;&#107;&#x62;&#111;&#x78;&#x40;&#122;&#x6c;&#105;&#98;&#x2e;&#115;&#101;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>
@@ -935,6 +820,155 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 ]]></content>
       <categories>
         <category>趣站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第一次用英国 giffgaff 电话卡</title>
+    <url>/posts/first_time_with_a_UK_giffgaff_card.html</url>
+    <content><![CDATA[<p>我前一阵子在京东买了一张 giffgaff 电话卡</p>
+<h2 id="特点和主要用途："><a href="#特点和主要用途：" class="headerlink" title="特点和主要用途："></a>特点和主要用途：</h2><ul>
+<li>无月租</li>
+<li>180 天内卡内余额变动保号（发一条短信大概 3 块钱）</li>
+<li>注册外区服务</li>
+</ul>
+<h2 id="获取方式"><a href="#获取方式" class="headerlink" title="获取方式"></a>获取方式</h2><ol>
+<li><p>正常情况下可以在官网申请免费卡（申请地址 <a href="https://www.giffgaff.com/freesim-international">https://www.giffgaff.com/freesim-international</a>）</p>
+</li>
+<li><p>但是听说官方邮寄的丢信率很高，所以就不折腾了，直接上网淘宝或京东购买（自行搜索并购买未激活卡）。</p>
+</li>
+</ol>
+<h2 id="激活这张卡的前置条件"><a href="#激活这张卡的前置条件" class="headerlink" title="激活这张卡的前置条件"></a>激活这张卡的前置条件</h2><p>你需要有一张 visa 或 mastercard 的信用卡（看网上有人用 depay 虚拟信用卡，或者到第三方网站购买 Voucher 充值）</p>
+<h2 id="激活过程"><a href="#激活过程" class="headerlink" title="激活过程"></a>激活过程</h2><ol>
+<li>打开 Giffgaff 官网激活页面 <a href="https://www.giffgaff.com/activate">https://www.giffgaff.com/activate</a> 输入卡上的六位激活码，点击 Activate your SIM ![激活 sim]<img src="https://bu.dusays.com/2023/12/01/656935dad4afd.jpg" alt="wp_editor_md_0fa7b036c2ef7149d3ec44a3a1d2253f.jpg"></li>
+<li>输入你的常用邮箱</li>
+<li>设置密码</li>
+<li>在是否接收推送信息页面可以直接选择 No Thanks</li>
+<li>你如果像我一样在中国内地使用，直接在套餐界面拉到最后选择「Pay as you go」即可</li>
+<li>选择充值金额，最少 10 英镑（大约 89 块软妹币）</li>
+<li>如实填写 visa 或 master 卡信息</li>
+<li>支付完成后即可看到自己的号码（但是可能需要几小时才能激活成功） 下载 giffgaff 官方 app 看下激活状态，我在以下状态呆了三个小时：<img src="https://bu.dusays.com/2023/12/01/656935dc59fba.jpg" alt="wp_editor_md_b021db434d6a532dc11b32edd3e2b1cf.jpg"></li>
+<li>手机插卡后，如果激活成功，会接收到一条短信</li>
+</ol>
+<h2 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h2><p>以下是在中国国内的漫游资费：<img src="https://bu.dusays.com/2023/12/01/656935db7c60d.jpg" alt="wp_editor_md_30fa8750cd3adb97bf5102c47c62bfd3.jpg"><br>如果你不想在使用过程中因为接电话，使用数据流量上网而扣费，那么就要进行一些设置。</p>
+<p>以下操作均会造成扣费： 1. 短信、电话、数据流量上网</p>
+<p><strong>解决方法：</strong> 手机设置中关闭蜂窝数据，不拨打电话，不发短信（保号除外）</p>
+<p>2. 手动拒接来电 giffgaff 默认开通语音信箱,拒接来电后将会自动接入语音信箱产生费用</p>
+<p><strong>解决方法：</strong> 关闭语音信箱,手机拨号键盘输入：”##002#” 并按拨号键,即可关闭语音信箱</p>
+<p>iPhone 会看到以下提示：<img src="https://bu.dusays.com/2023/12/01/656935dc34792.jpg" alt="wp_editor_md_441356fb2cf03007f0fefcf105f1875e.jpg"></p>
+<p>参考官网说明： <a href="https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off">https://www.giffgaff.com/help/articles/how-do-i-turn-voicemail-on-or-off</a></p>
+<p>3.  FaceTime 与 iMessage</p>
+<p>iPhone 取消 FaceTime 与 iMessage 服务:</p>
+<blockquote>
+<p>請依照以下步驟關閉 iMessage。 將 SIM 卡移轉到 iPhone。 前往「設定」。 點一下「訊息」。 關閉 iMessage。 回到「設定」。 點一下 FaceTime。 關閉 FaceTime。 退出「設定」。</p>
+</blockquote>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>
+<li><p>准备一张 VISA 或 MasterCard 卡</p>
+</li>
+<li><p>首次激活需要充值 10 英镑，官方会额外赠送 5 英镑</p>
+</li>
+<li><p>使用 Giffgaff 发送短信需要加上完整的国际区号</p>
+</li>
+<li><p>注册国外的服务时将 “0” 替换为英国的国际区号 “+44”</p>
+</li>
+<li><p>需要每 6 个月发送一条短信保号</p>
+</li>
+</ul>
+<p>PS： 防电话骚扰扣费参考: <a href="https://tsb2blog.com/call-blockin-part-2">https://tsb2blog.com/call-blockin-part-2</a></p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>聚合信息源</title>
+    <url>/posts/aggregate_info_sources.html</url>
+    <content><![CDATA[<ul>
+<li>RSS 平台：<ul>
+<li><a href="https://www.144u.com/">144U.COM - 万物皆可聚合</a></li>
+<li><a href="https://webfollow.cc/welcome">WebFollow - 在线 RSS 阅读器</a></li>
+<li><a href="https://rss.ping8.top/">RSS Reader</a></li>
+<li><a href="https://vx.mk/">微讯模块 | vx.mk</a></li>
+<li><a href="https://www.fre123.com/weekly/">技术周刊精选推荐 - fre123 免费资源共享平台</a></li>
+</ul>
+</li>
+<li>中文优质 RSS 源：<ul>
+<li><a href="https://github.com/weekend-project-space/top-rss-list">订阅人数最多的rss源，中文优质rss源</a></li>
+</ul>
+</li>
+<li>热榜：<ul>
+<li><a href="https://tophub.today/">今日热榜官网</a></li>
+<li><a href="https://xyzrank.com/">中文播客榜</a></li>
+<li><a href="https://momoyu.cc/">摸摸鱼热榜</a></li>
+<li><a href="https://s.webfollow.cc/">今日热搜</a></li>
+<li><a href="https://smzdk.top/">什么值得看 - 现在正在发生什么</a></li>
+<li><a href="https://moyuduck.com/">摸鱼鸭 一站式摸鱼新体验</a></li>
+</ul>
+</li>
+<li>英文：<ul>
+<li><a href="https://www.newsminimalist.com/">News Minimalist</a></li>
+<li><a href="https://immersivetranslate.com/docs/sites/">探索互联网上高质量的内容 | 沉浸式翻译</a></li>
+</ul>
+</li>
+<li>发现优质 Newsletter：<ul>
+<li><a href="https://alleyread.com/">AlleyRead - 重塑你的信息源</a></li>
+<li><a href="https://github.com/chasays/newsletter-list">有趣，免费的 newsletter-list</a></li>
+<li><a href="https://wiki.geekplux.com/#/page/newsletters">geekplux</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>静态博客永久链接变更后修改twikoo评论地址</title>
+    <url>/posts/twikoo_url_modified.html</url>
+    <content><![CDATA[<h2 id="修改起因"><a href="#修改起因" class="headerlink" title="修改起因"></a>修改起因</h2><p>之前我的博客文章地址是下面这样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/2023/12/05/如何找到优质博客.html</span><br></pre></td></tr></table></figure>
+
+<p>这样的地址不仅长，而且粘贴到微信等聊天软件中中文将不被识别为链接的一部分<br><img src="https://s2.loli.net/2023/12/05/RMbwfLDiXAOaN7y.png" alt="image.png"></p>
+<h2 id="先优化地址链接"><a href="#先优化地址链接" class="headerlink" title="先优化地址链接"></a>先优化地址链接</h2><p>所以我用这个 hexo 插件<br><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<p>来缩短我的链接成以下这种比较友好的样式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://readfere.com/posts/How_to_find_a_quality_blog.html</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改步骤"><a href="#修改步骤" class="headerlink" title="修改步骤"></a>修改步骤</h3><ol>
+<li>安装 hexo-abbrlink</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改 Hexo 根目录配置文件 _config.yml</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在每篇 markdown 文章的 frontmatter 中加入这个字段</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abbrlink: &quot;这里填写这篇文章永久地址的缩略名&quot; # 例如：How_to_find_a_quality_blog</span><br></pre></td></tr></table></figure>
+
+<p>文章中如果没配置这个字段，那么插件就会自动生成随机数字版链接</p>
+<h2 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h2><p>当我点击首页评论的时候出现 404 页面，发现应该跟我改变永久链接油管</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><h3 id="寻找解决方法"><a href="#寻找解决方法" class="headerlink" title="寻找解决方法"></a>寻找解决方法</h3><p>去主题群里问作者大佬得到以下回答：<br><img src="https://s2.loli.net/2023/12/05/ctUXbndRxjShEwM.png" alt="image.png"></p>
+<p>然后就搜索了以下下载 twikoo 评论数据的方法：<br><a href="https://www.imaegoo.com/2022/twikoo-data-export/">Twikoo 评论数据导出教程 - iMaeGoo’s Blog</a></p>
+<h3 id="导出-Twikoo-评论数据"><a href="#导出-Twikoo-评论数据" class="headerlink" title="导出 Twikoo 评论数据"></a>导出 Twikoo 评论数据</h3><p>导出 Twikoo 在 Vercel 的数据</p>
+<ol>
+<li>下载并安装 MongoDB 数据库工具（下载地址： <a href="https://www.mongodb.com/try/download/database-tools">https://www.mongodb.com/try/download/database-tools</a> ）；<br> 下载并解压之后需要配置环境变量，命令行工具才能生效，参考 <a href="https://blog.csdn.net/Alisa_Sheng/article/details/122621415">MongoDB数据库：安装、配置系统环境变量、和基础命令</a></li>
+<li>登录 Vercel&#x2F;Netlify（我部署在 Netlify，方法差不多） 管理后台，点开 Twikoo 的环境，点击上方的 Settings，点击左侧的 Environment Variables，在页面下方找到 MONGODB_URI，点击对应的小眼睛图标，会出现数据库连接地址，点击以复制这串地址；</li>
+<li>如果地址中包含参数，请先删去参数，参数即 “?” 和 “?” 后面的部分，例如 ?journal&#x3D;true&amp;w&#x3D;majority；</li>
+<li>打开一个命令行窗口，粘贴以下命令：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri 这里换成刚才复制的地址 --collection comment --type json --out twikoo-comments. json</span><br></pre></td></tr></table></figure>
+
+<p>例如我的是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoexport --uri mongodb+srv://twikoo:****@****.mongodb.net --collection comment --type json --out twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>命令运行完成后会在文件夹看到一个 twikoo-comments.json 文件<br>要修改下面这几个链接地址为现在的地址<br><img src="https://s2.loli.net/2023/12/05/l2kirS1ThP6Uc4D.png" alt="image.png"></p>
+<p>如果评论多的话，这个工作量会很大，建议用 vscode 结合正则表达式批量替换</p>
+<h3 id="上传修改后的-Twikoo-评论数据"><a href="#上传修改后的-Twikoo-评论数据" class="headerlink" title="上传修改后的 Twikoo 评论数据"></a>上传修改后的 Twikoo 评论数据</h3><p>完成后需要回传到 MongoDB 中覆盖原有 json 文件<br>命令是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mongoimport --uri &quot;mongodb+srv://twikoo:****@****.mongodb.net&quot; --collection comment --type json --mode merge --file twikoo-comments.json</span><br></pre></td></tr></table></figure>
+
+<p>搞定！</p>
+]]></content>
+      <categories>
+        <category>折腾记</category>
       </categories>
   </entry>
 </search>
