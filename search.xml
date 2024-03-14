@@ -372,6 +372,11 @@
       <categories>
         <category>折腾记</category>
       </categories>
+      <tags>
+        <tag>rime</tag>
+        <tag>输入法</tag>
+        <tag>使用指南</tag>
+      </tags>
   </entry>
   <entry>
     <title>优质博客主题收集</title>
@@ -627,7 +632,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
   </entry>
   <entry>
     <title>安装 App Store 下架应用</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/install-app-store-removed-app.html</url>
     <content><![CDATA[<p>我一共有两台 iPhone 设备和一台 mac 设备，最近我其中一台 iPhone 出现了 Handoff 功能失效的情况（也就是剪贴板接力功能，从一台设备复制，另一台设备粘贴），这台 iPhone 设备先后使用了重新登录 iCloud 账号，重置网络设置，重置所有设置等等方法，到最后都没有任何效果，而且也不是网络的问题。</p>
 <p>后来我咨询了苹果的售后，他们同样也让我进行以上的设置，我之前基本把他们说的解决方案都做过了，然后她祭出了最后一个大招，备份系统，还原所有设置。</p>
 <p>最后我经历了两次还原设置后并恢复了系统备份文件，终于 Handoff 恢复了正常（有的时候也抽风，比如只能接力网址，文字就无法接力，我最后觉得是系统的 bug，很玄学）</p>
@@ -820,7 +825,7 @@ Gitee 稳定版：<figure class="highlight powershell"><table><tr><td class="cod
 <h2 id="安娜的档案"><a href="#安娜的档案" class="headerlink" title="安娜的档案"></a>安娜的档案</h2><p><a href="https://annas-archive.se/">https://annas-archive.se/</a> <a href="https://annas-archive.org/">https://annas-archive.org/</a></p>
 <h2 id="一千多位专家每位推荐他们领域内的五本书："><a href="#一千多位专家每位推荐他们领域内的五本书：" class="headerlink" title="一千多位专家每位推荐他们领域内的五本书："></a>一千多位专家每位推荐他们领域内的五本书：</h2><p><a href="https://fivebooks.com/">https://fivebooks.com/</a></p>
 <h2 id="Z-Library-桌面端"><a href="#Z-Library-桌面端" class="headerlink" title="Z-Library 桌面端"></a>Z-Library 桌面端</h2><p>既可以直接访问，又可以提供 zlib 可访问的地址 <a href="https://zh.go-to-zlibrary.se/">https://zh.go-to-zlibrary.se/</a></p>
-<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#99;&#x6b;&#x62;&#111;&#120;&#64;&#122;&#x6c;&#105;&#98;&#x2e;&#115;&#x65;">&#x62;&#108;&#97;&#99;&#x6b;&#x62;&#111;&#120;&#64;&#122;&#x6c;&#105;&#98;&#x2e;&#115;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
+<p>如果实在找不到 zlib 可用访问地址可以给 <a href="mailto:&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#x6f;&#x78;&#64;&#122;&#x6c;&#x69;&#98;&#46;&#x73;&#x65;">&#x62;&#108;&#97;&#x63;&#x6b;&#98;&#x6f;&#x78;&#64;&#122;&#x6c;&#x69;&#98;&#46;&#x73;&#x65;</a> 发送任何一封邮件，您就可以在 3 到 5 分钟内收到最新可访问地址！</p>
 <h2 id="Libgen"><a href="#Libgen" class="headerlink" title="Libgen"></a>Libgen</h2><p><a href="https://www.libgen.is/">https://www.libgen.is/</a></p>
 <h2 id="zlibrary-anna-libgen-镜像网址检测工具"><a href="#zlibrary-anna-libgen-镜像网址检测工具" class="headerlink" title="zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具"></a>zlibrary&#x2F;anna&#x2F;libgen 镜像网址检测工具</h2><p><a href="https://mirror.ssdown.org/">https://mirror.ssdown.org/</a></p>
 <h2 id="Libsan-搜书机器人"><a href="#Libsan-搜书机器人" class="headerlink" title="Libsan 搜书机器人"></a>Libsan 搜书机器人</h2><p><a href="https://t.me/libsan_bot">https://t.me/libsan_bot</a></p>

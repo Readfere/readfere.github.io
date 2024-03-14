@@ -1,3 +1,8 @@
+https://readfere.com/json/music.json
+https://readfere.com/link/index.html
+https://readfere.com/music/index.html
+https://readfere.com/tags/index.html
+https://readfere.com/wordScenery/index.html
 https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/common_git_operations.html
 https://readfere.com/posts/memos_sync_solving.html
@@ -14,7 +19,7 @@ https://readfere.com/posts/Image_API_website.html
 https://readfere.com/posts/aggregate_search_recommendation.html
 https://readfere.com/posts/Switch_GitHub_account_locally.html
 https://readfere.com/posts/How_to_find_a_quality_blog.html
-https://readfere.com/posts/undefined.html
+https://readfere.com/posts/install-app-store-removed-app.html
 https://readfere.com/posts/movies_subtitles_download_sites.html
 https://readfere.com/posts/quick_way_to_access_GitHub.html
 https://readfere.com/posts/create_a_hugo_blog.html
@@ -33,11 +38,6 @@ https://readfere.com/dailyPhoto/index.html
 https://readfere.com/equipment/index.html
 https://readfere.com/essay/index.html
 https://readfere.com/fcircle/index.html
-https://readfere.com/json/music.json
-https://readfere.com/link/index.html
-https://readfere.com/music/index.html
-https://readfere.com/tags/index.html
-https://readfere.com/wordScenery/index.html
 https://readfere.com/
 https://readfere.com/tags/CDN/
 https://readfere.com/tags/Obsidian/
@@ -45,6 +45,9 @@ https://readfere.com/tags/TVSources/
 https://readfere.com/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/
 https://readfere.com/tags/%E7%9B%B4%E6%92%AD%E6%BA%90/
 https://readfere.com/tags/YouTube/
+https://readfere.com/tags/rime/
+https://readfere.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/
+https://readfere.com/tags/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/
 https://readfere.com/tags/GitHub/
 https://readfere.com/tags/iPhone/
 https://readfere.com/tags/%E6%97%A7%E7%89%88%E5%BA%94%E7%94%A8/
