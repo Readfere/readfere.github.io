@@ -1,4 +1,3 @@
-https://readfere.com/posts/7f759228.html
 https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/common_git_operations.html
 https://readfere.com/posts/memos_sync_solving.html
@@ -8,12 +7,14 @@ https://readfere.com/posts/obsidian_prism_highlight_css.html
 https://readfere.com/posts/TV_live_feed.html
 https://readfere.com/posts/youtube_third_party_apps.html
 https://readfere.com/posts/iphone_import_fonts.html
+https://readfere.com/posts/rime-input-method.html
 https://readfere.com/posts/collection_of_premium_blog_themes.html
 https://readfere.com/posts/create_a_hexo_blog.html
 https://readfere.com/posts/Image_API_website.html
 https://readfere.com/posts/aggregate_search_recommendation.html
 https://readfere.com/posts/Switch_GitHub_account_locally.html
 https://readfere.com/posts/How_to_find_a_quality_blog.html
+https://readfere.com/posts/undefined.html
 https://readfere.com/posts/movies_subtitles_download_sites.html
 https://readfere.com/posts/quick_way_to_access_GitHub.html
 https://readfere.com/posts/create_a_hugo_blog.html
