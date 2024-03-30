@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://readfere.com/posts/lx_music_sound_source.html</loc>
-    
-    <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://readfere.com/posts/github_hexo_autodeploy.html</loc>
     
     <lastmod>2024-03-30</lastmod>
@@ -381,6 +372,15 @@
   
   <url>
     <loc>https://readfere.com/posts/create_a_hugo_blog.html</loc>
+    
+    <lastmod>2024-03-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/lx_music_sound_source.html</loc>
     
     <lastmod>2024-03-30</lastmod>
     
