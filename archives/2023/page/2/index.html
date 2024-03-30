@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>文章2023 | AppSnitch·器</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="https://bu.dusays.com/2023/12/13/657910bc4bca9.png"><!-- index.css--><link rel="stylesheet" href="/css/index.css?v=1.6.1"><!-- inject head--><link rel="stylesheet" href="https://cdn2.codesign.qq.com/icons/7pOrz0WXB5ZWJPX/latest/iconfont.css"><!-- aplayer--><!-- swiper--><!-- Open Graph--><meta name="description" content="看书，思考，效率工具分享。"><!-- pwa--><script>(win => {
+        win.saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay,
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        }
+
+        const DarkModeStatus = localStorage.getItem('theme')
+        if (DarkModeStatus !== null) {
+            if (DarkModeStatus === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        }
+
+        const asideStatus = saveToLocal.get('aside-status')
+        if (asideStatus !== undefined) {
+            if (asideStatus === 'hide') {
+                document.documentElement.classList.add('hide-aside')
+            } else {
+                document.documentElement.classList.remove('hide-aside')
+            }
+        }
+    }
+)(window)
+
+console.log(
+    "%c Program: Hexo %c Theme: Solitude %c Version: v1.6.1",
+    "border-radius:5px 0 0 5px;padding: 5px 10px;color:white;background:#ff3842;",
+    "padding: 5px 10px;color:white;background:#3e9f50;",
+    "border-radius:0 5px 5px 0;padding: 5px 10px;background:#0084ff;color:white;"
+);</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: {"appId":"SFW56J58M0","apiKey":"39410d37484322a3073d1b1900556e99","indexName":"appsnitch","hits":{"per_page":10}},
+    localsearch: undefined,
+    runtime: '2023-11-09 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.png'
+    },
+    highlight: {
+        enable: true,
+        limit: 200,
+        expand: true,
+        copy: true,
+        syntax: 'highlight.js'
+    },
+    randomlinks: false,
+    lang: {
+        theme: {
+            dark: '已切换至深色模式',
+            light: '已切换至浅色模式',
+        },
+        copy: {
+            success: '复制成功',
+            error: '复制失败',
+        },
+        backtop: '返回顶部',
+        lately: {
+            second: '秒',
+            minute: '分钟',
+            hour: '小时',
+            day: '天',
+            month: '个月',
+            year: '年',
+            ago: '前',
+            error: 'NaN',
+        },
+        search: {
+            empty: '找不到你查询的内容：${query}',
+            hit: '找到 ${hits} 条结果，用时 ${time} 毫秒',
+            placeholder: '输入关键词快速查找',
+        },
+        chs: {
+            chs_to_cht: '繁體中文',
+            cht_to_chs: '简体中文',
+        }
+    },
+    aside: {
+        sayhello: {
+            morning: '一日之计在于晨',
+            noon: '吃饱了才有力气干活',
+            afternoon: '集中精力，攻克难关',
+            night: '不要太劳累了，早睡更健康',
+            goodnight: '睡个好觉，保证精力充沛',
+        },
+        sayhello2: ["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多","🎮 电竞游戏爱好者"],
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: {
+        enable: true,
+        type: '',
+        commentBarrage: true,
+        randomInfoStart: ["聪敏的","可爱的","美丽的"],
+        randomInfoEnd: ["白菜","小可爱","小仙女"],
+        twikoo: {
+            url: 'https://bibitalk.netlify.app/.netlify/functions/twikoo/',
+            accessToken: ''
+        },
+        waline: {
+            url: '',
+        }
+    },
+    lightbox: 'fancybox',
+    ai: {
+        enable: false,
+        key: '',
+        talk: "",
+        randomPost: false,
+    }
+};</script><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="AppSnitch·器" type="application/atom+xml">
+</head><body id="body"><!-- universe--><canvas id="universe"></canvas><!-- loading--><!-- console--><div id="console"><div class="close-btn" onclick="sco.hideConsole()"><i class="solitude st-close-fill"></i></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><div class="author-content-item-title">最新评论</div></div><div class="aside-list"></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="sco.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">寻找感兴趣的领域</div></div><div class="card-tag-cloud"><a href="/tags/CDN/">CDN<sup>1</sup></a><a href="/tags/Obsidian/">Obsidian<sup>2</sup></a><a href="/tags/TVSources/">TVSources<sup>1</sup></a><a href="/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/">开源工具<sup>1</sup></a><a href="/tags/%E7%9B%B4%E6%92%AD%E6%BA%90/">直播源<sup>1</sup></a><a href="/tags/YouTube/">YouTube<sup>1</sup></a><a href="/tags/rime/">rime<sup>1</sup></a><a href="/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法<sup>1</sup></a><a href="/tags/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">使用指南<sup>1</sup></a><a href="/tags/GitHub/">GitHub<sup>1</sup></a><a href="/tags/iPhone/">iPhone<sup>1</sup></a><a href="/tags/%E6%97%A7%E7%89%88%E5%BA%94%E7%94%A8/">旧版应用<sup>1</sup></a></div></div><div class="console-card history" onclick="sco.hideConsole()"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2024/03/')" href="javascript:void(0);"><span class="card-archive-list-date">2024/03</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/12/')" href="javascript:void(0);"><span class="card-archive-list-date">2023/12</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">9</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/11/')" href="javascript:void(0);"><span class="card-archive-list-date">2023/11</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">12</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/08/')" href="javascript:void(0);"><span class="card-archive-list-date">2023/08</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/07/')" href="javascript:void(0);"><span class="card-archive-list-date">2023/07</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span class="card-archive-list-count-unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" onclick="sco.switchDarkMode()" title="昼夜切换"><i class="solitude st-moon-clear-fill"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" onclick="sco.switchHideAside()" title="边栏显示控制"><i class="solitude st-side-bar-fill"></i></span></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="sco.switchCommentBarrage()"><span class="commentBarrage"><i class="solitude st-chat-fill"></i></span></div></div><div class="console-mask" onclick="sco.hideConsole()"></div></div><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude st-moon-clear-fill"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  st-folder-fill"></i><span>文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  st-checkbox-multiple-blank-fill"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  st-price-tag-fill"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/moments/"><i class="solitude  st-wifi-fill"></i><span>友链鱼塘</span></a></li><li><a class="site-page child" href="/links/"><i class="solitude  st-group-fill"></i><span>友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  st-gift-fill"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/equipment/"><i class="solitude  st-laptop-line"></i><span>装备</span></a></li><li><a class="site-page child" href="/tlink/"><i class="solitude  st-tools-fill"></i><span>工具箱</span></a></li><li><a class="site-page child" href="/music/"><i class="solitude  st-disc-fill"></i><span>音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  st-contacts-fill"></i><span>关于本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"><a href="/tags/CDN/">CDN<sup>1</sup></a><a href="/tags/Obsidian/">Obsidian<sup>2</sup></a><a href="/tags/TVSources/">TVSources<sup>1</sup></a><a href="/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/">开源工具<sup>1</sup></a><a href="/tags/%E7%9B%B4%E6%92%AD%E6%BA%90/">直播源<sup>1</sup></a><a href="/tags/YouTube/">YouTube<sup>1</sup></a><a href="/tags/rime/">rime<sup>1</sup></a><a href="/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法<sup>1</sup></a><a href="/tags/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">使用指南<sup>1</sup></a><a href="/tags/GitHub/">GitHub<sup>1</sup></a><a href="/tags/iPhone/">iPhone<sup>1</sup></a><a href="/tags/%E6%97%A7%E7%89%88%E5%BA%94%E7%94%A8/">旧版应用<sup>1</sup></a></div></div></div></div><!-- keyboard--><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a id="site-name" href="/" title="返回博客主页"><span class="title">AppSnitch</span></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">文章2023</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文库</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  st-folder-fill"></i><span>文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  st-checkbox-multiple-blank-fill"></i><span>全部分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  st-price-tag-fill"></i><span>全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>友链</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/moments/"><i class="solitude  st-wifi-fill"></i><span>友链鱼塘</span></a></li><li><a class="site-page child" href="/links/"><i class="solitude  st-group-fill"></i><span>友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling()"><i class="solitude  st-gift-fill"></i><span>宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/equipment/"><i class="solitude  st-laptop-line"></i><span>装备</span></a></li><li><a class="site-page child" href="/tlink/"><i class="solitude  st-tools-fill"></i><span>工具箱</span></a></li><li><a class="site-page child" href="/music/"><i class="solitude  st-disc-fill"></i><span>音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  st-contacts-fill"></i><span>关于本站</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="travellings_button"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html" title=""><i class="solitude st-train-line"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude st-search-line"></i></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude st-arrow-up-line"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude st-menu-line"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="archive"><div class="article-sort-title">文章<sup>27</sup></div><div class="article-sort"><div class="article-sort-item year">2023</div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/How_to_find_a_quality_blog.html" title="如何找到优质博客"><img src="https://bu.dusays.com/2023/12/27/658bf09f576f7.jpg" alt="如何找到优质博客"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/How_to_find_a_quality_blog.html" title="如何找到优质博客" onclick="window.event.cancelBubble=true;">如何找到优质博客</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/first_time_with_a_UK_giffgaff_card.html" title="第一次用英国 giffgaff 电话卡"><img src="https://bu.dusays.com/2023/12/27/658bf0a081e52.jpg" alt="第一次用英国 giffgaff 电话卡"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/first_time_with_a_UK_giffgaff_card.html" title="第一次用英国 giffgaff 电话卡" onclick="window.event.cancelBubble=true;">第一次用英国 giffgaff 电话卡</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/quick_way_to_access_GitHub.html" title="快速访问 GitHub 的方法"><img src="https://bu.dusays.com/2023/12/02/656a8a789945e.png" alt="快速访问 GitHub 的方法"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/quick_way_to_access_GitHub.html" title="快速访问 GitHub 的方法" onclick="window.event.cancelBubble=true;">快速访问 GitHub 的方法</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/ebook_search_sites.html" title="电子书搜索网站推荐"><img src="https://bu.dusays.com/2023/12/01/656935d9338d0.png" alt="电子书搜索网站推荐"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/ebook_search_sites.html" title="电子书搜索网站推荐" onclick="window.event.cancelBubble=true;">电子书搜索网站推荐</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/create_a_hugo_blog.html" title="搭建hugo博客"><img src="https://bu.dusays.com/2023/12/27/658bf09f71cf3.jpg" alt="搭建hugo博客"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/create_a_hugo_blog.html" title="搭建hugo博客" onclick="window.event.cancelBubble=true;">搭建hugo博客</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/aggregate_search_recommendation.html" title="好用的聚合搜索推荐"><img src="https://bu.dusays.com/2023/12/27/658bf09f33266.jpg" alt="好用的聚合搜索推荐"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/aggregate_search_recommendation.html" title="好用的聚合搜索推荐" onclick="window.event.cancelBubble=true;">好用的聚合搜索推荐</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/pt_sites.html" title="PT下载站大全"><img src="https://bu.dusays.com/2023/12/02/656a8a8aae6e5.png" alt="PT下载站大全"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/pt_sites.html" title="PT下载站大全" onclick="window.event.cancelBubble=true;">PT下载站大全</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/Image_API_website.html" title="图片 API 接口网站"><img src="https://bu.dusays.com/2023/12/01/656935d782852.png" alt="图片 API 接口网站"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/Image_API_website.html" title="图片 API 接口网站" onclick="window.event.cancelBubble=true;">图片 API 接口网站</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/lx_music_sound_source.html" title="洛雪音乐助手切换自定义音源"><img src="https://bu.dusays.com/2023/12/01/656935d79be6a.png" alt="洛雪音乐助手切换自定义音源"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/lx_music_sound_source.html" title="洛雪音乐助手切换自定义音源" onclick="window.event.cancelBubble=true;">洛雪音乐助手切换自定义音源</a><div class="article-sort-item-tags"></div></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/posts/youtube_third_party_apps.html" title="YouTube第三方客户端&amp;去广告方案"><img src="https://bu.dusays.com/2023/12/01/656935d954be8.jpg" alt="YouTube第三方客户端&amp;去广告方案"></a><div class="article-sort-item-info"><a class="article-sort-item-title" href="/posts/youtube_third_party_apps.html" title="YouTube第三方客户端&amp;去广告方案" onclick="window.event.cancelBubble=true;">YouTube第三方客户端&amp;去广告方案</a><div class="article-sort-item-tags"><a class="article-meta__tags" href="/tags/YouTube/" onclick="window.event.cancelBubble=true;"><span class="tags-punctuation">YouTube</span></a></div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/archives/2023/"><i class="solitude st-arrow-left-bold"></i> <div class="pagination_tips_prev">上页</div></a><a class="page-number" href="/archives/2023/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2023/page/3/">3</a><a class="extend next" rel="next" href="/archives/2023/page/3/"><div class="pagination_tips_next">下页</div> <i class="solitude st-arrow-right-bold"></i></a><div class="toPageGroup"><input id="toPageText" oninput="value=value.replace(/[^0-9]/g,'')" maxlength="3" title="跳转到指定页面" onkeyup="if (this.value === '0') this.value = ''"><a id="toPageButton" onclick="sco.toPage()"><i class="solitude st-show-right-line"></i></a></div></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="author-info__top-group"><div class="author-info__sayhi" id="author-info__sayhi" onclick="sco.changeSayHelloText()">sayhello.morning</div></div></div><div class="avatar-img-group"><img class="avatar-img" alt="头像" src="https://bu.dusays.com/2023/12/26/658a7772095b6.jpg"><div class="avatar-sticker"><img class="avatar-sticker-img" src="https://bu.dusays.com/2021/01/15/6bee6b8aecfe5.png" alt="心情贴纸"></div></div><div class="author-info__description_group"><div class="author-info__description">分享自己对编程的<b>热爱</b>，对美好生活的<b>向往</b>，对知识海洋<b>探索历程</b>。</div><div class="author-info__description2">相信你可以在这里找到对你有用的知识和教程。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about/"><div class="author-info__name">奇货队长</div><div class="author-info__desc">Tools for Thought.</div></a><div class="card-info-social-icons is-center"></div></div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude st-map-line"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/rime-input-method.html" title="㞢Rime输入法使用指北"><img alt="㞢Rime输入法使用指北" src="https://bu.dusays.com/2023/12/27/658bf0a090a89.jpg"></a><div class="content"><a class="title" href="/posts/rime-input-method.html" title="㞢Rime输入法使用指北">㞢Rime输入法使用指北</a><a class="article-recent_post_categories" href="/posts/rime-input-method.html">折腾记</a></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/install-app-store-removed-app.html" title="安装 App Store 下架应用"><img alt="安装 App Store 下架应用" src="https://bu.dusays.com/2023/12/27/658bf09f63afb.jpg"></a><div class="content"><a class="title" href="/posts/install-app-store-removed-app.html" title="安装 App Store 下架应用">安装 App Store 下架应用</a><a class="article-recent_post_categories" href="/posts/install-app-store-removed-app.html">折腾记</a></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/common_git_operations.html" title="Git常用操作"><img alt="Git常用操作" src="https://bu.dusays.com/2023/12/27/658bf09f1c1f4.jpg"></a><div class="content"><a class="title" href="/posts/common_git_operations.html" title="Git常用操作">Git常用操作</a></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/collection_of_premium_blog_themes.html" title="优质博客主题收集"><img alt="优质博客主题收集" src="https://bu.dusays.com/2023/12/27/658bf09f33266.jpg"></a><div class="content"><a class="title" href="/posts/collection_of_premium_blog_themes.html" title="优质博客主题收集">优质博客主题收集</a></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/aggregate_info_sources.html" title="聚合信息源"><img alt="聚合信息源" src="https://bu.dusays.com/2023/12/27/658bf09f54105.jpg"></a><div class="content"><a class="title" href="/posts/aggregate_info_sources.html" title="聚合信息源">聚合信息源</a></div></div></div></div><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="webinfo"><div class="webinfo-item"><div class="webinfo-item-title"><i class="item-icon solitude st-folder-fill"></i><div class="item-name">文章总数 :</div></div><div class="item-count">27</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="item-icon solitude st-calendar-todo-fill"></i><div class="item-name">建站天数 :</div></div><div class="item-count" id="runtimeshow"></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="item-icon solitude st-loop-left-fill"></i><div class="item-name">最后更新 :</div></div><time class="item-count" datetime="2024-03-30T01:23:58.751Z"></time></div></div></div></div></div></main><footer id="footer"><div id="st-footer-bar"><div class="footer-logo"><span class="solitude">AppSnitch</span></div><div class="footer-bar-description">来自AppSnitch·器 - Tools for Thought.的文章</div><a class="footer-bar-link" href="/">了解更多</a></div><div id="footer_deal"><div class="nolazyload footer_mini_logo" id="footer_mini_logo" title="返回顶部" onclick="sco.toTop()"><img src="https://bu.dusays.com/2023/12/13/657910bc4bca9.png" alt="返回顶部"></div></div><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2023 - 2024 By&nbsp;<a class="footer-bar-link" href="/">奇货队长</a></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/valor-x/hexo-theme-solitude" title="主题">主题</a><a class="footer-bar-link cc" href="/null" aria-label="copyright"><i class="solitude st-copyright-line"></i><i class="solitude st-creative-commons-by-line"></i><i class="solitude st-creative-commons-nc-line"></i><i class="solitude st-creative-commons-nd-line"></i></a></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><!-- inject body--><div><script src="/js/main.js?v=1.6.1"></script><script src="/js/utils.js?v=1.6.1"></script><!-- lately--><script src="/js/third_party/lately.min.js?v=1.6.1"></script><script src="/js/third_party/universe.min.js?v=1.6.1"></script><script>dark()
+</script><script src="https://cdn.staticfile.net/pjax/0.2.8/pjax.min.js"></script><script src="https://cdn.staticfile.net/node-snackbar/0.1.16/snackbar.min.js"></script><script src="/js/third_party/waterfall.min.js?v=1.6.1"></script><script src="https://cdn.staticfile.net/pace/1.2.4/pace.min.js"></script><script src="https://cdn.staticfile.net/instantsearch.js/4.63.0/instantsearch.production.min.js"></script><script src="https://cdn.staticfile.net/algoliasearch/4.22.0/algoliasearch-lite.umd.min.js"></script></div><div id="js-pjax"><script id="config-diff">var PAGE_CONFIG = {
+    is_post: false,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: false,
+    comment: false,
+}
+</script></div><!-- newest comment--><!-- pjax--><script>let pjaxSelectors = [
+    'title',
+    '#body-wrap',
+    '#site-config',
+    'meta[name="description"]',
+    '#js-pjax',
+    'meta[property^="og:"]',
+]
+
+const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+}
+initTheme()</script><!-- google adsense--><!-- search--><div id="algolia-search"><div class="search-dialog"><div class="algolia-navbar"><div class="search-dialog__title" id="algolia-search-title">搜索</div><div class="algolia-tips"><i class="solitude st-algolia-fill"></i><span class="algolia-tips-text">Algolia</span></div><span class="search-close-button"><i class="solitude st-close-fill"></i></span></div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><div id="search-results"><div id="algolia-hits"></div></div><div id="algolia-tips"><div id="algolia-pagination"></div><div id="algolia-stats"></div></div></div><div id="search-mask"></div></div><script src="/js/search/algolia.js?v=1.6.1"></script><!-- music--></body></html><script>const posts=["posts/rime-input-method.html","posts/install-app-store-removed-app.html","posts/common_git_operations.html","posts/collection_of_premium_blog_themes.html","posts/aggregate_info_sources.html","posts/Guide_for_CDN_Services.html","posts/TV_live_feed.html","posts/Switch_GitHub_account_locally.html","posts/twikoo_url_modified.html","posts/github_hexo_autodeploy.html","posts/programmer_physical_mental_spiritual_growth_guide.html","posts/create_a_hexo_blog.html","posts/How_to_find_a_quality_blog.html","posts/first_time_with_a_UK_giffgaff_card.html","posts/quick_way_to_access_GitHub.html","posts/ebook_search_sites.html","posts/create_a_hugo_blog.html","posts/aggregate_search_recommendation.html","posts/pt_sites.html","posts/Image_API_website.html","posts/lx_music_sound_source.html","posts/youtube_third_party_apps.html","posts/movies_subtitles_download_sites.html","posts/iphone_import_fonts.html","posts/obsidian_prism_highlight_css.html","posts/memos_sync_solving.html","posts/obsidian_dataview_local_pics.html"];function toRandomPost(){ pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]); }</script>
