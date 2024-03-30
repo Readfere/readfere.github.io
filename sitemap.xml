@@ -385,13 +385,6 @@
   </url>
   
   <url>
-    <loc>https://readfere.com/tags/YouTube/</loc>
-    <lastmod>2024-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://readfere.com/tags/TVSources/</loc>
     <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -407,6 +400,13 @@
   
   <url>
     <loc>https://readfere.com/tags/%E7%9B%B4%E6%92%AD%E6%BA%90/</loc>
+    <lastmod>2024-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/tags/YouTube/</loc>
     <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
