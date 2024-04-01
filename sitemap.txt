@@ -1,3 +1,8 @@
+https://readfere.com/links/index.html
+https://readfere.com/memos/index.html
+https://readfere.com/moment/index.html
+https://readfere.com/music/index.html
+https://readfere.com/tlink/index.html
 https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/common_git_operations.html
 https://readfere.com/posts/memos_sync_solving.html
@@ -29,10 +34,6 @@ https://readfere.com/about/index.html
 https://readfere.com/books/index.html
 https://readfere.com/equipment/index.html
 https://readfere.com/essay/index.html
-https://readfere.com/links/index.html
-https://readfere.com/moment/index.html
-https://readfere.com/music/index.html
-https://readfere.com/tlink/index.html
 https://readfere.com/
 https://readfere.com/tags/CDN/
 https://readfere.com/tags/Obsidian/
