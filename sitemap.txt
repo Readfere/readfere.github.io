@@ -1,6 +1,5 @@
 https://readfere.com/posts/TV_live_feed.html
 https://readfere.com/posts/Switch_GitHub_account_locally.html
-https://readfere.com/posts/How_to_find_a_quality_blog.html
 https://readfere.com/about/index.html
 https://readfere.com/books/index.html
 https://readfere.com/equipment/index.html
@@ -12,6 +11,7 @@ https://readfere.com/tlink/index.html
 https://readfere.com/posts/rime-input-method.html
 https://readfere.com/posts/install-app-store-removed-app.html
 https://readfere.com/posts/common_git_operations.html
+https://readfere.com/posts/collection_of_premium_blog_themes.html
 https://readfere.com/posts/aggregate_info_sources.html
 https://readfere.com/posts/Guide_for_CDN_Services.html
 https://readfere.com/posts/twikoo_url_modified.html
@@ -27,6 +27,7 @@ https://readfere.com/posts/quick_way_to_access_GitHub.html
 https://readfere.com/posts/lx_music_sound_source.html
 https://readfere.com/posts/pt_sites.html
 https://readfere.com/posts/create_a_hexo_blog.html
+https://readfere.com/posts/How_to_find_a_quality_blog.html
 https://readfere.com/posts/aggregate_search_recommendation.html
 https://readfere.com/posts/youtube_third_party_apps.html
 https://readfere.com/posts/movies_subtitles_download_sites.html

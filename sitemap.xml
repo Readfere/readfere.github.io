@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://readfere.com/posts/How_to_find_a_quality_blog.html</loc>
-    
-    <lastmod>2024-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://readfere.com/about/index.html</loc>
     
     <lastmod>2024-04-02</lastmod>
@@ -120,6 +111,15 @@
   
   <url>
     <loc>https://readfere.com/posts/common_git_operations.html</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/collection_of_premium_blog_themes.html</loc>
     
     <lastmod>2023-12-27</lastmod>
     
@@ -257,6 +257,15 @@
     <loc>https://readfere.com/posts/create_a_hexo_blog.html</loc>
     
     <lastmod>2023-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/How_to_find_a_quality_blog.html</loc>
+    
+    <lastmod>2023-11-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
