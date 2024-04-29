@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://readfere.com/posts/TV_live_feed.html</loc>
-    
-    <lastmod>2024-04-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://readfere.com/posts/Switch_GitHub_account_locally.html</loc>
-    
-    <lastmod>2024-04-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://readfere.com/about/index.html</loc>
     
     <lastmod>2024-04-29</lastmod>
@@ -140,6 +122,24 @@
     <loc>https://readfere.com/posts/Guide_for_CDN_Services.html</loc>
     
     <lastmod>2023-12-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/TV_live_feed.html</loc>
+    
+    <lastmod>2023-12-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://readfere.com/posts/Switch_GitHub_account_locally.html</loc>
+    
+    <lastmod>2023-12-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
