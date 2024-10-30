@@ -1,6 +1,3 @@
-https://www.readfere.com/music/index.html
-https://www.readfere.com/recentcomments/index.html
-https://www.readfere.com/tlink/index.html
 https://www.readfere.com/about/index.html
 https://www.readfere.com/books/index.html
 https://www.readfere.com/equipment/index.html
@@ -8,6 +5,9 @@ https://www.readfere.com/essay/index.html
 https://www.readfere.com/links/index.html
 https://www.readfere.com/memos/index.html
 https://www.readfere.com/message/index.html
+https://www.readfere.com/music/index.html
+https://www.readfere.com/recentcomments/index.html
+https://www.readfere.com/tlink/index.html
 https://www.readfere.com/posts/rime-input-method.html
 https://www.readfere.com/posts/install-app-store-removed-app.html
 https://www.readfere.com/posts/common_git_operations.html
