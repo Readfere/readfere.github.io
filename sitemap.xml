@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.readfere.com/about/index.html</loc>
+    
+    <lastmod>2025-03-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.readfere.com/books/index.html</loc>
     
     <lastmod>2025-03-25</lastmod>
@@ -75,15 +84,6 @@
   
   <url>
     <loc>https://www.readfere.com/tlink/index.html</loc>
-    
-    <lastmod>2025-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.readfere.com/about/index.html</loc>
     
     <lastmod>2025-03-25</lastmod>
     
